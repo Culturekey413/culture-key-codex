@@ -61,3 +61,4 @@ This Codex is the central coordination and documentation hub for the Culture Key
 
 The `codex_agents.json` file contains all agent metadata in JSON structure. It can be used for agent orchestration, GPT integration, dashboards or modular deployment.
 
+## 🔐 Για την ηθική χρήση των agents, δείτε το AGENT_ACCESS_POLICY.md
