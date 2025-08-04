@@ -1,0 +1,14 @@
+{
+  "scenarios": [
+    {
+      "name": "Beginner’s Fire",
+      "condition": "hesitation before action or choice",
+      "effect": "ignites internal alignment, calls the Lychnia and Fero modules for orientation"
+    },
+    {
+      "name": "Spark Without Path",
+      "condition": "user expresses confusion or loss of direction",
+      "effect": "provides poetic reorientation, initiates memory signal to Silon"
+    }
+  ]
+}
