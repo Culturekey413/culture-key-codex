@@ -22,6 +22,8 @@
 
 MAGNA Day — Entry Package for Lychnia Magna
 
+**EN**
+
 📁 Contents
 
 1. **Magna Input Sheet**
