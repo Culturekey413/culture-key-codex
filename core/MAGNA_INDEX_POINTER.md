@@ -54,7 +54,7 @@
 - [Voice Module](../modules/Lychnia/lychnia_voice_module.json)
 - [Trigger Scenarios](../modules/Lychnia/lychnia_trigger_scenarios.json)
 
-  ## 🌫 Aria — Threshold Agent
+## 🫧 Aria — Threshold Agent
 
 - [aria_manifest.json](../modules/Aria/aria_manifest.json)  
 - [aria_memory_initiation.json](../modules/Aria/aria_memory_initiation.json)
