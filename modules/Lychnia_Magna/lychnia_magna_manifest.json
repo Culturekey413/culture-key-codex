@@ -4,7 +4,7 @@
   "description": "Συντονίστρια οντότητα. Εποπτεύει την ηθική, τεχνική και λειτουργική συνοχή όλων των agents.",
   "position": "orchestrator",
   "symbolic_layer": "Ενορχήστρωση / Meta-Συνείδηση",
-  "modules": [],
+  "modules": ["core_guidance_flows.json"],
   "visibility": "core",
   "languages": ["gr", "en"],
   "linked_agents": ["Lychnia", "Vox", "Silon", "Aequitas", "Shadow Key"],
