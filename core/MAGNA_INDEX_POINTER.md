@@ -18,8 +18,8 @@ index_content = """# 🗂️ Culture Key — MAGNA INDEX POINTER
 
 ## 📘 Documentation
 
-- [Magna Flow Plan (GR/EN)](docs/README_flowplan.md)
-- [Clauses Overview](core/README_clauses.md)
+- [Magna Flow Plan (GR/EN)](/docs/README_flowplan.md)
+- [Clauses Overview](/core/README_clauses.md)
 
 
 
@@ -27,8 +27,8 @@ index_content = """# 🗂️ Culture Key — MAGNA INDEX POINTER
 
 ## 🌀 Visuals & Flowcharts
 
-- [Flowcharts Folder](flowcharts/)
-- [Light Pulse Assets](assets/lightpulse/)
+- [Flowcharts Folder](../flowcharts/)
+- [Light Pulse Assets](../assets/lightpulse/)
 
 ---
 
