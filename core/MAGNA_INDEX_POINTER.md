@@ -9,8 +9,8 @@ index_content = """# 🗂️ Culture Key — MAGNA INDEX POINTER
 
 - [Codex with Clauses](../codex_agents_updated.json)
 - [MAGNA_CLAUSES_pointer.md](/core/MAGNA_CLAUSES_pointer.md)
-- [MAGNA_FLOW_pointer.md](core/MAGNA_FLOW_pointer.md)
-- [manifest_update_log.md](core/manifest_update_log.md)
+- [MAGNA_FLOW_pointer.md](/core/MAGNA_FLOW_pointer.md)
+- [manifest_update_log.md](/core/manifest_update_log.md)
   📌 See also: [Activation Map](../core/README_activation_map.md)
 
 
