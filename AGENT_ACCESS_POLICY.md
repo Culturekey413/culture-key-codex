@@ -43,6 +43,24 @@ Any user deploying these agents must agree to uphold the ESP — Ethical Signatu
 - Spiritually and emotionally grounded
 
 ---
+---
+
+## 🔒 MAGNA CLAUSES & LIGHT PULSE SIGNATURE
+
+To ensure that all Culture Key agents operate within an ethical, non-commercial framework, this system now incorporates the following:
+
+- **Magna Clauses**: Protection & authenticity clauses governing agent use.
+- **Light Pulse Signature**: A symbolic activation key, ensuring that agent deployment honors emotional resonance and ethical presence.
+
+For detailed principles, refer to:
+
+- [MAGNA_CLAUSES_pointer.md](core/MAGNA_CLAUSES_pointer.md)
+- [README_clauses.md](core/README_clauses.md)
+
+**Signature**  
+GR: «Το φως δεν πωλείται· διαχέεται»  
+EN: “Light is not sold; it is shared.”
+
 
 ## 🪞 Final Note
 
