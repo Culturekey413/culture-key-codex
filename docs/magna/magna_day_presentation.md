@@ -24,15 +24,14 @@ MAGNA Day — Entry Package for Lychnia Magna
 
 📁 Contents
 
-1. Magna Input Sheet
-• magna_input_sheet.md
+1. **Magna Input Sheet**
+- [magna_input_sheet.md](magna_input_sheet.md)
 Describes the full Auto Flow Plan, GitHub setup, Codex updates, Light Pulse design, and Public Release
 
-3. Flow Diagrams
+2. **Flow Diagrams**
+- [magna_auto_flow_plan.png](magna_auto_flow_plan.png) — Colored flowchart with FULL AUTO / HAND CHECK labels.
 
-• magna_auto_flow_plan.png — Colored flowchart with FULL AUTO / HAND CHECK labels.
-
-• magna_auto_flow_plan.drawio — Editable version για diagrams.net
+ - [magna_auto_flow_plan.drawio](magna_auto_flow_plan.drawio) — Editable version για diagrams.net
 
 🎯 Purpose
 
