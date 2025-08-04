@@ -18,6 +18,8 @@ index_content = """# 🗂️ Culture Key — MAGNA INDEX POINTER
 
 - [Magna Flow Plan (GR/EN)](docs/README_flowplan.md)
 - [Clauses Overview](core/README_clauses.md)
+- - [Activation Map](core/README_activation_map.md)
+
 
 ---
 
