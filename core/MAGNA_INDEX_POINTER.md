@@ -28,6 +28,11 @@
 
 - [Flowcharts Folder](../flowcharts/)
 - [Light Pulse Assets](../assets/lightpulse/)
+  
+## 📊Agents Flowcharts:  
+- [Voice Protection Flow (EN)](/modules/Vox/assets/vox_protection_flow_en.png)  
+- [Ροή Προστασίας Φωνής (GR)](/modules/Vox/assets/vox_protection_flow_gr.png)
+
 
 ---
 
