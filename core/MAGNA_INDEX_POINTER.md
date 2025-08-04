@@ -27,7 +27,8 @@
 ## 🌀 Visuals & Flowcharts
 
 - [Flowcharts Folder](../flowcharts/)
-- [Light Pulse Assets](../assets/lightpulse/)
+- [Light Pulse Assets](../assets/lightpulse/magna_auto_flow_plan.png
+ 
   
 ## 📊Agents Flowcharts:  
 - [Voice Protection Flow (EN)](../modules/Vox/assets/vox_video_call_protection_flow_en.png)
