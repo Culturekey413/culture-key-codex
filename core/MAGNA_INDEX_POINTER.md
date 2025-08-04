@@ -1,5 +1,4 @@
-# Δημιουργία συνοπτικού index pointer με όλα τα βασικά links
-index_content = """# 🗂️ Culture Key — MAGNA INDEX POINTER
+## 🗂️ Culture Key — MAGNA INDEX POINTER
 
 Αυτό το αρχείο λειτουργεί ως δείκτης για όλη τη MAGNA δομή.
 
