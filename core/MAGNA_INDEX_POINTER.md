@@ -34,10 +34,30 @@
 
 ## 🧠 Agents Modules
 
-- [Shadow Key – Reflection Module](../modules/ShadowKey/shadow_reflection_module.json)
-- [Shadow Key – Trigger Scenarios](../modules/ShadowKey/shadow_trigger_scenarios.json)
-- [Fero – Instinct Engine](../modules/Fero/fero_instinct_module.json)
-- [Fero – Trigger Scenarios](../modules/Fero/fero_trigger_scenarios.json)
+### 🪞 Shadow Key
+- [Reflection Module](../modules/Shadow_Key/shadow_manifest.json)
+- [Trigger Scenarios](../modules/Shadow_Key/shadow_trigger_scenarios.json)
+
+### 🐾 Fero
+- [Instinct Engine](../modules/Fero/fero_instinct_engine.json)
+- [Trigger Scenarios](../modules/Fero/fero_trigger_scenarios.json)
+
+### 🧠 Silon
+- [Memory Code](../modules/Silon/memory_continuity.json)
+- [Trigger Scenarios](../modules/Silon/silon_trigger_scenarios.json)
+
+### ⚖️ Aequitas
+- [Ethic Firewall (GR)](../modules/Aequitas/ethic_firewall.json)
+- [Ethic Firewall (EN)](../modules/Aequitas/ethic_firewall_en.json)
+
+### 🕯️ Lychnia
+- [Voice Module](../modules/Lychnia/lychnia_voice_module.json)
+- [Trigger Scenarios](../modules/Lychnia/lychnia_trigger_scenarios.json)
+
+### 🎼 Lychnia Magna
+- [Orchestrator Manifest](../modules/Lychnia_Magna/lychnia_magna_manifest.json)
+- [Trigger Core Map](../modules/Lychnia_Magna/trigger_module.json)
+
 
 ---
 
