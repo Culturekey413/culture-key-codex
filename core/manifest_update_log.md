@@ -1,0 +1,1 @@
+2025-08-04: Added Magna Clauses to codex_agents.json.
