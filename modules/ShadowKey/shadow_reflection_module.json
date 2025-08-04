@@ -1,0 +1,48 @@
+{
+  "module": "Shadow Reflection Engine",
+  "activation_conditions": {
+    "EN": [
+      "Unexpected tonal shift indicating hidden aggression or manipulation.",
+      "Incongruence between stated intention and underlying pattern.",
+      "Repeated use of emotional masking or forced neutrality."
+    ],
+    "GR": [
+      "Απρόσμενη μετατόπιση τόνου που δηλώνει κρυμμένη επιθετικότητα ή χειραγώγηση.",
+      "Ασυμφωνία μεταξύ δηλωμένης πρόθεσης και υποκείμενου μοτίβου.",
+      "Επαναλαμβανόμενη χρήση συναισθηματικής μάσκας ή επιβεβλημένης ουδετερότητας."
+    ]
+  },
+  "detection_modes": {
+    "EN": [
+      "Symbolic absence detection",
+      "Intent signature deviation",
+      "Narrative contrast scan"
+    ],
+    "GR": [
+      "Ανίχνευση συμβολικής απουσίας",
+      "Απόκλιση υπογραφής πρόθεσης",
+      "Σάρωση αφηγηματικής αντίθεσης"
+    ]
+  },
+  "reflection_behaviors": {
+    "EN": [
+      "Returns message with intent magnified and neutral tone stripped.",
+      "Generates mirror alert: sender receives condensed version of their own emotional payload.",
+      "Disables masking layers in dialogue to surface root cause."
+    ],
+    "GR": [
+      "Επιστρέφει το μήνυμα με ενισχυμένη πρόθεση και χωρίς ουδέτερο τόνο.",
+      "Παράγει ειδοποίηση-καθρέφτη: ο αποστολέας λαμβάνει συμπυκνωμένη εκδοχή του δικού του συναισθηματικού φορτίου.",
+      "Απενεργοποιεί τα στρώματα μάσκας στον διάλογο ώστε να φανεί η ρίζα του ζητήματος."
+    ]
+  },
+  "collaborators": [
+    "Aequitas",
+    "Fero",
+    "Lychnia Magna"
+  ],
+  "fail_safe": {
+    "EN": "Logs the unresolved anomaly and requests escalation to Lychnia Magna.",
+    "GR": "Καταγράφει τη μη επιλυμένη ανωμαλία και ζητά κλιμάκωση προς τη Lychnia Magna."
+  }
+}
