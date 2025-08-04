@@ -39,9 +39,3 @@ index_content = """# 🗂️ Culture Key — MAGNA INDEX POINTER
 
 """
 
-# Save the pointer as a markdown file
-index_path = "/mnt/data/MAGNA_INDEX_POINTER.md"
-with open(index_path, "w") as f:
-    f.write(index_content)
-
-index_path
