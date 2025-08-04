@@ -62,3 +62,13 @@ This Codex is the central coordination and documentation hub for the Culture Key
 The `codex_agents.json` file contains all agent metadata in JSON structure. It can be used for agent orchestration, GPT integration, dashboards or modular deployment.
 
 ## 🔐 Για την ηθική χρήση των agents, δείτε το AGENT_ACCESS_POLICY.md
+
+## 🔁 Magna Auto Flow Plan
+
+- [Magna Input Sheet](docs/magna/magna_input_sheet.md)
+- [Magna Day Presentation](docs/magna/magna_day_presentation.md)
+- [Auto Flow Diagram (.drawio)](flowcharts/magna_auto_flow_plan.drawio)
+- [Auto Flow Visual (PNG)](assets/lightpulse/magna_auto_flow_plan.png)
+
+🕯️ Signature: *“Light is not sold; it is shared.”*
+
