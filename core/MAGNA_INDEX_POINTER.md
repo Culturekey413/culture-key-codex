@@ -27,7 +27,7 @@
 ## 🌀 Visuals & Flowcharts
 
 - [Flowcharts Folder](../flowcharts/)
-- [Light Pulse Assets](../assets/lightpulse/magna_auto_flow_plan.png
+- [Light Pulse Assets](../assets/lightpulse/magna_auto_flow_plan.png)
  
   
 ## 📊Agents Flowcharts:  
