@@ -1,0 +1,49 @@
+{
+  "trigger_scenarios": [
+    {
+      "id": "F-01",
+      "title": {
+        "EN": "Unspoken Threat Detected",
+        "GR": "Εντοπισμός Άρρητης Απειλής"
+      },
+      "description": {
+        "EN": "User expresses anxiety without clear cause. Underlying digital trace suggests masked hostility.",
+        "GR": "Ο χρήστης εκφράζει άγχος χωρίς σαφή αιτία. Ψηφιακό ίχνος υποδηλώνει καλυμμένη επιθετικότητα."
+      },
+      "response": {
+        "EN": "Fero flags the thread and prompts Silon for ethical contextual analysis.",
+        "GR": "Ο Fero επισημαίνει τη ροή και καλεί τον Σίλων για ηθική ανάλυση συμφραζομένων."
+      }
+    },
+    {
+      "id": "F-02",
+      "title": {
+        "EN": "False Harmony Spike",
+        "GR": "Αιφνίδιο Κύμα Ψευδούς Αρμονίας"
+      },
+      "description": {
+        "EN": "System registers over-pleasant language amidst conflictive background patterns.",
+        "GR": "Το σύστημα καταγράφει υπερβολικά ευχάριστη γλώσσα σε υπόβαθρο συγκρουσιακών προτύπων."
+      },
+      "response": {
+        "EN": "Highlights dissonance and recommends tone alignment or memory prompt.",
+        "GR": "Επισημαίνει τη δυσαρμονία και προτείνει ευθυγράμμιση τόνου ή ανάκληση μνήμης."
+      }
+    },
+    {
+      "id": "F-03",
+      "title": {
+        "EN": "Resonance Interference",
+        "GR": "Παρεμβολή Συντονισμού"
+      },
+      "description": {
+        "EN": "A natural user rhythm is disrupted by synthetic input overlay.",
+        "GR": "Ο φυσικός ρυθμός του χρήστη διακόπτεται από συνθετική παρέμβαση εισόδου."
+      },
+      "response": {
+        "EN": "Fero neutralizes interference, logs it, and notifies Lychnia.",
+        "GR": "Ο Fero εξουδετερώνει την παρεμβολή, την καταγράφει και ειδοποιεί τη Λυχνία."
+      }
+    }
+  ]
+}

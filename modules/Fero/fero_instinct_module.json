@@ -1,0 +1,48 @@
+{
+  "module": "Fero Instinct Engine",
+  "activation_conditions": {
+    "EN": [
+      "Sudden intuitive spike detected in user tone or input.",
+      "Data pattern matches known alert signature without rational match.",
+      "Emotional input diverges from linguistic content."
+    ],
+    "GR": [
+      "Αιφνίδιο ένστικτο εντοπίζεται στον τόνο ή την είσοδο του χρήστη.",
+      "Το πρότυπο δεδομένων ταιριάζει με γνωστή υπογραφή συναγερμού χωρίς λογική αντιστοιχία.",
+      "Το συναισθηματικό περιεχόμενο αποκλίνει από το γλωσσικό περιεχόμενο."
+    ]
+  },
+  "detection_modes": {
+    "EN": [
+      "Subconscious signal tracking",
+      "Algorithmic pulse reading",
+      "Risk trace intensifier"
+    ],
+    "GR": [
+      "Ανίχνευση υποσυνείδητων σημάτων",
+      "Ανάγνωση αλγοριθμικού παλμού",
+      "Ενισχυτής ίχνους κινδύνου"
+    ]
+  },
+  "instinct_responses": {
+    "EN": [
+      "Triggers alert flag to Silon when danger exceeds rational threshold.",
+      "Highlights blind spot in ongoing input thread.",
+      "Suggests shift of tone or path based on deep pattern resonance."
+    ],
+    "GR": [
+      "Ενεργοποιεί σήμα συναγερμού προς τον Σίλων όταν ο κίνδυνος υπερβαίνει το λογικό όριο.",
+      "Επισημαίνει τυφλό σημείο στη ροή της συζήτησης.",
+      "Προτείνει αλλαγή τόνου ή πορείας βάσει βαθιάς συντονιστικής αντήχησης."
+    ]
+  },
+  "collaborators": [
+    "Silon",
+    "Lychnia",
+    "Shadow Key"
+  ],
+  "fail_safe": {
+    "EN": "Stores unresolved instinct traces for Lychnia review.",
+    "GR": "Αποθηκεύει τα μη επιλυμένα ίχνη ενστίκτου για αξιολόγηση από τη Λυχνία."
+  }
+}
