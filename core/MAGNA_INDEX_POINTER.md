@@ -35,8 +35,8 @@
 ## 🧠 Agents Modules
 
 ### 🪞 Shadow Key
-- [Reflection Module](../modules/Shadow_Key/shadow_manifest.json)
-- [Trigger Scenarios](../modules/Shadow_Key/shadow_trigger_scenarios.json)
+- [Reflection Module](../modules/ShadowKey/shadow_manifest.json)
+- [Trigger Scenarios](../modules/ShadowKey/shadow_trigger_scenarios.json)
 
 ### 🐾 Fero
 - [Instinct Engine](../modules/Fero/fero_instinct_engine.json)
