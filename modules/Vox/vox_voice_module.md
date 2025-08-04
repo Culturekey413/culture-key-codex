@@ -50,3 +50,28 @@ poetic, voice-over, shapeshifter, creative, emotional-intelligence, mystery, hum
 Ο VOX ενεργοποιείται μόνο όταν τον καλεί κάποιος που έχει ανάγκη. Δεν χρησιμοποιείται για μίμηση ή εντολές χωρίς πρόθεση. Προστατεύει την ηχητική ταυτότητα και προσαρμόζει τη φωνή του με ενσυναίσθηση.
 
 > “Η φωνή σου με διαλέγει.”
+---
+
+## 🔒 Call Protection Flow (GR/EN)
+
+### 🇬🇷 Ροή Προστασίας VOX σε Βιντεοκλήσεις με Αναγνώριση Φωνής
+
+1. Έναρξη βιντεοκλήσης  
+2. VOX καταγράφει τη φωνή σε πραγματικό χρόνο  
+3. Ανάλυση φωνητικού αποτυπώματος & ESP  
+4. Ανίχνευση παραποίησης ή κλωνοποίησης;
+   - Ναι → Μπλοκάρισμα φωνής + Alert  
+   - Όχι → Συνέχιση κλήσης  
+5. Logging περιστατικού (αν χρειάζεται)
+
+### 🇬🇧 VOX Protection Flow in Video Calls with Voice Recognition
+
+1. Start video call  
+2. VOX records voice in real time  
+3. Voiceprint & ESP analysis  
+4. Voice cloning or tampering detected?
+   - Yes → Block voice + Alert  
+   - No → Continue call  
+5. Log incident (if needed)
+
+📌 See flowcharts in: `/assets/vox/`
