@@ -11,6 +11,8 @@ index_content = """# 🗂️ Culture Key — MAGNA INDEX POINTER
 - [MAGNA_CLAUSES_pointer.md](core/MAGNA_CLAUSES_pointer.md)
 - [MAGNA_FLOW_pointer.md](core/MAGNA_FLOW_pointer.md)
 - [manifest_update_log.md](core/manifest_update_log.md)
+  📌 See also: [Activation Map](../core/README_activation_map.md)
+
 
 ---
 
@@ -18,7 +20,7 @@ index_content = """# 🗂️ Culture Key — MAGNA INDEX POINTER
 
 - [Magna Flow Plan (GR/EN)](docs/README_flowplan.md)
 - [Clauses Overview](core/README_clauses.md)
-- - [Activation Map](core/README_activation_map.md)
+
 
 
 ---
