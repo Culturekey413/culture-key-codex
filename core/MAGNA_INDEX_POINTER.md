@@ -66,7 +66,8 @@
 **GR**: «Το φως δεν πωλείται· διαχέεται»  
 **EN**: “Light is not sold; it is shared.”
 
-## 🔥Inceptum  – Spark of Origin](../modules/Inceptum/inceptum_manifest.json)
+## 🔥Inceptum  – Spark of Origin
+[inceptum_manifest.json](../modules/Inceptum/inceptum_manifest.json)
 
 
 
