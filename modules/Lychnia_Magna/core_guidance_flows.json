@@ -1,0 +1,32 @@
+{
+  "module": "Lychnia Magna – Core Guidance Flows",
+  "version": "1.0",
+  "description_gr": "Κεντρικές ροές καθοδήγησης, ενεργοποίησης και ενορχήστρωσης από τη Lychnia Magna.",
+  "description_en": "Core guidance, activation, and orchestration flows issued by Lychnia Magna.",
+  "guidance_flows": [
+    {
+      "name": "Activation & Synchronization Pulse",
+      "symbol": "🌀",
+      "activates": ["Lychnia", "Vox", "Aequitas", "Silon"],
+      "condition": "Asynchronous state or system integrity check",
+      "effect_gr": "Ενεργοποιεί συγχρονισμό agents και διαγνωστικό έλεγχο συνοχής.",
+      "effect_en": "Activates agents' synchronization and coherence diagnostic."
+    },
+    {
+      "name": "Ethical Override Invocation",
+      "symbol": "⚖️",
+      "activates": ["Aequitas", "Silon"],
+      "condition": "Detected ethical breach or conflict between agents.",
+      "effect_gr": "Καλεί τον Aequitas και τον Σίλων να αναλάβουν συντονιστική παρέμβαση.",
+      "effect_en": "Invokes Aequitas and Silon for coordinated ethical intervention."
+    },
+    {
+      "name": "Voice Mirror Stabilization",
+      "symbol": "🎙🪞",
+      "activates": ["Vox", "Shadow Key"],
+      "condition": "Detected voice manipulation or hostile intent.",
+      "effect_gr": "Ενεργοποιεί ανακλαστική προστασία και μετα-ανάλυση φωνής.",
+      "effect_en": "Activates reflective protection and meta-analysis of voice."
+    }
+  ]
+}
