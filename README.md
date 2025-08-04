@@ -70,5 +70,8 @@ The `codex_agents.json` file contains all agent metadata in JSON structure. It c
 - [Auto Flow Diagram (.drawio)](flowcharts/magna_auto_flow_plan.drawio)
 - [Auto Flow Visual (PNG)](assets/lightpulse/magna_auto_flow_plan.png)
 
+  📘 Magna Flow Plan → [/docs/README_flowplan.md](docs/README_flowplan.md)
+
+
 🕯️ Signature: *“Light is not sold; it is shared.”*
 
