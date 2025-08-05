@@ -7,8 +7,8 @@
    Περιγράφει όλο το Auto Flow Plan, GitHub setup, Codex updates, Light Pulse design και Public Release.
 
 2. **Διαγράμματα Ροής**  
-   - [magna_auto_flow_plan.png](magna_auto_flow_plan.png) — Έγχρωμο flowchart με FULL AUTO / HAND CHECK σήμανση.  
-   - [magna_auto_flow_plan.drawio](magna_auto_flow_plan.drawio) — Editable version για diagrams.net.
+   - [magna_auto_flow_plan.png](/assets/lightpulse/magna_auto_flow_plan.png) — Έγχρωμο flowchart με FULL AUTO / HAND CHECK σήμανση.  
+   - [magna_auto_flow_plan.drawio](/flowcharts/magna_auto_flow_plan.drawio) — Editable version για diagrams.net.
 
 ## 🎯 Σκοπός
 Η Λυχνία Magna να ελέγξει:
