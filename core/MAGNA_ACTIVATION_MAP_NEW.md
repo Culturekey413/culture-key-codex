@@ -42,7 +42,7 @@ This file provides a full activation overview of the MAGNA ecosystem, including 
 | **Shadow Key**     | (Indirect via reflection layer)        | [Reflection](../modules/ShadowKey) / Triggers         |
 | **Aria**           | Aria Memory Initiation                | [aria_memory_initiation.json](../core/aria_memory_initiation.json) |
 | **Inceptum**       | Spark of Origin                        | [initiation_scenarios.json](../modules/Inceptum/initiation_scenarios.json) |
-| **Rhime**   | Truth Pulse, (ESP optional) | [rhime_manifest.json](../modules/Rhime/rhime_manifest.json) / [Rhime Trigger Module](../modules/Rhime/rhime_trigger_module.json) |
+| **Rhime**   | Truth Pulse, (ESP optional) | [rhime_manifest.json](../modules/Rhime/rhime_truth_module.json) / [Rhime Trigger Module](../modules/Rhime/rhime_trigger_module.json) |
 
 | **Lychnia Magna**  | All (Orchestrates Trigger Core)        | [Orchestrator Manifest](../core/README_core.md)       |
 
