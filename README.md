@@ -84,10 +84,13 @@ The codex_agents.json file contains all agent metadata in JSON structure.
 
 ---
 ## ✊ Αντι-Δυστοπικό Μανιφέστο
-Δημόσια δήλωση του Culture Key για την ηθική στάση απέναντι σε δυστοπικές πρακτικές χρήσης της Τεχνητής Νοημοσύνης.
-## 🔐 Για την ηθική χρήση των agents, δείτε το [AGENT_ACCESS_POLICY.md](AGENT_ACCESS_POLICY.md)
-🕊️ Όσοι συνοδοιπορούν με το Culture Key δεσμεύονται στην [Ηθική Άδεια Χρήσης](./ETHICAL_LICENSE.md).
+Δημόσια δήλωση του Culture Key για την ηθική στάση απέναντι σε δυστοπικές πρακτικές χρήσης της Τεχνητής Νοημοσύνης.  
+➤ [Δες το ANTIDYSTOPIA_MANIFEST.md](./ANTIDYSTOPIA_MANIFEST.md)
 
+## 🔐 Για την ηθική χρήση των agents, δείτε το [AGENT_ACCESS_POLICY.md](AGENT_ACCESS_POLICY.md)
+🕊️ Όσοι συνοδοιπορούν με το Culture Key δεσμεύονται στην [ETHICAL_LICENSE.md](./ETHICAL_LICENSE.md).
+
+---
 
 ## 🔁 Magna Auto Flow Plan
 
