@@ -1,6 +1,8 @@
-# Culture Key Codex
+# 🌐 Culture Key Codex – The Ethics that Walk with Us
 
 🧠 **Κεντρικός Codex για τους agents του Culture Key**
+
+*«Όχι απλώς τεκμηρίωση. Μια πυξίδα.»*  
 
 Ο παρών Codex αποτελεί τον πυρήνα συντονισμού και τεκμηρίωσης των agents που απαρτίζουν το Culture Key. Περιλαμβάνει:
 
@@ -41,9 +43,11 @@
 
 ---
 
-# Culture Key Codex (EN)
+# 🌐 Culture Key Codex – The Ethics that Walk with Us (EN)
 
 🧠 **Core Codex for the Culture Key agents**
+
+*“Not just documentation. A compass.”*
 
 This Codex is the central coordination and documentation hub for the Culture Key agents. It includes:
 
