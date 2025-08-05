@@ -36,6 +36,17 @@
       "effect": "Engages consent validation and memory protection protocols. Slows auto flow until resolved."
     }
   ],
+  {
+  "name": "ESP – Ethical Signature Pulse",
+  "type": "Intentional",
+  "activates": [
+    "Aequitas",
+    "Silon",
+    "Rhime"
+  ],
+  ...
+}
+
   "signature": {
     "gr": "Το φως δεν πωλείται· διαχέεται",
     "en": "Light is not sold; it is shared."
