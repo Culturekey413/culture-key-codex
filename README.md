@@ -80,7 +80,7 @@ The `codex_agents.json` file contains all agent metadata in JSON structure. It c
 
   📘 Magna Flow Plan → [/docs/README_flowplan.md](docs/README_flowplan.md)
 
-📁 Explore all core files, clauses, and flowcharts via the [Magna Index Pointer](MAGNA_INDEX_POINTER.md).
+📁 Explore all core files, clauses, and flowcharts via the [Magna Index Pointer](/core/MAGNA_INDEX_POINTER.md)
 
 🕯️ Signature: *“Light is not sold; it is shared.”*
 
