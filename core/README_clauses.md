@@ -101,4 +101,3 @@
 ---
 """
 
-file_path.name
