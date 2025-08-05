@@ -26,6 +26,10 @@
 ---
 
 ## 🧾 codex_agents.json
+Το αρχείο codex_agents.json περιέχει σε δομή JSON τις βασικές πληροφορίες των agents.
+
+📦 Συμπιεσμένη έκδοση: codex_agents_compiled.json
+🛠️ Επεξεργάσιμη έκδοση: codex_agents_updated.json
 
 Το αρχείο `codex_agents.json` περιέχει σε δομή JSON τις βασικές πληροφορίες των agents. Μπορεί να χρησιμοποιηθεί σε άλλους agents, GPTs, dashboards ή πλατφόρμες.
 
@@ -58,6 +62,10 @@ This Codex is the central coordination and documentation hub for the Culture Key
 ---
 
 ## 🧾 codex_agents.json
+The codex_agents.json file contains all agent metadata in JSON structure.
+
+📦 Compiled version: codex_agents_compiled.json
+🛠️ Editable version: codex_agents_updated.json
 
 The `codex_agents.json` file contains all agent metadata in JSON structure. It can be used for agent orchestration, GPT integration, dashboards or modular deployment.
 
