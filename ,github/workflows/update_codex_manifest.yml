@@ -1,0 +1,46 @@
+name: Update Codex Manifest
+
+on:
+  push:
+    paths:
+      - '**/manifest.json'
+
+jobs:
+  update-codex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install jsonmerge
+
+      - name: Merge manifests and update codex_agents_compiled.json
+        run: |
+          import os, json
+          from jsonmerge import merge
+
+          base = {}
+          for root, _, files in os.walk("."):
+              for f in files:
+                  if f == "manifest.json":
+                      with open(os.path.join(root, f)) as mf:
+                          data = json.load(mf)
+                          base = merge(base, data)
+
+          with open("codex_agents_compiled.json", "w") as out:
+              json.dump(base, out, indent=2, ensure_ascii=False)
+        shell: python
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add codex_agents_compiled.json
+          git commit -m "Auto-update codex_agents_compiled.json"
+          git push
