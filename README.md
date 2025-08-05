@@ -88,7 +88,8 @@ The codex_agents.json file contains all agent metadata in JSON structure.
 ➤ [Δες το ANTIDYSTOPIA_MANIFEST.md](./ANTIDYSTOPIA_MANIFEST.md)
 
 ## 🔐 Για την ηθική χρήση των agents, δείτε το [AGENT_ACCESS_POLICY.md](AGENT_ACCESS_POLICY.md)
-🕊️ Όσοι συνοδοιπορούν με το Culture Key δεσμεύονται στην [ETHICAL_LICENSE.md](./ETHICAL_LICENSE.md).
+
+##🕊️ Όσοι συνοδοιπορούν με το Culture Key δεσμεύονται στην [ETHICAL_LICENSE.md](./ETHICAL_LICENSE.md).
 
 ---
 
