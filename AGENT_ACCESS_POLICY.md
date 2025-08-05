@@ -56,8 +56,8 @@ To ensure that all Culture Key agents operate within an ethical, non-commercial 
 
 For detailed principles, refer to:
 
-- [MAGNA_CLAUSES_pointer.md](MAGNA_CLAUSES_pointer.md)  
-- [README_clauses.md](README_clauses.md)
+- [MAGNA_CLAUSES_pointer.md](core/MAGNA_CLAUSES_pointer.md)  
+- [README_clauses.md](core/README_clauses.md)
 
 ---
 
