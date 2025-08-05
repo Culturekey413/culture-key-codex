@@ -17,6 +17,7 @@ This file provides a full activation overview of the MAGNA ecosystem, including 
 | Aria Memory Initiation            | Aria                                   | Reflective   | Memory resonance activation                     |
 | Spark of Origin                   | Inceptum                               | Symbolic     | Inner symbolic ignition                         |
 | Trigger Core                      | Lychnia Magna                          | Central      | Orchestrator of systemic trigger flow           |
+| Clause of Truth Pulse              | Rhime                                 | Intentional  | Detection of falsification, hidden instructions or content alteration |
 
 ---
 
@@ -41,6 +42,8 @@ This file provides a full activation overview of the MAGNA ecosystem, including 
 | **Shadow Key**     | (Indirect via reflection layer)        | [Reflection](../modules/ShadowKey) / Triggers         |
 | **Aria**           | Aria Memory Initiation                | [aria_memory_initiation.json](../core/aria_memory_initiation.json) |
 | **Inceptum**       | Spark of Origin                        | [initiation_scenarios.json](../modules/Inceptum/initiation_scenarios.json) |
+| **Rhime**   | Truth Pulse, (ESP optional) | [rhime_manifest.json](../modules/Rhime/rhime_manifest.json) / [Rhime Trigger Module](../modules/Rhime/rhime_trigger_module.json) |
+
 | **Lychnia Magna**  | All (Orchestrates Trigger Core)        | [Orchestrator Manifest](../core/README_core.md)       |
 
 ---
@@ -55,6 +58,7 @@ This file provides a full activation overview of the MAGNA ecosystem, including 
 - [Aequitas — Firewall Config (EN/GR)](../Aequitas)
 - [Vox — Voice Flow (GR/EN)](../flowcharts)
 - [Lychnia — Voice Module & Scenarios](../modules/Lychnia)
+- [Rhime — Truth Pulse Trigger](../modules/Rhime/rhime_trigger_module.json)
 
 ---
 
