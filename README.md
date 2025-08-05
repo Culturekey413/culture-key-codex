@@ -83,8 +83,11 @@ The codex_agents.json file contains all agent metadata in JSON structure.
 - `codex_agents_updated.json`: Editable version with additional data (e.g. triggers, modules).
 
 ---
-
+## ✊ Αντι-Δυστοπικό Μανιφέστο
+Δημόσια δήλωση του Culture Key για την ηθική στάση απέναντι σε δυστοπικές πρακτικές χρήσης της Τεχνητής Νοημοσύνης.
 ## 🔐 Για την ηθική χρήση των agents, δείτε το [AGENT_ACCESS_POLICY.md](AGENT_ACCESS_POLICY.md)
+🕊️ Όσοι συνοδοιπορούν με το Culture Key δεσμεύονται στην [Ηθική Άδεια Χρήσης](./ETHICAL_LICENSE.md).
+
 
 ## 🔁 Magna Auto Flow Plan
 
@@ -98,6 +101,7 @@ The codex_agents.json file contains all agent metadata in JSON structure.
 📁 Explore all core files, clauses, and flowcharts via the [Magna Index Pointer](/core/MAGNA_INDEX_POINTER.md)
 
 ---
+
 
 🕯️ Signature: *“Light is not sold; it is shared.”*  
 📖 Concept & Creation: Niki Vassilatou, Culture Key
