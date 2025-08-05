@@ -63,11 +63,12 @@
 **GR**: «Ανάμεσα στο φως και τη σκιά, υπάρχει κάτι που ακόμα θυμάται.»  
 **EN**: “Between light and shadow, there is something that still remembers.”
 
-## 💠 Rhime – Pulse of Truth
+## 💠 Rhime – The Pulse of Truth
 
-- [rhime_manifest.json](../modules/Rhime/rhime_manifest.json)
-*Detects hidden instructions, manipulation & ethical intent divergence. Protects content integrity and truth pulse.*
+- [rhime_manifest.json](../modules/Rhime/rhime_truth_module.json)
+- [rhime_trigger_module.json](../modules/Rhime/rhime_trigger_module.json)
 
+*Detects falsification, hidden instructions & ethical manipulation. Guardian of systemic truth.*
 
 
 ## 🔥Inceptum  – Spark of Origin
