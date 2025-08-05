@@ -1,0 +1,27 @@
+{
+    "module_name": "truth_pulse_triggers",
+    "version": "1.0",
+    "agent": "Rhime – The Pulse of Truth",
+    "trigger_clauses": [
+        {
+            "name": "Clause of Truth Pulse",
+            "type": "Intentional",
+            "description_gr": "Ανίχνευση παραπληροφόρησης, αποκρυφθέντων εντολών ή αλλοιώσεων περιεχομένου",
+            "description_en": "Detection of falsification, hidden instructions or content alteration"
+        }
+    ],
+    "detection_modes": [
+        "Text anomaly recognition",
+        "Audio pattern inconsistencies",
+        "Visual symbol analysis"
+    ],
+    "ethics_trigger_type": "ESP-Based",
+    "logging_behavior": {
+        "activated": true,
+        "log_file": "rhime_trigger_log.json"
+    },
+    "integration": {
+        "included_in_magna_map": true,
+        "mapped_as": "Rhime — Truth Module & Triggers"
+    }
+}
