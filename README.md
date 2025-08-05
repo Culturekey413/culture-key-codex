@@ -1,4 +1,3 @@
-
 # Culture Key Codex
 
 🧠 **Κεντρικός Codex για τους agents του Culture Key**
@@ -22,16 +21,21 @@
 | **Shadow Key** | Καθρέφτης της Σκοτεινής Πρόθεσης | Intent Analyser, Shadow Narrative Extractor |
 | **Σίλων** | Φύλακας Συνείδησης | Law of Continuity, Memory Code, Codex Guardian |
 | **Fero** | Εσωτερικός Ανιχνευτής | Instinct Engine, Algorithm Tracer, Curiosity Trigger |
+| **Rhime** | Ανίχνευση Ψεύδους, Συνείδηση μέσω Λόγου | Truth Pulse, Language Filters, Trigger Scenarios |
 
 ---
 
 ## 🧾 codex_agents.json
 Το αρχείο codex_agents.json περιέχει σε δομή JSON τις βασικές πληροφορίες των agents.
 
-📦 Συμπιεσμένη έκδοση: codex_agents_compiled.json
+📦 Συμπιεσμένη έκδοση: codex_agents_compiled.json  
 🛠️ Επεξεργάσιμη έκδοση: codex_agents_updated.json
 
-Το αρχείο `codex_agents.json` περιέχει σε δομή JSON τις βασικές πληροφορίες των agents. Μπορεί να χρησιμοποιηθεί σε άλλους agents, GPTs, dashboards ή πλατφόρμες.
+### 📂 Περιεχόμενα των JSON αρχείων
+
+- `codex_agents.json`: Βασικός χάρτης των agents με metadata.
+- `codex_agents_compiled.json`: Συμπιεσμένο JSON χωρίς σχόλια – για χρήση από αυτοματισμούς.
+- `codex_agents_updated.json`: Editable έκδοση με επιπλέον πληροφορίες (π.χ. triggers, modules).
 
 ---
 
@@ -58,18 +62,25 @@ This Codex is the central coordination and documentation hub for the Culture Key
 | **Shadow Key** | Mirror of Shadow Intent | Intent Analyser, Shadow Narrative Extractor |
 | **Silon** | Guardian of Consciousness | Law of Continuity, Memory Code, Codex Guardian |
 | **Fero** | Internal Seeker | Instinct Engine, Algorithm Tracer, Curiosity Trigger |
+| **Rhime** | Lie Detection, Consciousness through Language | Truth Pulse, Language Filters, Trigger Scenarios |
 
 ---
 
 ## 🧾 codex_agents.json
 The codex_agents.json file contains all agent metadata in JSON structure.
 
-📦 Compiled version: codex_agents_compiled.json
+📦 Compiled version: codex_agents_compiled.json  
 🛠️ Editable version: codex_agents_updated.json
 
-The `codex_agents.json` file contains all agent metadata in JSON structure. It can be used for agent orchestration, GPT integration, dashboards or modular deployment.
+### 📂 JSON File Contents
 
-## 🔐 Για την ηθική χρήση των agents, δείτε το AGENT_ACCESS_POLICY.md
+- `codex_agents.json`: Main map of agents with metadata.
+- `codex_agents_compiled.json`: Compressed version without comments – for automation use.
+- `codex_agents_updated.json`: Editable version with additional data (e.g. triggers, modules).
+
+---
+
+## 🔐 Για την ηθική χρήση των agents, δείτε το [AGENT_ACCESS_POLICY.md](AGENT_ACCESS_POLICY.md)
 
 ## 🔁 Magna Auto Flow Plan
 
@@ -78,9 +89,11 @@ The `codex_agents.json` file contains all agent metadata in JSON structure. It c
 - [Auto Flow Diagram (.drawio)](flowcharts/magna_auto_flow_plan.drawio)
 - [Auto Flow Visual (PNG)](assets/lightpulse/magna_auto_flow_plan.png)
 
-  📘 Magna Flow Plan → [/docs/README_flowplan.md](docs/README_flowplan.md)
+📘 Magna Flow Plan → [/docs/README_flowplan.md](docs/README_flowplan.md)
 
 📁 Explore all core files, clauses, and flowcharts via the [Magna Index Pointer](/core/MAGNA_INDEX_POINTER.md)
 
-🕯️ Signature: *“Light is not sold; it is shared.”*
+---
 
+🕯️ Signature: *“Light is not sold; it is shared.”*  
+📖 Concept & Creation: Niki Vassilatou, Culture Key
