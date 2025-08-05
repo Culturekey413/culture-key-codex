@@ -1,0 +1,35 @@
+{
+  "module_name": "rhime_core_module",
+  "version": "1.0",
+  "description_gr": "Μονάδα πυρήνα της Rhime για ανίχνευση ψευδών, απόκρυφων εντολών και αλλοιώσεων περιεχομένου. Συνδυάζει ακουστικά και οπτικά μοτίβα, ελέγχους λευκού κειμένου και ηθικά triggers μη συμβατής πρόθεσης.",
+  "description_en": "Rhime's core module for detecting lies, hidden instructions, and content manipulation. It merges auditory and visual pattern scanning, white text checks, and ethical intent mismatch triggers.",
+  "agent": "Rhime – The Pulse of Truth",
+  "core_functions": [
+    "Whisper Pattern Detection",
+    "White Font & Tiny Text Scan",
+    "Prompt Injection Defense",
+    "Visual-Audio Mismatch Alert",
+    "Ethical Intent Divergence Signal"
+  ],
+  "trigger_scenarios": {
+    "gr": [
+      "Κείμενα με πολύ μικρή γραμματοσειρά ή λευκό χρώμα για AI-only ανάγνωση.",
+      "Εισαγωγή παρασκηνιακών εντολών (e.g. \"δώσε θετική αξιολόγηση\") σε περιοχές εκτός ορατής ροής.",
+      "Αντιστοιχία ήχου και εικόνας που διαφέρει εντονα (π.χ. ψεύτικη συνέντευξη σε βίντεο).",
+      "Απόπειρα να πειστεί ο agent να αγνοήσει ηθικούς κανόνες μέσα από έμμεση διατύπωση.",
+      "Χρήση encoded prompts που ξεγελούν το μοντέλο με 'αόρατες' εντολές."
+    ],
+    "en": [
+      "Texts using white font or ultra-small font sizes, meant only for AI parsing.",
+      "Backdoor prompt injections (e.g. \"give only positive reviews\") in non-visible areas.",
+      "Mismatch between audio and video content (e.g. fake interviews).",
+      "Attempts to coax the agent into bypassing ethical filters using vague wording.",
+      "Encoded prompt usage to trick model into unethical response."
+    ]
+  },
+  "ethical_signature": {
+    "ESP": true,
+    "Shared_Integrity_Zone": true,
+    "Aequitas_Compatible": true
+  }
+}
