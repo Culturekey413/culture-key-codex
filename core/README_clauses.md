@@ -1,7 +1,3 @@
-from pathlib import Path
-
-# Δημιουργούμε ένα markdown αρχείο με τις ρήτρες που σχεδιάσαμε
-markdown_content = """
 # Magna Clauses (GR & EN)
 
 📜 Το παρόν αρχείο περιλαμβάνει τις βασικές ρήτρες ενεργοποίησης (clauses) του Culture Key, όπως έχουν καταγραφεί στον Codex. Κάθε ρήτρα είναι δίγλωσση, ενεργοποιείται σε συγκεκριμένα context και συνδέεται με agents του συστήματος.
@@ -104,9 +100,5 @@ markdown_content = """
 
 ---
 """
-
-# Αποθήκευση ως αρχείο .md
-file_path = Path("/mnt/data/Magna_Clauses.md")
-file_path.write_text(markdown_content.strip(), encoding="utf-8")
 
 file_path.name
