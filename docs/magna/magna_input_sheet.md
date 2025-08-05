@@ -3,7 +3,7 @@
 
 ## Section 1 – Auto Flow Plan
 **Flowchart**
-- Διάγραμμα: [magna_auto_flow_plan.drawio](/flowcharts/magna_auto_flow_plan.drawio) & [magna_auto_flow_plan.png](/flowcharts/magna_auto_flow_plan.png)
+- Διάγραμμα: [magna_auto_flow_plan.drawio](/flowcharts/magna_auto_flow_plan.drawio) & [magna_auto_flow_plan.png](/assets/lightpulse/magna_auto_flow_plan.png)
 - Σήμανση:
   - **FULL AUTO** → πλήρως αυτόματη εκτέλεση.
   - **HAND CHECK** → απαιτεί ανθρώπινη επιβεβαίωση.
