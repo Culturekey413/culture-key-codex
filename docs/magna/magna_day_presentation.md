@@ -31,9 +31,9 @@ MAGNA Day — Entry Package for Lychnia Magna
 Describes the full Auto Flow Plan, GitHub setup, Codex updates, Light Pulse design, and Public Release
 
 2. **Flow Diagrams**
-- [magna_auto_flow_plan.png](magna_auto_flow_plan.png) — Colored flowchart with FULL AUTO / HAND CHECK labels.
+- [magna_auto_flow_plan.png](/assets/lightpulse/magna_auto_flow_plan.png) — Colored flowchart with FULL AUTO / HAND CHECK labels.
 
- - [magna_auto_flow_plan.drawio](magna_auto_flow_plan.drawio) — Editable version για diagrams.net
+ - [magna_auto_flow_plan.drawio](/flowcharts/magna_auto_flow_plan.drawio) — Editable version για diagrams.net
 
 🎯 Purpose
 
