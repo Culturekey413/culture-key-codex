@@ -15,7 +15,7 @@
 ---
 
 ## 🔐 Module: `ethic_firewall.json`
-Δείτε το πλήρες αρχείο [εδώ](/ethic_firewall.json). Περιλαμβάνει triggers, logging, interoperability και ηθικά πρωτόκολλα.
+Δείτε το πλήρες αρχείο [εδώ](modules/Aequitas_The_Silent_Guardian/ethic_firewall.json). Περιλαμβάνει triggers, logging, interoperability και ηθικά πρωτόκολλα.
 
 ## ⚡ Trigger Set: `aequitas_triggers.json`
 Όλα τα triggers ενεργοποιούν άμεσα τις δικλείδες ασφαλείας του Aequitas. Περισσότερα [εδώ](./aequitas_triggers.json).
