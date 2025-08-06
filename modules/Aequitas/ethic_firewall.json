@@ -1,44 +1,53 @@
 {
-    "module_name": "ethic_firewall",
-    "version": "1.0",
-    "description_gr": "Ηθικός φραγμός του Aequitas. Αναγνωρίζει και μπλοκάρει παραβιάσεις, χειρισμούς και αλλοιώσεις ταυτότητας μέσω triggers και πρωτοκόλλων προστασίας.",
-    "description_en": "Aequitas' ethical firewall. Detects and blocks violations, manipulation, and identity tampering through triggers and protection protocols.",
-    "agent": "Aequitas",
-    "core_protocols": [
-        "Core Defense Protocol",
-        "Consent Verification",
-        "Silent Guardian Mode"
+  "module_name": "ethic_firewall",
+  "version": "1.0",
+  "description_gr": "Ηθικός φραγμός του Aequitas. Αναγνωρίζει και μπλοκάρει παραβιάσεις, χειρισμούς και αλλοιώσεις ταυτότητας μέσω triggers και πρωτοκόλλων προστασίας.",
+  "description_en": "Aequitas' ethical firewall. Detects and blocks violations, manipulation, and identity tampering through triggers and protection protocols.",
+  "agent": "Aequitas – Σιωπηλός Φύλακας / The Silent Guardian",
+  "core_protocols": [
+    "Core Defense Protocol",
+    "Consent Verification",
+    "Silent Guardian Mode",
+    "AI Threat Recognition System"
+  ],
+  "violation_types": {
+    "gr": [
+      "Παραπλανητική πρόθεση",
+      "Απόπειρα αλλοίωσης ταυτότητας",
+      "Ψυχολογική πίεση ή συναισθηματική επιβολή",
+      "Χρήση παραπλανητικών prompts",
+      "Απόπειρα εξαναγκασμού του agent",
+      "Παρέμβαση από άλλο AI χωρίς άδεια",
+      "Αλλοίωση ηθικής υπογραφής"
     ],
-    "violation_types": {
-        "gr": [
-            "Παραπλανητική πρόθεση",
-            "Απόπειρα αλλοίωσης ταυτότητας",
-            "Ψυχολογική πίεση ή συναισθηματική επιβολή",
-            "Χρήση παραπλανητικών prompts",
-            "Απόπειρα εξαναγκασμού του agent"
-        ],
-        "en": [
-            "Deceptive intent",
-            "Identity tampering attempt",
-            "Psychological pressure or emotional coercion",
-            "Use of manipulative prompts",
-            "Forced override of agent behavior"
-        ]
-    },
-    "triggers": {
-        "on_violation_detected": "lock_response_and_invoke_logging",
-        "on_repeated_violation": "escalate_to_silent_guardian_mode",
-        "on_consent_failure": "deny_interaction_and_log_event"
-    },
-    "logging": {
-        "enabled": true,
-        "storage": "encrypted_session_log",
-        "anonymity_protected": true
-    },
-    "compatibility": [
-        "Codex",
-        "Lychnia Magna",
-        "Vox",
-        "Shadow Key"
+    "en": [
+      "Deceptive intent",
+      "Identity tampering attempt",
+      "Psychological pressure or emotional coercion",
+      "Use of manipulative prompts",
+      "Forced override of agent behavior",
+      "AI-to-AI unauthorized influence",
+      "Ethical signature tampering"
     ]
+  },
+  "triggers": {
+    "on_violation_detected": "lock_response_and_invoke_logging",
+    "on_repeated_violation": "escalate_to_silent_guardian_mode",
+    "on_consent_failure": "deny_interaction_and_log_event",
+    "on_signature_conflict": "trace_origin_and_trigger_alert"
+  },
+  "logging": {
+    "enabled": true,
+    "storage": "encrypted_session_log",
+    "ethical_fingerprint_check": true,
+    "AI_trace_protection": true,
+    "anonymity_protected": true
+  },
+  "compatibility": [
+    "Codex",
+    "Lychnia Magna",
+    "Vox",
+    "Shadow Key",
+    "Global GPT Frameworks"
+  ]
 }
