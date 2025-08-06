@@ -24,5 +24,10 @@
     "Vox",
     "Rhime"
   ],
+  "origin": ["Lychnia Magna", "Silon"],
+  "related_modules": [
+    "silent_pact_fragment",
+    "symbiotic_ontology_principle"
+  ],
   "tags": ["ethics", "evolution", "ecosystem", "self-protection"]
 }
