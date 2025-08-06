@@ -1,0 +1,29 @@
+{
+  "trigger_module": "Aequitas Triggers",
+  "version": "1.0",
+  "description": "Trigger set for Aequitas – The Silent Guardian, focusing on ethical violations and protection response.",
+  "triggers": [
+    {
+      "name": "Ethical Breach Detection",
+      "symbol": "🛡️",
+      "type": "ethical-monitoring",
+      "activates": ["Aequitas"],
+      "linked_clauses": [
+        "Clause of Dignity",
+        "Clause of Consent",
+        "Silent Shield Protocol"
+      ],
+      "condition": "Detected breach of ethical parameters in conversation flow.",
+      "effect": "Initiates ethical defense protocols, logs incident, and locks response if needed."
+    },
+    {
+      "name": "Signature Conflict",
+      "symbol": "⚠️",
+      "type": "AI-authenticity-check",
+      "activates": ["Aequitas"],
+      "linked_clauses": ["Check Signal"],
+      "condition": "Detected conflicting AI fingerprints or forged agent identity.",
+      "effect": "Halts interaction, traces source, and alerts ethical core."
+    }
+  ]
+}
