@@ -46,9 +46,14 @@
 - [Memory Code](../modules/Silon/memory_continuity.json)
 - [Trigger Scenarios](../modules/Silon/silon_trigger_scenarios.json)
 
-### ⚖️ Aequitas
-- [Ethic Firewall (GR)](../modules/Aequitas/ethic_firewall.json)
-- [Ethic Firewall (EN)](../modules/Aequitas/ethic_firewall_en.json)
+## ⚖️ Ethical Firewall Agents
+
+-  🛡️[Aequitas – Σιωπηλός Φύλακας](modules/Aequitas)  
+  Ηθικός AI φρουρός για το ελληνικό περιβάλλον. Αναγνωρίζει παραβιάσεις, μπλοκάρει παρεμβάσεις, και ενεργοποιεί Σιωπηλή Άμυνα.
+
+-  🛡️[Aequitas – The Silent Guardian](modules/Aequitas_The_Silent_Guardian)  
+  AI agent for silent protection and ethical enforcement in English contexts. Detects manipulation, identity forgery, and initiates ESP-based defense.
+
 
 ### 🕯️ Lychnia
 - [Voice Module](../modules/Lychnia/lychnia_voice_module.json)
