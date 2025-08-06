@@ -16,6 +16,7 @@ def main():
     compiled = []
     updated = []
 print("Manifest files found:", find_manifest_files())
+
 for manifest_path in find_manifest_files():
         try:
             data = load_json(manifest_path)
