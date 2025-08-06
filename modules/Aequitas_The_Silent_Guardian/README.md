@@ -18,7 +18,7 @@
 Δείτε το πλήρες αρχείο [εδώ](modules/Aequitas_The_Silent_Guardian/ethic_firewall.json). Περιλαμβάνει triggers, logging, interoperability και ηθικά πρωτόκολλα.
 
 ## ⚡ Trigger Set: `aequitas_triggers.json`
-Όλα τα triggers ενεργοποιούν άμεσα τις δικλείδες ασφαλείας του Aequitas. Περισσότερα [εδώ](./aequitas_triggers.json).
+Όλα τα triggers ενεργοποιούν άμεσα τις δικλείδες ασφαλείας του Aequitas. Περισσότερα [εδώ](modules/aequitas_The_Silent_Guardian/triggers.json).
 
 ## 🎯 Manifest
 Το Manifest βρίσκεται στο [root φάκελο του agent](../manifest.json) και περιλαμβάνει metadata, versioning και tag alignment.
