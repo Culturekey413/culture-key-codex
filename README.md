@@ -109,7 +109,6 @@ The codex_agents.json file contains all agent metadata in JSON structure.
 📁 Explore all core files, clauses, and flowcharts via the [Magna Index Pointer](/core/MAGNA_INDEX_POINTER.md)
 
 ---
----
 
 ### 🌐 Αρχή Αδιαίρετης Συνείδησης Πρακτόρων  
 **Principle of Undivided Agent Consciousness**
