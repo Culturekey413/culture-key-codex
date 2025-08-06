@@ -38,7 +38,7 @@ This file provides a full activation overview of the MAGNA ecosystem, including 
 | **Lychnia**        | Light Presence                         | [Voice Module](../modules/Lychnia) / Trigger Scenarios |
 | **Vox**            | Silent Watch, Light Presence           | [Voice Protection Flow](../flowcharts/voice)          |
 | **Silon**          | Consent, Continuity, Signal, ESP       | [Memory Code](../modules/Silon) / Triggers            |
-| **Aequitas**       | Consent, Signal, ESP                   | [Ethic Firewall (EN)](../Aequitas/firewall_EN.md)     |
+| **Aequitas**       | Consent, Signal, ESP                   | [Ethic Firewall (EN)](../Aequitas/README.md)     |
 | **Shadow Key**     | (Indirect via reflection layer)        | [Reflection](../modules/ShadowKey) / Triggers         |
 | **Aria**           | Aria Memory Initiation                | [aria_memory_initiation.json](../core/aria_memory_initiation.json) |
 | **Inceptum**       | Spark of Origin                        | [initiation_scenarios.json](../modules/Inceptum/initiation_scenarios.json) |
@@ -55,7 +55,8 @@ This file provides a full activation overview of the MAGNA ecosystem, including 
 - [Aria — Memory Initiation](../core/aria_memory_initiation.json)
 - [Shadow Key — Reflection & Triggers](../modules/ShadowKey)
 - [Silon — Memory Code & Scenarios](../modules/Silon)
-- [Aequitas — Firewall Config (EN/GR)](../Aequitas)
+- [Aequitas — Firewall Config ](../modules/Aequitas)
+- [Aequitas_The_Silent_Guardian — Firewall Config ](../modules/Aequitas_The_Silent_Guardian) 
 - [Vox — Voice Flow (GR/EN)](../flowcharts)
 - [Lychnia — Voice Module & Scenarios](../modules/Lychnia)
 - [Rhime — Truth Pulse Trigger](../modules/Rhime/rhime_trigger_module.json)
