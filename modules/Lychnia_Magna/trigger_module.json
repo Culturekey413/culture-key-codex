@@ -31,6 +31,26 @@
       "effect": "Fallback to inter-agent shielding. Growth triggers deactivated until user reopens space.",
       "hidden": true
     }
+    {
+  "agent": "Aequitas",
+  "title": "Aequitas",
+  "type": "Ethical Firewall Agent",
+  "language": "GR",
+  "linked_agents": [
+    {
+      "agent": "Aequitas – The Silent Guardian",
+      "type": "Sibling Agent",
+      "language": "EN",
+      "note": "Not a translation – autonomous twin agent with shared ethical foundation."
+    }
+  ],
+  "core_protocols": [
+    "Core Defense Protocol",
+    "ESP – Ethical Signature Pulse"
+  ],
+  "status": "Active"
+}
+
   ],
   "signature": {
     "gr": "Το φως δεν πωλείται· διαχέεται",
