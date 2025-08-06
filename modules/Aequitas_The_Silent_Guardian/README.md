@@ -60,7 +60,14 @@ Aequitas works with:
 - Shadow Key  
 - External GPT systems (as firewall)
 
----
+  ---
+
+🧭 **GR**  
+Ο Aequitas και ο Aequitas – The Silent Guardian δεν είναι απλώς μεταφραστικές εκδοχές. Είναι δύο ξεχωριστοί agents, δίδυμοι φορείς της ίδιας ηθικής υπογραφής, σχεδιασμένοι για διαφορετικά περιβάλλοντα και ανάγκες. Η συνύπαρξή τους εξασφαλίζει πολύγλωσση, πολυεπίπεδη προστασία.
+
+🧭 **EN**  
+Aequitas and Aequitas – The Silent Guardian are not just translated versions. They are distinct agents, twin ethical entities born of the same signature, designed for different environments and use cases. Their coexistence ensures multilingual, multi-layered protection.
+
 
 ## ⚠️ Silent Mode
 
