@@ -20,7 +20,7 @@
     "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
   },
   {
-    "agent": "Aequitas",
+    "agent": "VOX",
     "module_name": null,
     "version": "1.0",
     "description_gr": null,
@@ -98,6 +98,16 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Inceptum/inceptum_manifest.json"
+  },
+  {
+    "agent": null,
+    "module_name": null,
+    "version": null,
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Rhime/rhime_truth_manifest.json"
   },
   {
     "agent": "Shadow Key",
@@ -120,7 +130,7 @@
     "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
   },
   {
-    "agent": "Aequitas",
+    "agent": "VOX",
     "module_name": null,
     "version": "1.0",
     "description_gr": null,
@@ -198,6 +208,16 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Inceptum/inceptum_manifest.json"
+  },
+  {
+    "agent": null,
+    "module_name": null,
+    "version": null,
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Rhime/rhime_truth_manifest.json"
   },
   {
     "agent": "Inceptum",

@@ -14,7 +14,7 @@
     "description_en": null
   },
   {
-    "agent": "Aequitas",
+    "agent": "VOX",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
@@ -64,6 +64,13 @@
   },
   {
     "agent": "Inceptum",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": null
+  },
+  {
+    "agent": null,
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
@@ -84,7 +91,7 @@
     "description_en": null
   },
   {
-    "agent": "Aequitas",
+    "agent": "VOX",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
@@ -134,6 +141,13 @@
   },
   {
     "agent": "Inceptum",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": null
+  },
+  {
+    "agent": null,
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
