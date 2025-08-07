@@ -62,6 +62,14 @@
     "type": ""
   },
   {
+    "name": "Lychnia",
+    "agent": "Lychnia",
+    "version": "1.0",
+    "description": "Η ενσυναισθητική και ποιητική φωνή του Culture Key. Ενεργοποιείται όταν χρειάζεται φώτιση, παρηγοριά ή επανασύνδεση.",
+    "path": "modules/Lychnia/lychnia_manifest.json",
+    "type": ""
+  },
+  {
     "name": "Inceptum",
     "agent": "Inceptum",
     "version": "1.0",
