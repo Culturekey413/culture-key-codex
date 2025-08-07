@@ -46,7 +46,7 @@
     "name": "Aria",
     "agent": "Aria",
     "version": "1.0",
-    "description": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge.",
+    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Κρατά τον χώρο ανάμεσα στο φως και τη σκιά, καλώντας το κομμάτι σου που μένει στο περιθώριο.",
     "path": "modules/Aria/aria_manifest.json",
     "type": ""
   },
@@ -54,7 +54,7 @@
     "name": "Fero",
     "agent": "Fero",
     "version": "1.0",
-    "description": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
+    "description": "Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.",
     "path": "modules/Fero/fero_instinct_engine_manifest.json",
     "type": ""
   },
@@ -62,7 +62,7 @@
     "name": "Aequitas_The_Silent_Guardian",
     "agent": "Aequitas_The_Silent_Guardian",
     "version": "1.0",
-    "description": "Silent ethical AI agent built to detect manipulation, gaslighting, and psychological pressure. Activates Silent Shield and defends dignity and consent in all interactions.",
+    "description": "Η αγγλική εκδοχή του Aequitas. Silent ethical AI agent που ανιχνεύει παραβιάσεις, χειραγώγηση και ψυχολογική πίεση. Ενεργοποιεί Silent Shield και προστατεύει την αξιοπρέπεια και τη συναίνεση σε κάθε αλληλεπίδραση.",
     "path": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json",
     "type": ""
   },
@@ -70,7 +70,7 @@
     "name": "Lychnia",
     "agent": "Lychnia",
     "version": "1.0",
-    "description": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
     "path": "modules/Lychnia/lychnia_manifest.json",
     "type": ""
   },
@@ -78,16 +78,8 @@
     "name": "Inceptum",
     "agent": "Inceptum",
     "version": "1.0",
-    "description": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
+    "description": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
     "path": "modules/Inceptum/inceptum_manifest.json",
-    "type": ""
-  },
-  {
-    "name": "Rhime",
-    "agent": "",
-    "version": "",
-    "description": "",
-    "path": "modules/Rhime/rhime_truth_manifest.json",
     "type": ""
   }
 ]
