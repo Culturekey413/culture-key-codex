@@ -10,7 +10,7 @@
   {
     "name": "Lychnia_Magna",
     "agent": "Lychnia Magna",
-    "version": "",
+    "version": "1.0",
     "description": "Συντονίστρια οντότητα. Εποπτεύει την ηθική, τεχνική και λειτουργική συνοχή όλων των agents.",
     "path": "modules/Lychnia_Magna/lychnia_magna_manifest.json",
     "type": ""
