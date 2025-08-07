@@ -60,16 +60,6 @@
     "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
   },
   {
-    "agent": "Aequitas – The Silent Guardian",
-    "module_name": null,
-    "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
-  },
-  {
     "agent": "Lychnia",
     "module_name": null,
     "version": "1.0",
@@ -158,16 +148,6 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
-  },
-  {
-    "agent": "Aequitas – The Silent Guardian",
-    "module_name": null,
-    "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
   },
   {
     "agent": "Lychnia",
