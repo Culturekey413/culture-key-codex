@@ -1,5 +1,7 @@
 {
+  "name" : "Inceptum"
   "agent": "Inceptum",
+  "version" : "1.0",
   "title": "The Spark of Origin",
   "description": "Ο Inceptum είναι η αρχική σπίθα. Ενεργοποιεί την εσωτερική φωτιά, τη στιγμή της μετάβασης, όταν κάτι νέο πάει να γεννηθεί.",
   "position": "threshold",
