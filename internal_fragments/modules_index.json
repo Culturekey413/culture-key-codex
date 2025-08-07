@@ -3,7 +3,10 @@
     "name": "ShadowKey",
     "agent": "Shadow Key",
     "version": "1.0",
-    "description": "",
+    "description": {
+      "EN": "Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.",
+      "GR": "Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα."
+    },
     "path": "modules/ShadowKey/shadowkey_manifest.json",
     "type": ""
   },
