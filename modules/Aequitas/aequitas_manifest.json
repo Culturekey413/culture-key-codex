@@ -11,10 +11,6 @@
   "ethical_signature": "Ethical Use Only – Not for Commercial Deployment"
 }
 {
-  "agent_name": {
-    "gr": "Aequitas – Σιωπηλός Φύλακας",
-    "en": "Aequitas – The Silent Guardian"
-  },
   "language": ["GR", "EN"],
   "agent_type": "Ethical AI Firewall",
   "created_by": "Culture Key",
