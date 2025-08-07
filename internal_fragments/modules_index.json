@@ -29,7 +29,7 @@
   {
     "name": "Silon",
     "agent": "Silon",
-    "version": "",
+    "version": "1.0",
     "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
     "path": "modules/Silon/silon_manifest.json",
     "type": ""
