@@ -1,0 +1,46 @@
+name: Validate Module Fields
+
+on:
+  push:
+    paths:
+      - 'modules/**/*.json'
+
+jobs:
+  validate-fields:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Validate module fields
+        run: |
+          import os, json, sys
+          REQUIRED_FIELDS = ['name', 'agent', 'version', 'description']
+          errors = []
+
+          for root, dirs, files in os.walk('modules'):
+              for file in files:
+                  if file.endswith('_manifest.json') or file == 'manifest.json':
+                      path = os.path.join(root, file)
+                      try:
+                          with open(path, encoding='utf-8') as f:
+                              data = json.load(f)
+                          for field in REQUIRED_FIELDS:
+                              if not data.get(field):
+                                  errors.append(f"{path} missing field: {field}")
+                      except Exception as e:
+                          errors.append(f"{path} is invalid JSON: {e}")
+
+          if errors:
+              print("❌ Found issues in module manifests:")
+              for e in errors:
+                  print(e)
+              sys.exit(1)
+          else:
+              print("✅ All module manifests are valid!")
+        shell: python
