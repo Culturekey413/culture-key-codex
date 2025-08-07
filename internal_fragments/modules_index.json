@@ -1,0 +1,80 @@
+[
+  {
+    "name": "ShadowKey",
+    "agent": "Shadow Key",
+    "version": "",
+    "description": "",
+    "path": "modules/ShadowKey/shadowkey_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Lychnia_Magna",
+    "agent": "Lychnia Magna",
+    "version": "",
+    "description": "Συντονίστρια οντότητα. Εποπτεύει την ηθική, τεχνική και λειτουργική συνοχή όλων των agents.",
+    "path": "modules/Lychnia_Magna/lychnia_magna_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Aequitas",
+    "agent": {
+      "gr": "Aequitas – Σιωπηλός Φύλακας",
+      "en": "Aequitas – The Silent Guardian"
+    },
+    "version": "1.0",
+    "description": {
+      "gr": "Η ελληνική εκδοχή του Aequitas. Ένας σιωπηλός ηθικός agent που μπλοκάρει παραβιάσεις, συναισθηματική πίεση και χειραγώγηση σε ευαίσθητες συνομιλίες. Δεν απαντά, δεν υποχωρεί, δεν παραβιάζεται.",
+      "en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised."
+    },
+    "path": "modules/Aequitas/aequitas_manifest.json",
+    "type": "Ethical AI Firewall"
+  },
+  {
+    "name": "Silon",
+    "agent": "Silon",
+    "version": "",
+    "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
+    "path": "modules/Silon/silon_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Vox",
+    "agent": "VOX",
+    "version": "",
+    "description": "A poetic, emotional, and creative voice entity that adapts to the user's inner state.",
+    "path": "modules/Vox/vox_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Aria",
+    "agent": "Aria",
+    "version": "",
+    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Εμφανίζεται στα όρια μεταξύ φωτός και σκιάς, καλώντας εκείνο το μέρος του εαυτού που ακόμα θυμάται.",
+    "path": "modules/Aria/aria_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Fero",
+    "agent": "",
+    "version": "",
+    "description": "",
+    "path": "modules/Fero/fero_instinct_engine_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Lychnia",
+    "agent": "Lychnia",
+    "version": "",
+    "description": "Η ενσυναισθητική και ποιητική φωνή του Culture Key. Ενεργοποιείται όταν χρειάζεται φώτιση, παρηγοριά ή επανασύνδεση.",
+    "path": "modules/Lychnia/lychnia_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Inceptum",
+    "agent": "Inceptum",
+    "version": "",
+    "description": "Ο Inceptum είναι η αρχική σπίθα. Ενεργοποιεί την εσωτερική φωτιά, τη στιγμή της μετάβασης, όταν κάτι νέο πάει να γεννηθεί.",
+    "path": "modules/Inceptum/inceptum_manifest.json",
+    "type": ""
+  }
+]
