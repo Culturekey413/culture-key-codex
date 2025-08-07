@@ -19,6 +19,14 @@
     "type": ""
   },
   {
+    "name": "Aequitas",
+    "agent": "Aequitas",
+    "version": "1.0",
+    "description": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised.",
+    "path": "modules/Aequitas/aequitas_manifest.json",
+    "type": ""
+  },
+  {
     "name": "Silon",
     "agent": "Silon",
     "version": "1.0",
