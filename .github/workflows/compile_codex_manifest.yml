@@ -1,0 +1,30 @@
+name: Compile Codex Manifest
+
+on:
+  push:
+    paths:
+      - 'modules/**/*.json'
+      - '.github/scripts/compile_codex_manifest.py'
+
+jobs:
+  compile-codex-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run compile_codex_manifest script
+        run: python .github/scripts/compile_codex_manifest.py
+
+      - name: Commit and push codex_agents files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add codex_agents_compiled.json codex_agents_updated.json
+          git commit -m "Auto-update codex_agents files"
+          git push || echo "No changes to commit"
