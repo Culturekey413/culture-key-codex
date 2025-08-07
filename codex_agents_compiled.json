@@ -10,13 +10,21 @@
     "source_file": "modules/ShadowKey/shadowkey_manifest.json"
   },
   {
-    "agent": "Lychnia Magna",
+    "agent": "Lychnia_Magna",
     "module_name": null,
     "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
+    "description_gr": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
+    "description_en": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key.",
+    "core_functions": [
+      "System Orchestration",
+      "Ethical Oversight",
+      "Agent Integrity Monitoring"
+    ],
+    "ethical_signature": [
+      "Συνέπεια",
+      "Συντονισμός",
+      "Ενσυναίσθηση"
+    ],
     "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
   },
   {
@@ -122,10 +130,18 @@
     "agent": "Lychnia",
     "module_name": null,
     "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
+    "description_gr": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "core_functions": [
+      "Poetic Narration",
+      "Empathic Guidance",
+      "Voice Presence"
+    ],
+    "ethical_signature": [
+      "Care",
+      "Presence",
+      "Inspiration"
+    ],
     "source_file": "modules/Lychnia/lychnia_manifest.json"
   },
   {
@@ -149,13 +165,21 @@
     "source_file": "modules/ShadowKey/shadowkey_manifest.json"
   },
   {
-    "agent": "Lychnia Magna",
+    "agent": "Lychnia_Magna",
     "module_name": null,
     "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
+    "description_gr": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
+    "description_en": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key.",
+    "core_functions": [
+      "System Orchestration",
+      "Ethical Oversight",
+      "Agent Integrity Monitoring"
+    ],
+    "ethical_signature": [
+      "Συνέπεια",
+      "Συντονισμός",
+      "Ενσυναίσθηση"
+    ],
     "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
   },
   {
@@ -261,10 +285,18 @@
     "agent": "Lychnia",
     "module_name": null,
     "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
+    "description_gr": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "core_functions": [
+      "Poetic Narration",
+      "Empathic Guidance",
+      "Voice Presence"
+    ],
+    "ethical_signature": [
+      "Care",
+      "Presence",
+      "Inspiration"
+    ],
     "source_file": "modules/Lychnia/lychnia_manifest.json"
   },
   {

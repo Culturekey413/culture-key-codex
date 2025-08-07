@@ -7,11 +7,11 @@
     "description_en": null
   },
   {
-    "agent": "Lychnia Magna",
+    "agent": "Lychnia_Magna",
     "title_gr": "",
     "title_en": "",
-    "description_gr": null,
-    "description_en": null
+    "description_gr": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
+    "description_en": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key."
   },
   {
     "agent": "Aequitas",
@@ -59,8 +59,8 @@
     "agent": "Lychnia",
     "title_gr": "",
     "title_en": "",
-    "description_gr": null,
-    "description_en": null
+    "description_gr": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions."
   },
   {
     "agent": null,
@@ -77,11 +77,11 @@
     "description_en": null
   },
   {
-    "agent": "Lychnia Magna",
+    "agent": "Lychnia_Magna",
     "title_gr": "",
     "title_en": "",
-    "description_gr": null,
-    "description_en": null
+    "description_gr": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
+    "description_en": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key."
   },
   {
     "agent": "Aequitas",
@@ -129,8 +129,8 @@
     "agent": "Lychnia",
     "title_gr": "",
     "title_en": "",
-    "description_gr": null,
-    "description_en": null
+    "description_gr": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions."
   },
   {
     "agent": null,
