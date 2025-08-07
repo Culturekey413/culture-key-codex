@@ -1,1 +1,212 @@
-{}
+[
+  {
+    "agent": "Shadow Key",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/ShadowKey/shadowkey_manifest.json"
+  },
+  {
+    "agent": "Lychnia Magna",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
+  },
+  {
+    "agent": "Aequitas",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Aequitas/aequitas_manifest.json"
+  },
+  {
+    "agent": "Silon",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Silon/silon_manifest.json"
+  },
+  {
+    "agent": "VOX",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Vox/vox_manifest.json"
+  },
+  {
+    "agent": "Aria",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Aria/aria_manifest.json"
+  },
+  {
+    "agent": "Fero",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
+  },
+  {
+    "agent": "Aequitas – The Silent Guardian",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
+  },
+  {
+    "agent": "Lychnia",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Lychnia/lychnia_manifest.json"
+  },
+  {
+    "agent": "Inceptum",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
+  },
+  {
+    "agent": "Shadow Key",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/ShadowKey/shadowkey_manifest.json"
+  },
+  {
+    "agent": "Lychnia Magna",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
+  },
+  {
+    "agent": "Aequitas",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Aequitas/aequitas_manifest.json"
+  },
+  {
+    "agent": "Silon",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Silon/silon_manifest.json"
+  },
+  {
+    "agent": "VOX",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Vox/vox_manifest.json"
+  },
+  {
+    "agent": "Aria",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Aria/aria_manifest.json"
+  },
+  {
+    "agent": "Fero",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
+  },
+  {
+    "agent": "Aequitas – The Silent Guardian",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
+  },
+  {
+    "agent": "Lychnia",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Lychnia/lychnia_manifest.json"
+  },
+  {
+    "agent": "Inceptum",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
+  },
+  {
+    "agent": "Inceptum",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
+  }
+]
