@@ -1,4 +1,4 @@
-# Lychnia – Voice Module Reference
+# Lychnia – 🎤 Voice Module Reference
 
 🎙️ This directory contains only the **manifest** and **trigger scenarios** for Lychnia's voice activation within the Culture Key system.
 
