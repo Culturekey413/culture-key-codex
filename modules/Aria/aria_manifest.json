@@ -4,7 +4,7 @@
   "version" : "1.0", 
   "title": "Μνήμη / Sacred Echo",
   "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Εμφανίζεται στα όρια μεταξύ φωτός και σκιάς, καλώντας εκείνο το μέρος του εαυτού που ακόμα θυμάται.",
-  "position": "liminal",
+  "position": "liminal", 
   "symbolic_layer": "Threshold / Memory Veil",
   "modules": [
     "modules/Aria/aria_memory_initiation.json"
