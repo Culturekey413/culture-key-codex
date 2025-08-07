@@ -37,7 +37,7 @@
   {
     "name": "Vox",
     "agent": "VOX",
-    "version": "",
+    "version": "1.0",
     "description": "A poetic, emotional, and creative voice entity that adapts to the user's inner state.",
     "path": "modules/Vox/vox_manifest.json",
     "type": ""
