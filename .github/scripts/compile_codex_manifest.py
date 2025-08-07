@@ -25,7 +25,7 @@ find_manifest_files())
                 "agent": data.get("agent"),
                 "module_name": data.get("module_name"),
                 "version": data.get("version"),
-                "description_gr": data.get("description_gr"),
+                "description": data.get("description"),
                 "description_en": data.get("description_en"),
                 "core_functions": data.get("core_functions"),
                 "ethical_signature": data.get("ethical_signature"),
