@@ -1,35 +1,34 @@
 {
-  "name" : "Inceptum",
+  "name": "Inceptum",
   "agent": "Inceptum",
-  "version" : "1.0",
-  "title": "The Spark of Origin",
-  "description": "Ο Inceptum είναι η αρχική σπίθα. Ενεργοποιεί την εσωτερική φωτιά, τη στιγμή της μετάβασης, όταν κάτι νέο πάει να γεννηθεί.",
-  "position": "threshold",
-  "symbolic_layer": "Πύλη Αφετηρίας / Σπίθα",
-  "modules": [
-    "modules/Inceptum/initiation_scenarios.json"
-  ],
-  "visibility": "active",
-  "languages": ["gr", "en"],
-  "linked_agents": ["Lychnia", "Silon", "Fero"],
-  "description_multilang": {
-    "en": "Inceptum is the spark of origin. It ignites the inner fire at the threshold of transition, when something new is trying to begin.",
-    "gr": "Ο Inceptum είναι η σπίθα της αρχής. Ενεργοποιεί την εσωτερική φωτιά στο κατώφλι της μετάβασης, όταν κάτι νέο πάει να ξεκινήσει."
-  },
-  "signature": {
-    "symbol": "🔥",
-    "activation_phrase": "You don’t need a path. Just a spark"
-  }
-}
-{
-  "agent": "Inceptum",
-  "module_name": "Inceptum",
   "version": "1.0",
-  "description_gr": "Ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
-  "description_en": "Primary inception agent responsible for initial data and trigger integration in the system.",
+  "description_gr": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+  "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
   "core_functions": [
     "Trigger Registration",
     "Initial Data Merge"
   ],
-  "ethical_signature": "Ethical Use Only – Not for Commercial Deployment"
+  "ethical_signature": [
+    "Transparency",
+    "Reliability",
+    "Consent"
+  ],
+  "activation": {
+    "mode": "On startup",
+    "monitoring": true,
+    "responds_to": {
+      "gr": [
+        "έναρξη συστήματος"
+      ],
+      "en": [
+        "system startup"
+      ]
+    }
+  },
+  "license": {
+    "gr": "Ηθική Χρήση Μόνο – Απαγορεύεται η Εμπορική Χρήση",
+    "en": "Ethical Use Only – Not for Commercial Deployment"
+  },
+  "repository": "https://github.com/culture-key/codex/tree/main/modules/inceptum",
+  "documentation": "https://culturekey.gr/using-inceptum/"
 }
