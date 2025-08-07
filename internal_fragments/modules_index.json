@@ -2,7 +2,7 @@
   {
     "name": "ShadowKey",
     "agent": "Shadow Key",
-    "version": "",
+    "version": "1.0",
     "description": "",
     "path": "modules/ShadowKey/shadowkey_manifest.json",
     "type": ""
