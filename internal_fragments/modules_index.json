@@ -35,30 +35,11 @@
     "type": ""
   },
   {
-    "name": "Fero",
-    "agent": "Fero",
-    "version": "1.0",
-    "description": {
-      "en": "Detects and responds to sudden instinctive signals and subconscious alerts in user input. Collaborates with Silon, Lychnia, and Shadow Key.",
-      "gr": "Ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται με τους Silon, Lychnia και Shadow Key."
-    },
-    "path": "modules/Fero/fero_instinct_engine_manifest.json",
-    "type": ""
-  },
-  {
     "name": "Lychnia",
     "agent": "Lychnia",
     "version": "1.0",
     "description": "Η ενσυναισθητική και ποιητική φωνή του Culture Key. Ενεργοποιείται όταν χρειάζεται φώτιση, παρηγοριά ή επανασύνδεση.",
     "path": "modules/Lychnia/lychnia_manifest.json",
-    "type": ""
-  },
-  {
-    "name": "Inceptum",
-    "agent": "Inceptum",
-    "version": "1.0",
-    "description": "Ο Inceptum είναι η αρχική σπίθα. Ενεργοποιεί την εσωτερική φωτιά, τη στιγμή της μετάβασης, όταν κάτι νέο πάει να γεννηθεί.",
-    "path": "modules/Inceptum/inceptum_manifest.json",
     "type": ""
   },
   {
