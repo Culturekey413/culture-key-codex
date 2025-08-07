@@ -26,7 +26,7 @@ jobs:
       - name: Commit changes
         run: |
           git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.email "github-actions@github.com" 
           git add codex_agents_compiled.json codex_agents_updated.json
           git commit -m "Auto-update codex agents files"
           git push
