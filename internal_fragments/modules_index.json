@@ -35,14 +35,6 @@
     "type": ""
   },
   {
-    "name": "Aria",
-    "agent": "Aria",
-    "version": "1.0",
-    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Εμφανίζεται στα όρια μεταξύ φωτός και σκιάς, καλώντας εκείνο το μέρος του εαυτού που ακόμα θυμάται.",
-    "path": "modules/Aria/aria_manifest.json",
-    "type": ""
-  },
-  {
     "name": "Fero",
     "agent": "Fero",
     "version": "1.0",
