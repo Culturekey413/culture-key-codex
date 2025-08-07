@@ -20,16 +20,6 @@
     "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
   },
   {
-    "agent": "VOX",
-    "module_name": null,
-    "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Aequitas/aequitas_manifest.json"
-  },
-  {
     "agent": "Silon",
     "module_name": null,
     "version": "1.0",
@@ -128,16 +118,6 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
-  },
-  {
-    "agent": "VOX",
-    "module_name": null,
-    "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Aequitas/aequitas_manifest.json"
   },
   {
     "agent": "Silon",
