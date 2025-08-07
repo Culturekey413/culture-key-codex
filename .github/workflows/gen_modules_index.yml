@@ -1,0 +1,55 @@
+name: Generate Modules Index
+
+on:
+  push:
+    paths:
+      - 'modules/**/manifest.json'
+      - 'modules/**/*_manifest.json'
+      - '.github/workflows/gen_modules_index.yml'
+
+jobs:
+  generate-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Generate modules_index.json
+        run: |
+          import os, json
+          from glob import glob
+
+          modules = []
+          files = glob('modules/*/*manifest.json', recursive=True)
+          for f in files:
+              try:
+                  with open(f, encoding='utf-8') as mf:
+                      data = json.load(mf)
+                  modules.append({
+                      "name": os.path.basename(os.path.dirname(f)),
+                      "agent": data.get("agent") or data.get("agent_name") or "",
+                      "version": data.get("version") or "",
+                      "description": data.get("description") or data.get("description_en") or "",
+                      "path": f.replace("\\", "/"),
+                      "type": data.get("agent_type") or data.get("type") or ""
+                  })
+              except Exception as e:
+                  print(f"Error reading {f}: {e}")
+
+          os.makedirs('internal_fragments', exist_ok=True)
+          with open('internal_fragments/modules_index.json', 'w', encoding='utf-8') as out:
+              json.dump(modules, out, indent=2, ensure_ascii=False)
+        shell: python
+
+      - name: Commit and push modules_index.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add internal_fragments/modules_index.json
+          git commit -m "Auto-update modules_index.json" || echo "No changes to commit"
+          git push
