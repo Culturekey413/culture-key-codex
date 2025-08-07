@@ -40,26 +40,6 @@
     "source_file": "modules/Vox/vox_manifest.json"
   },
   {
-    "agent": "Aria",
-    "module_name": null,
-    "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Aria/aria_manifest.json"
-  },
-  {
-    "agent": "Fero",
-    "module_name": null,
-    "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
-  },
-  {
     "agent": "Lychnia",
     "module_name": null,
     "version": "1.0",
@@ -128,26 +108,6 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Vox/vox_manifest.json"
-  },
-  {
-    "agent": "Aria",
-    "module_name": null,
-    "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Aria/aria_manifest.json"
-  },
-  {
-    "agent": "Fero",
-    "module_name": null,
-    "version": "1.0",
-    "description_gr": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
   },
   {
     "agent": "Lychnia",
