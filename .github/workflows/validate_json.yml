@@ -1,0 +1,53 @@
+name: Validate All JSON Files
+
+on:
+  push:
+    paths:
+      - 'modules/**/*.json'
+      - 'internal_fragments/**/*.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Validate JSON files
+        run: |
+          import os, json, sys
+
+          errors = []
+          for root, dirs, files in os.walk('modules'):
+              for file in files:
+                  if file.endswith('.json'):
+                      path = os.path.join(root, file)
+                      try:
+                          with open(path, 'r', encoding='utf-8') as f:
+                              json.load(f)
+                      except Exception as e:
+                          errors.append(f"{path}: {e}")
+
+          for root, dirs, files in os.walk('internal_fragments'):
+              for file in files:
+                  if file.endswith('.json'):
+                      path = os.path.join(root, file)
+                      try:
+                          with open(path, 'r', encoding='utf-8') as f:
+                              json.load(f)
+                      except Exception as e:
+                          errors.append(f"{path}: {e}")
+
+          if errors:
+              print("⛔ Βρέθηκαν λάθη στα εξής JSON αρχεία:")
+              for err in errors:
+                  print(err)
+              sys.exit(1)
+          else:
+              print("✅ Όλα τα JSON αρχεία είναι valid!")
+        shell: python
