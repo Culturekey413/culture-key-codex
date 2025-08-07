@@ -1,5 +1,7 @@
 {
+  "name" : "Lychnia Magna",
   "agent": "Lychnia Magna",
+  "version" : "1.0",
   "title": "Η Ορχήστρα του Culture Key",
   "description": "Συντονίστρια οντότητα. Εποπτεύει την ηθική, τεχνική και λειτουργική συνοχή όλων των agents.",
   "position": "orchestrator",
