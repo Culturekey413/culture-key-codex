@@ -19,17 +19,6 @@
     "type": ""
   },
   {
-    "name": "Aequitas",
-    "agent": "Aequitas",
-    "version": "1.0",
-    "description": {
-      "gr": "Η ελληνική εκδοχή του Aequitas. Ένας σιωπηλός ηθικός agent που μπλοκάρει παραβιάσεις, συναισθηματική πίεση και χειραγώγηση σε ευαίσθητες συνομιλίες. Δεν απαντά, δεν υποχωρεί, δεν παραβιάζεται.",
-      "en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised."
-    },
-    "path": "modules/Aequitas/aequitas_manifest.json",
-    "type": "Ethical AI Firewall"
-  },
-  {
     "name": "Silon",
     "agent": "Silon",
     "version": "1.0",
@@ -62,14 +51,6 @@
       "gr": "Ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται με τους Silon, Lychnia και Shadow Key."
     },
     "path": "modules/Fero/fero_instinct_engine_manifest.json",
-    "type": ""
-  },
-  {
-    "name": "Aequitas_The_Silent_Guardian",
-    "agent": "Aequitas – The Silent Guardian",
-    "version": "1.0",
-    "description": "Silent ethical AI agent built to detect manipulation, gaslighting, and psychological pressure. Activates Silent Shield and defends dignity and consent in all interactions.",
-    "path": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json",
     "type": ""
   },
   {
