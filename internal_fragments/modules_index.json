@@ -46,13 +46,5 @@
     "description": "Η ενσυναισθητική και ποιητική φωνή του Culture Key. Ενεργοποιείται όταν χρειάζεται φώτιση, παρηγοριά ή επανασύνδεση.",
     "path": "modules/Lychnia/lychnia_manifest.json",
     "type": ""
-  },
-  {
-    "name": "Inceptum",
-    "agent": "Inceptum",
-    "version": "",
-    "description": "Ο Inceptum είναι η αρχική σπίθα. Ενεργοποιεί την εσωτερική φωτιά, τη στιγμή της μετάβασης, όταν κάτι νέο πάει να γεννηθεί.",
-    "path": "modules/Inceptum/inceptum_manifest.json",
-    "type": ""
   }
 ]
