@@ -12,9 +12,9 @@
   },
   {
     "name": "Lychnia_Magna",
-    "agent": "Lychnia Magna",
+    "agent": "Lychnia_Magna",
     "version": "1.0",
-    "description": "Συντονίστρια οντότητα. Εποπτεύει την ηθική, τεχνική και λειτουργική συνοχή όλων των agents.",
+    "description": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key.",
     "path": "modules/Lychnia_Magna/lychnia_magna_manifest.json",
     "type": ""
   },
@@ -72,6 +72,14 @@
     "version": "1.0",
     "description": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
     "path": "modules/Lychnia/lychnia_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Inceptum",
+    "agent": "Inceptum",
+    "version": "1.0",
+    "description": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
+    "path": "modules/Inceptum/inceptum_manifest.json",
     "type": ""
   },
   {
