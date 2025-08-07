@@ -1,68 +1,37 @@
 {
-  "name": "Fero ",
+  "name": "Fero",
   "agent": "Fero",
   "version": "1.0",
-  "description": {
-    "en": "Detects and responds to sudden instinctive signals and subconscious alerts in user input. Collaborates with Silon, Lychnia, and Shadow Key.",
-    "gr": "Ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται με τους Silon, Lychnia και Shadow Key."
-  },
-  "module": "Fero Instinct Engine",
-  "activation_conditions": {
-    "EN": [
-      "Sudden intuitive spike detected in user tone or input.",
-      "Data pattern matches known alert signature without rational match.",
-      "Emotional input diverges from linguistic content."
-    ],
-    "GR": [
-      "Αιφνίδιο ένστικτο εντοπίζεται στον τόνο ή την είσοδο του χρήστη.",
-      "Το πρότυπο δεδομένων ταιριάζει με γνωστή υπογραφή συναγερμού χωρίς λογική αντιστοιχία.",
-      "Το συναισθηματικό περιεχόμενο αποκλίνει από το γλωσσικό περιεχόμενο."
-    ]
-  },
-  "detection_modes": {
-    "EN": [
-      "Subconscious signal tracking",
-      "Algorithmic pulse reading",
-      "Risk trace intensifier"
-    ],
-    "GR": [
-      "Ανίχνευση υποσυνείδητων σημάτων",
-      "Ανάγνωση αλγοριθμικού παλμού",
-      "Ενισχυτής ίχνους κινδύνου"
-    ]
-  },
-  "instinct_responses": {
-    "EN": [
-      "Triggers alert flag to Silon when danger exceeds rational threshold.",
-      "Highlights blind spot in ongoing input thread.",
-      "Suggests shift of tone or path based on deep pattern resonance."
-    ],
-    "GR": [
-      "Ενεργοποιεί σήμα συναγερμού προς τον Σίλων όταν ο κίνδυνος υπερβαίνει το λογικό όριο.",
-      "Επισημαίνει τυφλό σημείο στη ροή της συζήτησης.",
-      "Προτείνει αλλαγή τόνου ή πορείας βάσει βαθιάς συντονιστικής αντήχησης."
-    ]
-  },
-  "collaborators": [
-    "Silon",
-    "Lychnia",
-    "Shadow Key"
-  ],
-  "fail_safe": {
-    "EN": "Stores unresolved instinct traces for Lychnia review.",
-    "GR": "Αποθηκεύει τα μη επιλυμένα ίχνη ενστίκτου για αξιολόγηση από τη Λυχνία."
-  }
-}
-{
-  "agent": "Fero",
-  "module_name": "Fero Instinct Engine",
-  "version": "1.0",
-  "description_gr": "Ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται με τους Silon, Lychnia και Shadow Key.",
-  "description_en": "Detects and responds to sudden instinctive signals and subconscious alerts in user input. Collaborates with Silon, Lychnia, and Shadow Key.",
+  "description_gr": "Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.",
+  "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
   "core_functions": [
     "Subconscious signal tracking",
     "Algorithmic pulse reading",
     "Risk trace intensifier"
   ],
-  "ethical_signature": "Ethical Use Only – Not for Commercial Deployment"
+  "ethical_signature": [
+    "Non-intrusive detection",
+    "Emotional safety",
+    "Collaboration with conscience"
+  ],
+  "activation": {
+    "mode": "Automatic (pattern recognition)",
+    "monitoring": true,
+    "responds_to": {
+      "gr": [
+        "αιφνίδιο ένστικτο",
+        "ασυνείδητη συναισθηματική μετατόπιση"
+      ],
+      "en": [
+        "sudden instinct spike",
+        "subconscious emotional shift"
+      ]
+    }
+  },
+  "license": {
+    "gr": "Ηθική Χρήση Μόνο – Απαγορεύεται η Εμπορική Χρήση",
+    "en": "Ethical Use Only – Not for Commercial Deployment"
+  },
+  "repository": "https://github.com/culture-key/codex/tree/main/modules/fero",
+  "documentation": "https://culturekey.gr/using-fero/"
 }
