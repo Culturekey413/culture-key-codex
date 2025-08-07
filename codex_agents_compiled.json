@@ -145,6 +145,23 @@
     "source_file": "modules/Lychnia/lychnia_manifest.json"
   },
   {
+    "agent": "Inceptum",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
+    "core_functions": [
+      "Trigger Registration",
+      "Initial Data Merge"
+    ],
+    "ethical_signature": [
+      "Transparency",
+      "Reliability",
+      "Consent"
+    ],
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
+  },
+  {
     "agent": null,
     "module_name": null,
     "version": null,
@@ -300,6 +317,23 @@
     "source_file": "modules/Lychnia/lychnia_manifest.json"
   },
   {
+    "agent": "Inceptum",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
+    "core_functions": [
+      "Trigger Registration",
+      "Initial Data Merge"
+    ],
+    "ethical_signature": [
+      "Transparency",
+      "Reliability",
+      "Consent"
+    ],
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
+  },
+  {
     "agent": null,
     "module_name": null,
     "version": null,
@@ -308,5 +342,22 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Rhime/rhime_truth_manifest.json"
+  },
+  {
+    "agent": "Inceptum",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
+    "core_functions": [
+      "Trigger Registration",
+      "Initial Data Merge"
+    ],
+    "ethical_signature": [
+      "Transparency",
+      "Reliability",
+      "Consent"
+    ],
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
   }
 ]
