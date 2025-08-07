@@ -48,14 +48,6 @@
     "type": ""
   },
   {
-    "name": "Aequitas_The_Silent_Guardian",
-    "agent": "Aequitas – The Silent Guardian",
-    "version": "1.0",
-    "description": "Silent ethical AI agent built to detect manipulation, gaslighting, and psychological pressure. Activates Silent Shield and defends dignity and consent in all interactions.",
-    "path": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json",
-    "type": ""
-  },
-  {
     "name": "Lychnia",
     "agent": "Lychnia",
     "version": "",
