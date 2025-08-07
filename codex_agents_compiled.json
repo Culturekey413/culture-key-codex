@@ -80,6 +80,24 @@
     "source_file": "modules/Aria/aria_manifest.json"
   },
   {
+    "agent": "Fero",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": "Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.",
+    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
+    "core_functions": [
+      "Subconscious signal tracking",
+      "Algorithmic pulse reading",
+      "Risk trace intensifier"
+    ],
+    "ethical_signature": [
+      "Non-intrusive detection",
+      "Emotional safety",
+      "Collaboration with conscience"
+    ],
+    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
+  },
+  {
     "agent": "Aequitas_The_Silent_Guardian",
     "module_name": null,
     "version": "1.0",
@@ -199,6 +217,24 @@
       "Non-intrusive Listening"
     ],
     "source_file": "modules/Aria/aria_manifest.json"
+  },
+  {
+    "agent": "Fero",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": "Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.",
+    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
+    "core_functions": [
+      "Subconscious signal tracking",
+      "Algorithmic pulse reading",
+      "Risk trace intensifier"
+    ],
+    "ethical_signature": [
+      "Non-intrusive detection",
+      "Emotional safety",
+      "Collaboration with conscience"
+    ],
+    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
   },
   {
     "agent": "Aequitas_The_Silent_Guardian",
