@@ -87,5 +87,13 @@
     "description": "Ο Inceptum είναι η αρχική σπίθα. Ενεργοποιεί την εσωτερική φωτιά, τη στιγμή της μετάβασης, όταν κάτι νέο πάει να γεννηθεί.",
     "path": "modules/Inceptum/inceptum_manifest.json",
     "type": ""
+  },
+  {
+    "name": "Rhime",
+    "agent": "",
+    "version": "",
+    "description": "",
+    "path": "modules/Rhime/rhime_truth_manifest.json",
+    "type": ""
   }
 ]
