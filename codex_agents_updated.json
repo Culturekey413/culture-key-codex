@@ -70,6 +70,13 @@
     "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
   },
   {
+    "agent": "Rhime",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": null
+  },
+  {
     "agent": "Shadow Key",
     "title_gr": "",
     "title_en": "",
@@ -138,6 +145,13 @@
     "title_en": "",
     "description_gr": null,
     "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
+  },
+  {
+    "agent": "Rhime",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": null
   },
   {
     "agent": "Inceptum",

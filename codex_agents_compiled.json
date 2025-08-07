@@ -162,6 +162,16 @@
     "source_file": "modules/Inceptum/inceptum_manifest.json"
   },
   {
+    "agent": "Rhime",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Rhime/rhime_truth_manifest.json"
+  },
+  {
     "agent": "Shadow Key",
     "module_name": null,
     "version": "1.0",
@@ -322,6 +332,16 @@
       "Consent"
     ],
     "source_file": "modules/Inceptum/inceptum_manifest.json"
+  },
+  {
+    "agent": "Rhime",
+    "module_name": null,
+    "version": "1.0",
+    "description_gr": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Rhime/rhime_truth_manifest.json"
   },
   {
     "agent": "Inceptum",
