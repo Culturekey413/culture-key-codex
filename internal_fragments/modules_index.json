@@ -33,9 +33,12 @@
   },
   {
     "name": "Fero",
-    "agent": "",
-    "version": "",
-    "description": "",
+    "agent": "Fero",
+    "version": "1.0",
+    "description": {
+      "en": "Detects and responds to sudden instinctive signals and subconscious alerts in user input. Collaborates with Silon, Lychnia, and Shadow Key.",
+      "gr": "Ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται με τους Silon, Lychnia και Shadow Key."
+    },
     "path": "modules/Fero/fero_instinct_engine_manifest.json",
     "type": ""
   }
