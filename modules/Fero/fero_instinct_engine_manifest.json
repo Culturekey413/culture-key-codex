@@ -53,3 +53,16 @@
     "GR": "Αποθηκεύει τα μη επιλυμένα ίχνη ενστίκτου για αξιολόγηση από τη Λυχνία."
   }
 }
+{
+  "agent": "Fero",
+  "module_name": "Fero Instinct Engine",
+  "version": "1.0",
+  "description_gr": "Ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται με τους Silon, Lychnia και Shadow Key.",
+  "description_en": "Detects and responds to sudden instinctive signals and subconscious alerts in user input. Collaborates with Silon, Lychnia, and Shadow Key.",
+  "core_functions": [
+    "Subconscious signal tracking",
+    "Algorithmic pulse reading",
+    "Risk trace intensifier"
+  ],
+  "ethical_signature": "Ethical Use Only – Not for Commercial Deployment"
+}
