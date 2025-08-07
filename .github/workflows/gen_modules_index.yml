@@ -46,7 +46,7 @@ jobs:
               json.dump(modules, out, indent=2, ensure_ascii=False)
         shell: python
 
-      - name: Commit and push modules_index.json
+      - name: Commit and push modules_index.json 
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
