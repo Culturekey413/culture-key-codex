@@ -41,5 +41,13 @@
     },
     "path": "modules/Fero/fero_instinct_engine_manifest.json",
     "type": ""
+  },
+  {
+    "name": "Inceptum",
+    "agent": "Inceptum",
+    "version": "1.0",
+    "description": "Ο Inceptum είναι η αρχική σπίθα. Ενεργοποιεί την εσωτερική φωτιά, τη στιγμή της μετάβασης, όταν κάτι νέο πάει να γεννηθεί.",
+    "path": "modules/Inceptum/inceptum_manifest.json",
+    "type": ""
   }
 ]
