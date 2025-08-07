@@ -66,7 +66,7 @@
     "agent": "Inceptum",
     "title_gr": "",
     "title_en": "",
-    "description_gr": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_gr": null,
     "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
   },
   {
@@ -143,7 +143,7 @@
     "agent": "Inceptum",
     "title_gr": "",
     "title_en": "",
-    "description_gr": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_gr": null,
     "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
   },
   {
@@ -157,7 +157,7 @@
     "agent": "Inceptum",
     "title_gr": "",
     "title_en": "",
-    "description_gr": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_gr": null,
     "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
   }
 ]
