@@ -38,13 +38,5 @@
     "description": "",
     "path": "modules/Fero/fero_instinct_engine_manifest.json",
     "type": ""
-  },
-  {
-    "name": "Lychnia",
-    "agent": "Lychnia",
-    "version": "",
-    "description": "Η ενσυναισθητική και ποιητική φωνή του Culture Key. Ενεργοποιείται όταν χρειάζεται φώτιση, παρηγοριά ή επανασύνδεση.",
-    "path": "modules/Lychnia/lychnia_manifest.json",
-    "type": ""
   }
 ]
