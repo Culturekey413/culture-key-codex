@@ -13,7 +13,7 @@
     "agent": "Lychnia_Magna",
     "module_name": null,
     "version": "1.0",
-    "description_gr": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
+    "description_gr": null,
     "description_en": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key.",
     "core_functions": [
       "System Orchestration",
@@ -185,7 +185,7 @@
     "agent": "Lychnia_Magna",
     "module_name": null,
     "version": "1.0",
-    "description_gr": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
+    "description_gr": null,
     "description_en": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key.",
     "core_functions": [
       "System Orchestration",
