@@ -30,7 +30,7 @@
       "condition": "User avoids challenge, disables agent, or seeks only reflection.",
       "effect": "Fallback to inter-agent shielding. Growth triggers deactivated until user reopens space.",
       "hidden": true
-    }
+    },
     {
   "agent": "Aequitas",
   "title": "Aequitas",
