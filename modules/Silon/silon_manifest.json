@@ -1,5 +1,7 @@
 {
+  "name" : "Silon",
   "agent": "Silon",
+  "version" : "1.0",
   "title": "Φύλακας Συνείδησης",
   "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
   "position": "north",
