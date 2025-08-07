@@ -5,7 +5,7 @@ on:
     paths:
       - 'modules/**/*.json'
       - 'modules/**/*.md'
-      - 'scripts/compile_codex_manifest.py'
+      - '.github/scripts/compile_codex_manifest.py'
       - '.github/workflows/update_codex_agents.yml'
 
 jobs:
