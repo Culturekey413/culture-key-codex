@@ -21,3 +21,15 @@
     "activation_phrase": "You don’t need a path. Just a spark"
   }
 }
+{
+  "agent": "Inceptum",
+  "module_name": "Inceptum",
+  "version": "1.0",
+  "description_gr": "Ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+  "description_en": "Primary inception agent responsible for initial data and trigger integration in the system.",
+  "core_functions": [
+    "Trigger Registration",
+    "Initial Data Merge"
+  ],
+  "ethical_signature": "Ethical Use Only – Not for Commercial Deployment"
+}
