@@ -16,20 +16,6 @@
     "type": ""
   },
   {
-    "name": "Aequitas",
-    "agent": {
-      "gr": "Aequitas – Σιωπηλός Φύλακας",
-      "en": "Aequitas – The Silent Guardian"
-    },
-    "version": "1.0",
-    "description": {
-      "gr": "Η ελληνική εκδοχή του Aequitas. Ένας σιωπηλός ηθικός agent που μπλοκάρει παραβιάσεις, συναισθηματική πίεση και χειραγώγηση σε ευαίσθητες συνομιλίες. Δεν απαντά, δεν υποχωρεί, δεν παραβιάζεται.",
-      "en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised."
-    },
-    "path": "modules/Aequitas/aequitas_manifest.json",
-    "type": "Ethical AI Firewall"
-  },
-  {
     "name": "Silon",
     "agent": "Silon",
     "version": "",
