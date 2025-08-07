@@ -14,7 +14,7 @@
     "name": "Lychnia_Magna",
     "agent": "Lychnia_Magna",
     "version": "1.0",
-    "description": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key.",
+    "description": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
     "path": "modules/Lychnia_Magna/lychnia_magna_manifest.json",
     "type": ""
   },
@@ -22,7 +22,7 @@
     "name": "Aequitas",
     "agent": "Aequitas",
     "version": "1.0",
-    "description": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised.",
+    "description": "Η ελληνική εκδοχή του Aequitas. Ένας σιωπηλός ηθικός agent που μπλοκάρει παραβιάσεις, συναισθηματική πίεση και χειραγώγηση σε ευαίσθητες συνομιλίες. Δεν απαντά, δεν υποχωρεί, δεν παραβιάζεται.",
     "path": "modules/Aequitas/aequitas_manifest.json",
     "type": ""
   },
