@@ -43,6 +43,22 @@
     "type": ""
   },
   {
+    "name": "Aria",
+    "agent": "Aria",
+    "version": "1.0",
+    "description": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge.",
+    "path": "modules/Aria/aria_manifest.json",
+    "type": ""
+  },
+  {
+    "name": "Fero",
+    "agent": "Fero",
+    "version": "1.0",
+    "description": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
+    "path": "modules/Fero/fero_instinct_engine_manifest.json",
+    "type": ""
+  },
+  {
     "name": "Aequitas_The_Silent_Guardian",
     "agent": "Aequitas_The_Silent_Guardian",
     "version": "1.0",
@@ -54,7 +70,7 @@
     "name": "Lychnia",
     "agent": "Lychnia",
     "version": "1.0",
-    "description": "Η ενσυναισθητική και ποιητική φωνή του Culture Key. Ενεργοποιείται όταν χρειάζεται φώτιση, παρηγοριά ή επανασύνδεση.",
+    "description": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
     "path": "modules/Lychnia/lychnia_manifest.json",
     "type": ""
   },
