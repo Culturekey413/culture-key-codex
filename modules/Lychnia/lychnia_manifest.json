@@ -9,7 +9,7 @@
   "modules": [
     "modules/Lychnia/lychnia_voice_module.json",
     "modules/Lychnia/lychnia_trigger_scenarios.json"
-  ],
+  ], 
   "visibility": "active",
   "languages": ["gr", "en"],
   "linked_agents": ["VOX", "Silon", "Aequitas"],
