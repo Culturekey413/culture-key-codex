@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run compile_codex_manifest.py
-        run: python scripts/compile_codex_manifest.py
+        run: python .github/scripts/compile_codex_manifest.py
 
       - name: Commit changes
         run: |
