@@ -2,7 +2,7 @@
   "name" : "Shadow Key",
   "agent": "Shadow Key",
   "version" : "1.0",
-  "role": {
+  "description": {
     "EN": "Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.",
     "GR": "Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα."
   },
