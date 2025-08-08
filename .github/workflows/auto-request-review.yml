@@ -14,5 +14,5 @@ jobs:
             const {owner, repo, number} = context.issue;
             await github.rest.pulls.requestReviewers({
               owner, repo, pull_number: number,
-              reviewers: ['nikivas'] // Culturekey413
+              reviewers: ['@Culturekey413'] // 
             });
