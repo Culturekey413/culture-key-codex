@@ -1,0 +1,40 @@
+name: enforce-label-policy
+on:
+  pull_request:
+    types: [labeled]
+permissions:
+  pull-requests: write
+  issues: write
+  checks: read
+jobs:
+  verify:
+    if: ${{ github.event.pull_request.base.ref == 'main' && contains(github.event.pull_request.labels.*.name, 'approved-for-main') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const requiredLabel = 'approved-for-main';
+            const {owner, repo, number} = context.issue;
+
+            const pr = (await github.rest.pulls.get({owner, repo, pull_number: number})).data;
+
+            // approvals
+            const reviews = (await github.rest.pulls.listReviews({owner, repo, pull_number: number})).data;
+            const approvers = new Set(reviews.filter(r => r.state === 'APPROVED').map(r => r.user.login));
+
+            // checks
+            const sha = pr.head.sha;
+            const checks = (await github.rest.checks.listForRef({owner, repo, ref: sha})).data.check_runs || [];
+            const allGreen = checks.length === 0 || checks.every(c => c.conclusion === 'success' || c.conclusion === 'skipped');
+
+            if (approvers.size < 1 || !allGreen) {
+              // Αφαίρεσε το label & ενημέρωσε
+              await github.rest.issues.removeLabel({owner, repo, issue_number: number, name: requiredLabel}).catch(()=>{});
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: number,
+                body: `⚠️ Η ετικέτα **${requiredLabel}** αφαιρέθηκε: απαιτείται τουλάχιστον μία έγκριση *και* πράσινα checks.`
+              });
+              // Προαιρετικά κλείσε το PR (αν θες)
+              // await github.rest.pulls.update({owner, repo, pull_number: number, state: 'closed'});
+            }
