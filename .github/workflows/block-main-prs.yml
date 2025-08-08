@@ -1,7 +1,7 @@
 name: block-main-prs
 on:
   pull_request_target:
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, synchronize, labeled, unlabeled]
 jobs:
   guard:
     if: github.base_ref == 'main'
