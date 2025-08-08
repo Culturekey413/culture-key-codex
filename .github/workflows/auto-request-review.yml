@@ -1,0 +1,18 @@
+name: auto-request-review
+on:
+  pull_request:
+    types: [opened, reopened]
+permissions:
+  pull-requests: write
+jobs:
+  request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner, repo, number} = context.issue;
+            await github.rest.pulls.requestReviewers({
+              owner, repo, pull_number: number,
+              reviewers: ['nikivas'] // Culturekey413
+            });
