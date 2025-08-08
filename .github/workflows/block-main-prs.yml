@@ -20,8 +20,7 @@ jobs:
             if (!hasLabel) {
               await github.rest.issues.createComment({
                 owner, repo, issue_number: number,
-                body: `🚫 Αυτό το PR στο \`main\` κλείστηκε γιατί δεν έχει την ετικέτα **${requiredLabel}**. \
-Πρόσθεσε την ετικέτα όταν εγκριθεί ρητά και ξανάνοιξέ το.`
+                body: `🚫 Αυτό το PR στο \`main\` κλείστηκε γιατί δεν έχει την ετικέτα **${requiredLabel}**. Πρόσθεσε την ετικέτα όταν εγκριθεί ρητά και ξανάνοιξέ το.`
               });
               await github.rest.pulls.update({owner, repo, pull_number: number, state: 'closed'});
               throw new Error('Closed PR targeting main without required label.');
