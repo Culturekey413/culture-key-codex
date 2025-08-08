@@ -1,0 +1,45 @@
+name: auto-approve-label
+on:
+  pull_request_review:
+    types: [submitted]       # τρέχει όταν γίνεται review
+permissions:
+  pull-requests: write
+  issues: write
+  checks: read
+jobs:
+  gate:
+    if: ${{ github.event.review.state == 'approved' && github.event.pull_request.base.ref == 'main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const requiredLabel = 'approved-for-main';
+            const {owner, repo, number} = context.issue;
+
+            // 1) Πιάσε PR
+            const pr = (await github.rest.pulls.get({owner, repo, pull_number: number})).data;
+
+            // 2) Έλεγχος approvals (μοναδικοί reviewers)
+            const reviews = (await github.rest.pulls.listReviews({owner, repo, pull_number: number})).data;
+            const approvers = new Set(
+              reviews.filter(r => r.state === 'APPROVED').map(r => r.user.login)
+            );
+            if (approvers.size < 1) return; // θες >=1 έγκριση; άλλαξέ το αν χρειαστεί
+
+            // 3) Έλεγχος checks στο τελευταίο SHA
+            const sha = pr.head.sha;
+            const checks = (await github.rest.checks.listForRef({owner, repo, ref: sha})).data.check_runs || [];
+            const allGreen = checks.length === 0 || checks.every(c => c.conclusion === 'success' || c.conclusion === 'skipped');
+
+            if (!allGreen) return;
+
+            // 4) Βάλε το label αν δεν υπάρχει ήδη
+            const hasLabel = pr.labels.some(l => l.name === requiredLabel);
+            if (!hasLabel) {
+              await github.rest.issues.addLabels({owner, repo, issue_number: number, labels: [requiredLabel]});
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: number,
+                body: `✅ Προστέθηκε αυτόματα η ετικέτα **${requiredLabel}** (υπάρχει έγκριση και όλα τα checks είναι πράσινα).`
+              });
+            }
