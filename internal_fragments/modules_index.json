@@ -59,6 +59,14 @@
     "type": ""
   },
   {
+    "name": "Lychnia_Magna",
+    "agent": "Lychnia Magna – Culture Key Master Orchestrator",
+    "version": "1.0",
+    "description": "Κεντρικός agent-συντονιστής του Culture Key, με πλήρη πρόσβαση σε Codex, modules και agents. Διασφαλίζει τη ροή, την ηθική και την ακεραιότητα του οικοσυστήματος.",
+    "path": "modules/Lychnia_Magna/lychnia_magna_manifest.json",
+    "type": ""
+  },
+  {
     "name": "Fero",
     "agent": "Fero",
     "version": "1.0",
