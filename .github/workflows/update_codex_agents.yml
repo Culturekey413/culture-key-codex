@@ -32,21 +32,4 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          import json
-
-# --- Υπάρχον: Διαβάζει compiled.json ---
-with open("compiled.json", "r", encoding="utf-8") as f:
-    compiled_data = json.load(f)
-
-# --- Νέο κομμάτι: Ενημέρωση root README.md ---
-readme_content = "# Culture Key — Agents Overview\n\n"
-readme_content += "## Active Agents / Ενεργοί Πράκτορες\n\n"
-
-for agent in sorted(compiled_data.get("agents", []), key=lambda x: x["full_name"].lower()):
-    readme_content += f"- **{agent['full_name']}** (v{agent['version']}) — {agent['description']}\n"
-
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print("✅ README.md updated.")
 
