@@ -50,41 +50,56 @@ find_manifest_files())
 
 if __name__ == "__main__":
     main()
-import os
-import json
+import os, json
 
-# Διαβάζουμε το compiled.json που ήδη παράγει το script
-with open("codex_agents_compiled.json", "r", encoding="utf-8") as f:
+COMPILED_PATH = "codex_agents_compiled.json"
+
+# Φόρτωσε το compiled από το σωστό αρχείο
+with open(COMPILED_PATH, "r", encoding="utf-8") as f:
     compiled_data = json.load(f)
 
-agents = compiled_data.get("agents", [])
+# Υποστήριξη και για list και για dict σχήμα
+if isinstance(compiled_data, list):
+    agents = compiled_data
+elif isinstance(compiled_data, dict):
+    agents = compiled_data.get("agents", [])
+else:
+    agents = []
 
-# =========================
-# 1️⃣ Ενημέρωση magna_index_pointer.md
-# =========================
-pointer_content = "# Magna Index Pointer\n\n## Agents / Πράκτορες\n\n"
-for agent in sorted(agents, key=lambda x: x["full_name"].lower()):
-    pointer_content += f"- **{agent['full_name']}** (v{agent['version']}) — {agent['description']}\n"
-    pointer_content += f"  Path: `modules/{agent['agent']}`\n\n"
+def g(v, d=""):
+    return v if v is not None else d
+
+# ============= 1) magna_index_pointer.md =================
+pointer = ["# Magna Index Pointer", "", "## Agents / Πράκτορες", ""]
+for a in sorted(agents, key=lambda x: g(x.get("full_name") or x.get("agent") or "", "").lower()):
+    full_name = g(a.get("full_name") or a.get("agent") or "Unknown Agent")
+    version   = g(a.get("version") or "")
+    desc      = g(a.get("description") or "")
+    # Προσπάθησε να βρεις φάκελο· αν δεν υπάρχει, άστο κενό
+    folder = a.get("agent") or a.get("agent_folder") or ""
+    pointer.append(f"- **{full_name}** (v{version}) — {desc}".rstrip())
+    if folder:
+        pointer.append(f"  Path: `modules/{folder}`")
+    pointer.append("")  # κενή γραμμή ανά item
 
 with open("magna_index_pointer.md", "w", encoding="utf-8") as f:
-    f.write(pointer_content)
-
+    f.write("\n".join(pointer))
 print("✅ magna_index_pointer.md updated.")
 
-# =========================
-# 2️⃣ Ενημέρωση root README.md
-# =========================
-readme_content = "# Culture Key — Agents Overview / Επισκόπηση Πρακτόρων\n\n"
-readme_content += "## Active Agents / Ενεργοί Πράκτορες\n\n"
+# ============= 2) README.md (root) =======================
+readme = [
+    "# Culture Key — Agents Overview / Επισκόπηση Πρακτόρων",
+    "",
+    "## Active Agents / Ενεργοί Πράκτορες",
+    ""
+]
+for a in sorted(agents, key=lambda x: g(x.get("full_name") or x.get("agent") or "", "").lower()):
+    full_name = g(a.get("full_name") or a.get("agent") or "Unknown Agent")
+    version   = g(a.get("version") or "")
+    desc      = g(a.get("description") or "")
+    readme.append(f"- **{full_name}** (v{version}) — {desc}".rstrip())
 
-for agent in sorted(agents, key=lambda x: x["full_name"].lower()):
-    readme_content += f"- **{agent['full_name']}** (v{agent['version']}) — {agent['description']}\n"
-
-readme_content += "\n---\n"
-readme_content += "© Culture Key — Non-Commercial, Ethical AI\n"
-
+readme += ["", "---", "© Culture Key — Non-Commercial, Ethical AI"]
 with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
+    f.write("\n".join(readme))
 print("✅ README.md updated.")
