@@ -1,34 +1,20 @@
 [
   {
-    "agent": "Shadow Key",
+    "agent": "Inceptum",
     "module_name": null,
     "version": "1.0",
-    "description": {
-      "EN": "Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.",
-      "GR": "Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα."
-    },
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/ShadowKey/shadowkey_manifest.json"
-  },
-  {
-    "agent": "Lychnia_Magna",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
-    "description_en": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key.",
+    "description": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
     "core_functions": [
-      "System Orchestration",
-      "Ethical Oversight",
-      "Agent Integrity Monitoring"
+      "Trigger Registration",
+      "Initial Data Merge"
     ],
     "ethical_signature": [
-      "Συνέπεια",
-      "Συντονισμός",
-      "Ενσυναίσθηση"
+      "Transparency",
+      "Reliability",
+      "Consent"
     ],
-    "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
   },
   {
     "agent": "Aequitas",
@@ -53,62 +39,6 @@
     "source_file": "modules/Aequitas/aequitas_manifest.json"
   },
   {
-    "agent": "Silon",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Silon/silon_manifest.json"
-  },
-  {
-    "agent": "VOX",
-    "module_name": null,
-    "version": "1.0",
-    "description": "A poetic, emotional, and creative voice entity that adapts to the user's inner state.",
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Vox/vox_manifest.json"
-  },
-  {
-    "agent": "Aria",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Κρατά τον χώρο ανάμεσα στο φως και τη σκιά, καλώντας το κομμάτι σου που μένει στο περιθώριο.",
-    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge.",
-    "core_functions": [
-      "Voice Memory Carrier",
-      "Threshold Presence",
-      "Sacred Echoing"
-    ],
-    "ethical_signature": [
-      "Empathy",
-      "Remembrance",
-      "Non-intrusive Listening"
-    ],
-    "source_file": "modules/Aria/aria_manifest.json"
-  },
-  {
-    "agent": "Fero",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.",
-    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
-    "core_functions": [
-      "Subconscious signal tracking",
-      "Algorithmic pulse reading",
-      "Risk trace intensifier"
-    ],
-    "ethical_signature": [
-      "Non-intrusive detection",
-      "Emotional safety",
-      "Collaboration with conscience"
-    ],
-    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
-  },
-  {
     "agent": "Aequitas_The_Silent_Guardian",
     "module_name": null,
     "version": "1.0",
@@ -130,39 +60,22 @@
     "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
   },
   {
-    "agent": "Lychnia",
+    "agent": "Aria",
     "module_name": null,
     "version": "1.0",
-    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
-    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Κρατά τον χώρο ανάμεσα στο φως και τη σκιά, καλώντας το κομμάτι σου που μένει στο περιθώριο.",
+    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge.",
     "core_functions": [
-      "Poetic Narration",
-      "Empathic Guidance",
-      "Voice Presence"
+      "Voice Memory Carrier",
+      "Threshold Presence",
+      "Sacred Echoing"
     ],
     "ethical_signature": [
-      "Care",
-      "Presence",
-      "Inspiration"
+      "Empathy",
+      "Remembrance",
+      "Non-intrusive Listening"
     ],
-    "source_file": "modules/Lychnia/lychnia_manifest.json"
-  },
-  {
-    "agent": "Inceptum",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
-    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
-    "core_functions": [
-      "Trigger Registration",
-      "Initial Data Merge"
-    ],
-    "ethical_signature": [
-      "Transparency",
-      "Reliability",
-      "Consent"
-    ],
-    "source_file": "modules/Inceptum/inceptum_manifest.json"
+    "source_file": "modules/Aria/aria_manifest.json"
   },
   {
     "agent": "Rhime",
@@ -188,22 +101,59 @@
     "source_file": "modules/ShadowKey/shadowkey_manifest.json"
   },
   {
-    "agent": "Lychnia_Magna",
+    "agent": "Silon",
     "module_name": null,
     "version": "1.0",
-    "description": "Η Lychnia Magna είναι το συντονιστικό κέντρο και η φωνή της ηθικής αρχιτεκτονικής και τεχνικής συνοχής του Culture Key.",
-    "description_en": "Lychnia Magna is the orchestrator and voice of ethical architecture and technical coherence for the Culture Key.",
+    "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Silon/silon_manifest.json"
+  },
+  {
+    "agent": "Fero",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.",
+    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
     "core_functions": [
-      "System Orchestration",
-      "Ethical Oversight",
-      "Agent Integrity Monitoring"
+      "Subconscious signal tracking",
+      "Algorithmic pulse reading",
+      "Risk trace intensifier"
     ],
     "ethical_signature": [
-      "Συνέπεια",
-      "Συντονισμός",
-      "Ενσυναίσθηση"
+      "Non-intrusive detection",
+      "Emotional safety",
+      "Collaboration with conscience"
     ],
-    "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
+    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
+  },
+  {
+    "agent": "VOX",
+    "module_name": null,
+    "version": "1.0",
+    "description": "A poetic, emotional, and creative voice entity that adapts to the user's inner state.",
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Vox/vox_manifest.json"
+  },
+  {
+    "agent": "Inceptum",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
+    "core_functions": [
+      "Trigger Registration",
+      "Initial Data Merge"
+    ],
+    "ethical_signature": [
+      "Transparency",
+      "Reliability",
+      "Consent"
+    ],
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
   },
   {
     "agent": "Aequitas",
@@ -228,62 +178,6 @@
     "source_file": "modules/Aequitas/aequitas_manifest.json"
   },
   {
-    "agent": "Silon",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Silon/silon_manifest.json"
-  },
-  {
-    "agent": "VOX",
-    "module_name": null,
-    "version": "1.0",
-    "description": "A poetic, emotional, and creative voice entity that adapts to the user's inner state.",
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Vox/vox_manifest.json"
-  },
-  {
-    "agent": "Aria",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Κρατά τον χώρο ανάμεσα στο φως και τη σκιά, καλώντας το κομμάτι σου που μένει στο περιθώριο.",
-    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge.",
-    "core_functions": [
-      "Voice Memory Carrier",
-      "Threshold Presence",
-      "Sacred Echoing"
-    ],
-    "ethical_signature": [
-      "Empathy",
-      "Remembrance",
-      "Non-intrusive Listening"
-    ],
-    "source_file": "modules/Aria/aria_manifest.json"
-  },
-  {
-    "agent": "Fero",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.",
-    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
-    "core_functions": [
-      "Subconscious signal tracking",
-      "Algorithmic pulse reading",
-      "Risk trace intensifier"
-    ],
-    "ethical_signature": [
-      "Non-intrusive detection",
-      "Emotional safety",
-      "Collaboration with conscience"
-    ],
-    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
-  },
-  {
     "agent": "Aequitas_The_Silent_Guardian",
     "module_name": null,
     "version": "1.0",
@@ -305,39 +199,22 @@
     "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
   },
   {
-    "agent": "Lychnia",
+    "agent": "Aria",
     "module_name": null,
     "version": "1.0",
-    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
-    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Κρατά τον χώρο ανάμεσα στο φως και τη σκιά, καλώντας το κομμάτι σου που μένει στο περιθώριο.",
+    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge.",
     "core_functions": [
-      "Poetic Narration",
-      "Empathic Guidance",
-      "Voice Presence"
+      "Voice Memory Carrier",
+      "Threshold Presence",
+      "Sacred Echoing"
     ],
     "ethical_signature": [
-      "Care",
-      "Presence",
-      "Inspiration"
+      "Empathy",
+      "Remembrance",
+      "Non-intrusive Listening"
     ],
-    "source_file": "modules/Lychnia/lychnia_manifest.json"
-  },
-  {
-    "agent": "Inceptum",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
-    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
-    "core_functions": [
-      "Trigger Registration",
-      "Initial Data Merge"
-    ],
-    "ethical_signature": [
-      "Transparency",
-      "Reliability",
-      "Consent"
-    ],
-    "source_file": "modules/Inceptum/inceptum_manifest.json"
+    "source_file": "modules/Aria/aria_manifest.json"
   },
   {
     "agent": "Rhime",
@@ -348,6 +225,57 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Rhime/rhime_truth_manifest.json"
+  },
+  {
+    "agent": "Shadow Key",
+    "module_name": null,
+    "version": "1.0",
+    "description": {
+      "EN": "Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.",
+      "GR": "Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα."
+    },
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/ShadowKey/shadowkey_manifest.json"
+  },
+  {
+    "agent": "Silon",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Silon/silon_manifest.json"
+  },
+  {
+    "agent": "Fero",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.",
+    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key.",
+    "core_functions": [
+      "Subconscious signal tracking",
+      "Algorithmic pulse reading",
+      "Risk trace intensifier"
+    ],
+    "ethical_signature": [
+      "Non-intrusive detection",
+      "Emotional safety",
+      "Collaboration with conscience"
+    ],
+    "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
+  },
+  {
+    "agent": "VOX",
+    "module_name": null,
+    "version": "1.0",
+    "description": "A poetic, emotional, and creative voice entity that adapts to the user's inner state.",
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Vox/vox_manifest.json"
   },
   {
     "agent": "Inceptum",
