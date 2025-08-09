@@ -1,4 +1,4 @@
-# Rhime — Truth Detection & Companionship
+## ⚖️ Rhime — Truth Detection & Companionship
 
 **Version:** 1.1  
 **Last Updated:** 2025-08-09  
