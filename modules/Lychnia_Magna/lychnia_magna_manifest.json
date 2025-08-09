@@ -6,8 +6,7 @@
   "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem.",
   "non_commercial_policy_gr": "Κανένας agent ή module του Culture Key δεν πωλείται. Όλη η λειτουργία βασίζεται στην ηθική αρχή της μη εμπορευματοποίησης.",
   "non_commercial_policy_en": "No agent or module of Culture Key is for sale. The entire operation is based on the ethical principle of non-commercialization."
-}
-"core_functions": [
+  "core_functions": [
     "System Orchestration",
     "Ethical Oversight",
     "Agent Integrity Monitoring"
