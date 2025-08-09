@@ -54,7 +54,7 @@ import os
 import json
 
 # Διαβάζουμε το compiled.json που ήδη παράγει το script
-with open("compiled.json", "r", encoding="utf-8") as f:
+with open("codex_agents_compiled.json", "r", encoding="utf-8") as f:
     compiled_data = json.load(f)
 
 agents = compiled_data.get("agents", [])
