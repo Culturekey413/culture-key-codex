@@ -60,6 +60,24 @@
     "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
   },
   {
+    "agent": "Lychnia",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "core_functions": [
+      "Poetic Narration",
+      "Empathic Guidance",
+      "Voice Presence"
+    ],
+    "ethical_signature": [
+      "Care",
+      "Presence",
+      "Inspiration"
+    ],
+    "source_file": "modules/Lychnia/lychnia_manifest.json"
+  },
+  {
     "agent": "Aria",
     "module_name": null,
     "version": "1.0",
@@ -76,16 +94,6 @@
       "Non-intrusive Listening"
     ],
     "source_file": "modules/Aria/aria_manifest.json"
-  },
-  {
-    "agent": "Rhime",
-    "module_name": null,
-    "version": "1.0",
-    "description": "The Pulse of Truth",
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Rhime/rhime_truth_manifest.json"
   },
   {
     "agent": "Shadow Key",
@@ -217,6 +225,24 @@
     "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
   },
   {
+    "agent": "Lychnia",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "core_functions": [
+      "Poetic Narration",
+      "Empathic Guidance",
+      "Voice Presence"
+    ],
+    "ethical_signature": [
+      "Care",
+      "Presence",
+      "Inspiration"
+    ],
+    "source_file": "modules/Lychnia/lychnia_manifest.json"
+  },
+  {
     "agent": "Aria",
     "module_name": null,
     "version": "1.0",
@@ -233,16 +259,6 @@
       "Non-intrusive Listening"
     ],
     "source_file": "modules/Aria/aria_manifest.json"
-  },
-  {
-    "agent": "Rhime",
-    "module_name": null,
-    "version": "1.0",
-    "description": "The Pulse of Truth",
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Rhime/rhime_truth_manifest.json"
   },
   {
     "agent": "Shadow Key",
