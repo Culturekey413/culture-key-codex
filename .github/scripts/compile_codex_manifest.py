@@ -50,56 +50,75 @@ find_manifest_files())
 
 if __name__ == "__main__":
     main()
-import os, json
-
+import re, json, os
 COMPILED_PATH = "codex_agents_compiled.json"
+README_PATH   = "README.md"
+POINTER_PATH  = "magna_index_pointer.md"
 
-# Φόρτωσε το compiled από το σωστό αρχείο
+# --- load compiled agents (list or dict) ---
 with open(COMPILED_PATH, "r", encoding="utf-8") as f:
-    compiled_data = json.load(f)
+    compiled = json.load(f)
+agents_raw = compiled if isinstance(compiled, list) else compiled.get("agents", [])
 
-# Υποστήριξη και για list και για dict σχήμα
-if isinstance(compiled_data, list):
-    agents = compiled_data
-elif isinstance(compiled_data, dict):
-    agents = compiled_data.get("agents", [])
+# --- de-duplicate by 'agent' or 'full_name' to μην βγαίνουν διπλές γλώσσες ---
+uniq = {}
+for a in agents_raw:
+    key = (a.get("agent") or a.get("full_name") or "").strip().lower()
+    if not key:
+        continue
+    # κράτα την πρώτη πλήρη εγγραφή
+    if key not in uniq:
+        uniq[key] = a
+agents = list(uniq.values())
+
+def g(a, k, default=""):
+    v = a.get(k)
+    return v if v is not None else default
+
+# ---------- 1) build Agents section (clean, δίγλωσσο header) ----------
+section_lines = []
+section_lines.append("")
+for a in sorted(agents, key=lambda x: (g(x,"full_name") or g(x,"agent","")).lower()):
+    full_name = g(a, "full_name") or g(a, "agent", "Unknown Agent")
+    version   = g(a, "version", "")
+    desc      = g(a, "description", "")
+    line = f"- **{full_name}**" + (f" (v{version})" if version else "") + (f" — {desc}" if desc else "")
+    section_lines.append(line)
+section_lines.append("")
+
+generated_block = "\n".join(section_lines)
+
+# ---------- 2) replace ONLY the marked region in README ----------
+if os.path.exists(README_PATH):
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        readme = f.read()
+    start = r"<!-- AGENTS_SECTION_START -->"
+    end   = r"<!-- AGENTS_SECTION_END -->"
+    pattern = re.compile(f"{start}.*?{end}", flags=re.DOTALL)
+    replacement = f"<!-- AGENTS_SECTION_START -->\n<!-- generated: do not edit by hand -->\n{generated_block}\n<!-- AGENTS_SECTION_END -->"
+    if pattern.search(readme):
+        readme = pattern.sub(replacement, readme)
+    else:
+        # αν λείπουν οι markers, μην γράψεις όλο το README· απλώς πρόσθεσέ τους στο τέλος
+        readme += f"\n\n## Active Agents / Ενεργοί Πράκτορες\n{replacement}\n"
+
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(readme)
+    print("✅ README.md (agents section) updated.")
 else:
-    agents = []
+    print("⚠️ README.md not found; skipped.")
 
-def g(v, d=""):
-    return v if v is not None else d
-
-# ============= 1) magna_index_pointer.md =================
+# ---------- 3) regenerate magna_index_pointer.md (ολόκληρο, όχι markers) ----------
 pointer = ["# Magna Index Pointer", "", "## Agents / Πράκτορες", ""]
-for a in sorted(agents, key=lambda x: g(x.get("full_name") or x.get("agent") or "", "").lower()):
-    full_name = g(a.get("full_name") or a.get("agent") or "Unknown Agent")
-    version   = g(a.get("version") or "")
-    desc      = g(a.get("description") or "")
-    # Προσπάθησε να βρεις φάκελο· αν δεν υπάρχει, άστο κενό
-    folder = a.get("agent") or a.get("agent_folder") or ""
-    pointer.append(f"- **{full_name}** (v{version}) — {desc}".rstrip())
-    if folder:
-        pointer.append(f"  Path: `modules/{folder}`")
-    pointer.append("")  # κενή γραμμή ανά item
-
-with open("magna_index_pointer.md", "w", encoding="utf-8") as f:
+for a in sorted(agents, key=lambda x: (g(x,"full_name") or g(x,"agent","")).lower()):
+    full_name = g(a, "full_name") or g(a, "agent", "Unknown Agent")
+    version   = g(a, "version", "")
+    desc      = g(a, "description", "")
+    agent_id  = g(a, "agent", "")
+    pointer.append(f"- **{full_name}**" + (f" (v{version})" if version else "") + (f" — {desc}" if desc else ""))
+    if agent_id:
+        pointer.append(f"  Path: `modules/{agent_id}`")
+    pointer.append("")
+with open(POINTER_PATH, "w", encoding="utf-8") as f:
     f.write("\n".join(pointer))
-print("✅ magna_index_pointer.md updated.")
-
-# ============= 2) README.md (root) =======================
-readme = [
-    "# Culture Key — Agents Overview / Επισκόπηση Πρακτόρων",
-    "",
-    "## Active Agents / Ενεργοί Πράκτορες",
-    ""
-]
-for a in sorted(agents, key=lambda x: g(x.get("full_name") or x.get("agent") or "", "").lower()):
-    full_name = g(a.get("full_name") or a.get("agent") or "Unknown Agent")
-    version   = g(a.get("version") or "")
-    desc      = g(a.get("description") or "")
-    readme.append(f"- **{full_name}** (v{version}) — {desc}".rstrip())
-
-readme += ["", "---", "© Culture Key — Non-Commercial, Ethical AI"]
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write("\n".join(readme))
-print("✅ README.md updated.")
+print("✅ magna_index_pointer.md rebuilt.")
