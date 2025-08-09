@@ -24,6 +24,14 @@
     "type": ""
   },
   {
+    "name": "Lychnia",
+    "agent": "Lychnia",
+    "version": "1.0",
+    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "path": "modules/Lychnia/lychnia_manifest.json",
+    "type": ""
+  },
+  {
     "name": "Aria",
     "agent": "Aria",
     "version": "1.0",
