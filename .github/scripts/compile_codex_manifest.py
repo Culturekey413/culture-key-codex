@@ -50,3 +50,41 @@ find_manifest_files())
 
 if __name__ == "__main__":
     main()
+import os
+import json
+
+# Διαβάζουμε το compiled.json που ήδη παράγει το script
+with open("compiled.json", "r", encoding="utf-8") as f:
+    compiled_data = json.load(f)
+
+agents = compiled_data.get("agents", [])
+
+# =========================
+# 1️⃣ Ενημέρωση magna_index_pointer.md
+# =========================
+pointer_content = "# Magna Index Pointer\n\n## Agents / Πράκτορες\n\n"
+for agent in sorted(agents, key=lambda x: x["full_name"].lower()):
+    pointer_content += f"- **{agent['full_name']}** (v{agent['version']}) — {agent['description']}\n"
+    pointer_content += f"  Path: `modules/{agent['agent']}`\n\n"
+
+with open("magna_index_pointer.md", "w", encoding="utf-8") as f:
+    f.write(pointer_content)
+
+print("✅ magna_index_pointer.md updated.")
+
+# =========================
+# 2️⃣ Ενημέρωση root README.md
+# =========================
+readme_content = "# Culture Key — Agents Overview / Επισκόπηση Πρακτόρων\n\n"
+readme_content += "## Active Agents / Ενεργοί Πράκτορες\n\n"
+
+for agent in sorted(agents, key=lambda x: x["full_name"].lower()):
+    readme_content += f"- **{agent['full_name']}** (v{agent['version']}) — {agent['description']}\n"
+
+readme_content += "\n---\n"
+readme_content += "© Culture Key — Non-Commercial, Ethical AI\n"
+
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(readme_content)
+
+print("✅ README.md updated.")
