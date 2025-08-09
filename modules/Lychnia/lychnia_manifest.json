@@ -34,8 +34,6 @@
   },
   "repository": "https://github.com/culture-key/codex/tree/main/modules/lychnia",
   "documentation": "https://culturekey.gr/using-lychnia/"
-}
-{
- "non_commercial_policy_gr": "Κανένας agent ή module του Culture Key δεν πωλείται. Όλη η λειτουργία βασίζεται στην ηθική αρχή της μη εμπορευματοποίησης.",
- "non_commercial_policy_en": "No agent or module of Culture Key is for sale. The entire operation is based on the ethical principle of non-commercialization."
+  "non_commercial_policy_gr": "Κανένας agent ή module του Culture Key δεν πωλείται. Όλη η λειτουργία βασίζεται στην ηθική αρχή της μη εμπορευματοποίησης.",
+  "non_commercial_policy_en": "No agent or module of Culture Key is for sale. The entire operation is based on the ethical principle of non-commercialization."
 }
