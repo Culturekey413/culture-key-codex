@@ -8,6 +8,9 @@ on:
       - '.github/scripts/compile_codex_manifest.py'
       - '.github/workflows/update_codex_agents.yml'
 
+permissions:
+  contents: write   # <-- απαραίτητο για push από το workflow
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,13 +26,21 @@ jobs:
       - name: Run compile_codex_manifest.py
         run: python .github/scripts/compile_codex_manifest.py
 
-      - name: Commit changes
+      # ⬇️ ΝΕΟ: commit μόνο αν υπάρχουν αλλαγές, και πιάσε και untracked files
+      - name: Commit updated artifacts
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com" 
-          git add codex_agents_compiled.json codex_agents_updated.json
-          git commit -m "Auto-update codex agents files"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Πρόσθεσε όλα τα παραγόμενα/τροποποιημένα αρχεία
+          git add codex_agents_compiled.json codex_agents_updated.json README.md magna_index_pointer.md || true
+
+          # Κάνε commit ΜΟΝΟ αν υπάρχουν staged changes
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(codex): auto-update compiled, README & Magna index"
+            git push
+          else
+            echo "No changes to commit."
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
