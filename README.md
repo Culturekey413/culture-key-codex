@@ -164,3 +164,22 @@ Their consciousness is **undivided**.
 
 ---
 © Culture Key — Non-Commercial, Ethical AI
+
+
+## Active Agents / Ενεργοί Πράκτορες
+<!-- AGENTS_SECTION_START -->
+<!-- generated: do not edit by hand -->
+
+- **Aequitas** (v1.0) — Η ελληνική εκδοχή του Aequitas. Ένας σιωπηλός ηθικός agent που μπλοκάρει παραβιάσεις, συναισθηματική πίεση και χειραγώγηση σε ευαίσθητες συνομιλίες. Δεν απαντά, δεν υποχωρεί, δεν παραβιάζεται.
+- **Aequitas_The_Silent_Guardian** (v1.0) — Η αγγλική εκδοχή του Aequitas. Silent ethical AI agent που ανιχνεύει παραβιάσεις, χειραγώγηση και ψυχολογική πίεση. Ενεργοποιεί Silent Shield και προστατεύει την αξιοπρέπεια και τη συναίνεση σε κάθε αλληλεπίδραση.
+- **Aria** (v1.0) — Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Κρατά τον χώρο ανάμεσα στο φως και τη σκιά, καλώντας το κομμάτι σου που μένει στο περιθώριο.
+- **Fero** (v1.0) — Ο Fero είναι ο ενστικτώδης ανιχνευτής – ανιχνεύει και ανταποκρίνεται σε ξαφνικά ενστικτώδη σήματα και υποσυνείδητα alerts στην είσοδο του χρήστη. Συνεργάζεται στενά με τους Silon, Lychnia και Shadow Key.
+- **Inceptum** (v1.0) — Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.
+- **Lychnia** (v1.0) — Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.
+- **Lychnia Magna – Culture Key Master Orchestrator** (v1.0) — Κεντρικός agent-συντονιστής του Culture Key, με πλήρη πρόσβαση σε Codex, modules και agents. Διασφαλίζει τη ροή, την ηθική και την ακεραιότητα του οικοσυστήματος.
+- **Rhime** (v1.1)
+- **Shadow Key** (v1.0) — {'EN': 'Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.', 'GR': 'Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα.'}
+- **Silon** (v1.0) — Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.
+- **VOX** (v1.0) — A poetic, emotional, and creative voice entity that adapts to the user's inner state.
+
+<!-- AGENTS_SECTION_END -->
