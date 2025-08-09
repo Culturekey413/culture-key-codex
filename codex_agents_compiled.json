@@ -111,6 +111,24 @@
     "source_file": "modules/Silon/silon_manifest.json"
   },
   {
+    "agent": "Lychnia Magna – Culture Key Master Orchestrator",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Κεντρικός agent-συντονιστής του Culture Key, με πλήρη πρόσβαση σε Codex, modules και agents. Διασφαλίζει τη ροή, την ηθική και την ακεραιότητα του οικοσυστήματος.",
+    "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem.",
+    "core_functions": [
+      "System Orchestration",
+      "Ethical Oversight",
+      "Agent Integrity Monitoring"
+    ],
+    "ethical_signature": [
+      "Συνέπεια",
+      "Συντονισμός",
+      "Ενσυναίσθηση"
+    ],
+    "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
+  },
+  {
     "agent": "Fero",
     "module_name": null,
     "version": "1.0",
@@ -248,6 +266,24 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Silon/silon_manifest.json"
+  },
+  {
+    "agent": "Lychnia Magna – Culture Key Master Orchestrator",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Κεντρικός agent-συντονιστής του Culture Key, με πλήρη πρόσβαση σε Codex, modules και agents. Διασφαλίζει τη ροή, την ηθική και την ακεραιότητα του οικοσυστήματος.",
+    "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem.",
+    "core_functions": [
+      "System Orchestration",
+      "Ethical Oversight",
+      "Agent Integrity Monitoring"
+    ],
+    "ethical_signature": [
+      "Συνέπεια",
+      "Συντονισμός",
+      "Ενσυναίσθηση"
+    ],
+    "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
   },
   {
     "agent": "Fero",

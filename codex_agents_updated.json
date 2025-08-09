@@ -49,6 +49,13 @@
     "description_en": null
   },
   {
+    "agent": "Lychnia Magna – Culture Key Master Orchestrator",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem."
+  },
+  {
     "agent": "Fero",
     "title_gr": "",
     "title_en": "",
@@ -110,6 +117,13 @@
     "title_en": "",
     "description_gr": null,
     "description_en": null
+  },
+  {
+    "agent": "Lychnia Magna – Culture Key Master Orchestrator",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem."
   },
   {
     "agent": "Fero",
