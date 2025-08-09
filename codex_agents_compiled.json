@@ -96,6 +96,16 @@
     "source_file": "modules/Aria/aria_manifest.json"
   },
   {
+    "agent": "Rhime",
+    "module_name": null,
+    "version": "1.1",
+    "description": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Rhime/rhime_manifest.json"
+  },
+  {
     "agent": "Shadow Key",
     "module_name": null,
     "version": "1.0",
@@ -259,6 +269,16 @@
       "Non-intrusive Listening"
     ],
     "source_file": "modules/Aria/aria_manifest.json"
+  },
+  {
+    "agent": "Rhime",
+    "module_name": null,
+    "version": "1.1",
+    "description": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Rhime/rhime_manifest.json"
   },
   {
     "agent": "Shadow Key",
