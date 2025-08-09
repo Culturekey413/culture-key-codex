@@ -4,6 +4,8 @@
   "version": "1.0",
   "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
   "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+  "non_commercial_policy_gr": "Κανένας agent ή module του Culture Key δεν πωλείται. Όλη η λειτουργία βασίζεται στην ηθική αρχή της μη εμπορευματοποίησης.",
+  "non_commercial_policy_en": "No agent or module of Culture Key is for sale. The entire operation is based on the ethical principle of non-commercialization.",
   "core_functions": [
     "Poetic Narration", 
     "Empathic Guidance",
@@ -34,6 +36,5 @@
   },
   "repository": "https://github.com/culture-key/codex/tree/main/modules/lychnia",
   "documentation": "https://culturekey.gr/using-lychnia/"
-  "non_commercial_policy_gr": "Κανένας agent ή module του Culture Key δεν πωλείται. Όλη η λειτουργία βασίζεται στην ηθική αρχή της μη εμπορευματοποίησης.",
-  "non_commercial_policy_en": "No agent or module of Culture Key is for sale. The entire operation is based on the ethical principle of non-commercialization.",
-}
+  }
+
