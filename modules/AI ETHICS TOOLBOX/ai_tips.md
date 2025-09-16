@@ -1,4 +1,4 @@
-AI TIP #2 – ChatGPT σωστή χρήση / ChatGPT done right
+AI TIPS #1 – ChatGPT σωστή χρήση / ChatGPT done right
 
 Δεν είναι μαγικό ραβδί. Είναι συνεργάτης.
 Όσο πιο καθαρά του μιλάς, τόσο καλύτερα σε βοηθάει.
