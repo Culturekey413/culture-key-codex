@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poster Kit v3.4 — Merge Stable 1.3 (Canvas Fallback + In-Poster Editing)</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Noto+Sans+Greek:wght@400;600;800&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --w:1080px; --h:1920px;
+    --bg:#fff8e7; --ink:#222; --accent:#6b46c1;
+    --grbg:#eef6ff; --enbg:#f2fff2; --frame:#eadfcc;
+    --img-opacity:1; --img-top:25%; --img-width:60%; --img-radius:10px;
+  }
+  @page { size: A4 portrait; margin: 10mm; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:#faf7f2;color:#222}
+  header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eadfcc;padding:10px 14px;z-index:10}
+  header h1{margin:0;font-size:16px}
+  .wrap{display:grid;grid-template-columns:380px 1fr;gap:16px;padding:14px;max-width:1500px;margin:0 auto}
+  @media(max-width:1100px){.wrap{grid-template-columns:1fr}}
+  .panel{background:#fff;border:1px solid #eadfcc;border-radius:14px;box-shadow:0 1px 0 #ede3d6;padding:12px}
+  .panel h2{font-size:12px;text-transform:uppercase;color:#6b5747;letter-spacing:.3px;margin:6px 0 10px}
+  label{font-size:12px;color:#6b5747;display:block;margin:8px 0 4px}
+  input[type=text], textarea, select, input[type=color], input[type=file], input[type=number]{width:100%;padding:8px 10px;border:1px solid #e0d5c6;border-radius:10px;background:#fff}
+  textarea{min-height:70px;resize:vertical}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .btn{border:0;border-radius:10px;background:#111827;color:#fff;padding:9px 12px;font-weight:600;cursor:pointer}
+  .btn.ghost{background:#fff;color:#111827;border:1px solid #d9cdbd}
+  .stage{display:flex;justify-content:center;align-items:center}
+  .poster{
+    width:var(--w); height:var(--h);
+    position:relative; overflow:hidden; border-radius:18px;
+    background:var(--bg); color:var(--ink);
+    box-shadow:0 10px 30px rgba(60,40,30,.12), inset 0 0 0 1px var(--frame);
+    padding:72px 64px;
+  }
+  .header{font-weight:900;font-size:64px;text-align:center;color:var(--accent);margin:0 0 12px 0;font-family:'Inter','Noto Sans Greek',system-ui,Arial,sans-serif}
+  .sub{font-weight:700;font-size:40px;text-align:center;margin:0 0 24px 0;white-space:pre-line}
+  .block{border-radius:14px;padding:18px 20px;margin:12px 0;border:var(--blk-border,0) solid var(--frame)}
+  .gr{background:var(--grbg)}
+  .en{background:var(--enbg)}
+  .gr p,.en p{margin:8px 0;line-height:1.35}
+  #grText,#enText{white-space:pre-line;padding:12px 14px;}
+  .footer{position:absolute;left:64px;right:64px;bottom:48px;opacity:.95;text-align:center;white-space:pre-line}
+  .note{position:absolute;top:18px;right:18px;font-size:12px;color:#8a7c6e}
+  /* user image */
+  #userImg{position:absolute;left:50%;transform:translateX(-50%);opacity:var(--img-opacity,1);top:var(--img-top,25%);width:var(--img-width,60%);border-radius:var(--img-radius,10px);box-shadow:0 8px 26px rgba(0,0,0,.12)}
+  /* doodles */
+  .doodle{position:absolute;user-select:none;pointer-events:none;opacity:.9}
+  #d1{top:26px;left:26px}
+  #d2{top:26px;right:26px}
+  #d3{bottom:26px;left:26px}
+  #d4{bottom:26px;right:26px}
+
+  .dropzone{border:2px dashed #d9cdbd;border-radius:12px;padding:10px;text-align:center;color:#6b5747;font-size:12px;margin-top:8px}
+  .dropzone.dragover{background:#fff8ef;border-color:#6b46c1;color:#111827}
+  .tip{font-size:12px;color:#8a7c6e;margin-top:6px}
+
+  /* Watermark */
+  #watermark{
+    position:absolute; left:24px; bottom:24px; right:auto; top:auto;
+    font-size:14px; font-weight:600; color:rgba(0,0,0,.45);
+    letter-spacing:.3px; user-select:none; pointer-events:none;
+    text-shadow:0 1px 2px rgba(0,0,0,.15);
+    white-space:pre-wrap; max-width:70%;
+  }
+  .wm-hidden{display:none !important}
+</style>
+</head>
+<body>
+<header><h1>Poster Kit v3.4 — Merge Stable 1.3</h1></header>
+
+<div class="wrap">
+  <section class="panel">
+
+    <h2>Header</h2>
+    <label>Title</label><input id="hdr" type="text" value="AI ETHICS">
+    <label>Subtitle</label><input id="sub" type="text" value="✦ MANIFESTO ✦">
+    <div class="row">
+      <div><label>Accent</label><input id="accent" type="color" value="#6b46c1"></div>
+      <div><label>Poster BG</label><input id="bg" type="color" value="#fff8e7"></div>
+    </div>
+
+    <h2>Greek Block</h2>
+    <label>Text (GR)</label><textarea id="gr">Pinned ✦ Το μανιφέστο μας
+
+Το Culture Key – AI TRENDS ξεκινά με αξίες:
+🔑 Ηθική  🔑 Εμπιστοσύνη  🔑 Διαφάνεια</textarea>
+    <div class="row3">
+      <div><label>Font</label>
+        <select id="grFont">
+          <option value="serif">Serif</option>
+          <option value="sans" selected>Sans</option>
+          <option value="mono">Mono</option>
+          <option value="comic">Comic</option>
+        </select></div>
+      <div><label>Block BG</label><input id="grBg" type="color" value="#eef6ff"></div>
+      <div><label>Align</label><select id="grAlign"><option>left</option><option selected>center</option><option>right</option></select></div>
+    </div>
+    <div class="row3">
+      <div><label>Border size</label><input type="range" id="grBorder" min="0" max="8" value="0"></div>
+      <div><label>Text color</label><input id="grColor" type="color" value="#1b1b1b"></div>
+      <div><label>Font size</label><input id="grSize" type="range" min="20" max="64" value="36"></div>
+    </div>
+
+    <h2>English Block</h2>
+    <label>Text (EN)</label><textarea id="en">Pinned ✦ Our Manifesto
+
+Culture Key – AI TRENDS begins with values:
+🔑 Ethics  🔑 Trust  🔑 Transparency</textarea>
+    <div class="row3">
+      <div><label>Font</label>
+        <select id="enFont">
+          <option value="serif">Serif</option>
+          <option value="sans" selected>Sans</option>
+          <option value="mono">Mono</option>
+          <option value="comic">Comic</option>
+        </select></div>
+      <div><label>Block BG</label><input id="enBg" type="color" value="#f2fff2"></div>
+      <div><label>Align</label><select id="enAlign"><option>left</option><option selected>center</option><option>right</option></select></div>
+    </div>
+    <div class="row3">
+      <div><label>Border size</label><input type="range" id="enBorder" min="0" max="8" value="0"></div>
+      <div><label>Text color</label><input id="enColor" type="color" value="#1b1b1b"></div>
+      <div><label>Font size</label><input id="enSize" type="range" min="20" max="64" value="36"></div>
+    </div>
+
+    <h2>Footer</h2>
+    <label>Hashtags</label><input id="foot" type="text" value="#AIETHICS #CultureKey #AITRENDS #Manifesto">
+    <div class="row">
+      <button class="btn" id="toggleSize">Switch: Story/Feed</button>
+      <button class="btn ghost" id="print">Export PDF</button>
+      <button class="btn" id="exportPng">Export PNG</button>
+    </div>
+    <div class="row">
+      <button class="btn" id="lockBtn">🔒 Lock Text</button>
+      <span class="tip">Κλειδώνει/ξεκλειδώνει την επεξεργασία πάνω στο poster.</span>
+    </div>
+
+    <h2>Typography</h2>
+    <div class="row3">
+      <div><label>Title size (px)</label><input id="titleSize" type="range" min="24" max="120" value="64"></div>
+      <div><label>Subtitle size (px)</label><input id="subSize" type="range" min="18" max="72" value="40"></div>
+      <div><label>Footer size (px)</label><input id="footSize" type="range" min="12" max="48" value="22"></div>
+    </div>
+
+    <h2>Image</h2>
+    <label>Upload image (optional)</label><input id="imgFile" type="file" accept="image/*">
+    <div id="dropzone" class="dropzone">Drag & drop image here (or use the button above)</div>
+    <div class="row" style="margin-top:8px">
+      <button class="btn ghost" id="clearImg" disabled>Clear image</button>
+    </div>
+    <div class="row3">
+      <div><label>Size (%)</label><input id="imgSize" type="range" min="20" max="100" value="60"></div>
+      <div><label>Top (%)</label><input id="imgTop" type="range" min="5" max="80" value="25"></div>
+      <div><label>Opacity</label><input id="imgOpacity" type="range" min="20" max="100" value="100"></div>
+    </div>
+    <div class="row">
+      <div><label>Rounded corners</label><input id="imgRadius" type="range" min="0" max="40" value="10"></div>
+      <div><button class="btn ghost" id="toggleImg">Show/Hide</button></div>
+    </div>
+
+    <h2>Watermark</h2>
+    <label>Watermark text</label><input id="wmText" type="text" value="© Culture Key — AI Ethics Toolbox">
+    <div class="row3">
+      <div><label>Color</label><input id="wmColor" type="color" value="#000000"></div>
+      <div><label>Opacity (%)</label><input id="wmOpacity" type="range" min="0" max="100" value="45"></div>
+      <div><label>Size (px)</label><input id="wmSize" type="number" min="8" max="64" value="14"></div>
+    </div>
+    <div class="row3">
+      <div><label>Position</label>
+        <select id="wmPos">
+          <option value="bl" selected>Bottom-Left</option>
+          <option value="br">Bottom-Right</option>
+          <option value="tl">Top-Left</option>
+          <option value="tr">Top-Right</option>
+          <option value="center">Center</option>
+        </select>
+      </div>
+      <div><label>Margin X (px)</label><input id="wmMx" type="number" min="0" max="200" value="24"></div>
+      <div><label>Margin Y (px)</label><input id="wmMy" type="number" min="0" max="200" value="24"></div>
+    </div>
+    <div class="row">
+      <button class="btn ghost" id="wmToggle">Show/Hide</button>
+      <button class="btn ghost" id="wmClear">Clear watermark</button>
+    </div>
+
+    <h2>Doodles / Icons</h2>
+    <div class="row3">
+      <div><label>Top-Left</label><select id="d1Sel"><option value="">None</option><option>✦</option><option>★</option><option>🔑</option><option>💡</option><option>☕</option></select></div>
+      <div><label>Top-Right</label><select id="d2Sel"><option value="">None</option><option>✦</option><option>★</option><option>🔑</option><option>💡</option><option>☕</option></select></div>
+      <div><label>Bottom-Left</label><select id="d3Sel"><option value="">None</option><option>✦</option><option>★</option><option>🔑</option><option>💡</option><option>☕</option></select></div>
+    </div>
+    <div class="row3">
+      <div><label>Bottom-Right</label><select id="d4Sel"><option value="">None</option><option>✦</option><option>★</option><option>🔑</option><option>💡</option><option>☕</option></select></div>
+      <div><label>Icon size (px)</label><input id="dSize" type="range" min="16" max="96" value="42"></div>
+      <div><label>Frame stroke</label><input id="frameColor" type="color" value="#eadfcc"></div>
+    </div>
+
+  </section>
+
+  <section class="panel stage">
+    <div class="poster" id="poster">
+      <div class="note">Poster Kit v3.4</div>
+      <img id="userImg" style="display:none"/>
+      <span class="doodle" id="d1"></span>
+      <span class="doodle" id="d2"></span>
+      <span class="doodle" id="d3"></span>
+      <span class="doodle" id="d4"></span>
+      <h1 class="header" id="hTitle" contenteditable="true">AI ETHICS</h1>
+      <h2 class="sub" id="hSub" contenteditable="true">✦ MANIFESTO ✦</h2>
+      <div class="block gr" id="grBlock"><div id="grText" contenteditable="true"></div></div>
+      <div class="block en" id="enBlock"><div id="enText" contenteditable="true"></div></div>
+      <div class="footer" id="footText" contenteditable="true">#AIETHICS #CultureKey #AITRENDS #Manifesto</div>
+      <div id="watermark">© Culture Key — AI Ethics Toolbox</div>
+    </div>
+  </section>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+function fontCSS(kind){switch(kind){
+  case 'serif':return "Georgia, 'Times New Roman', serif";
+  case 'mono':return "ui-monospace, SFMono-Regular, Menlo, Monaco, monospace";
+  case 'comic':return "'Comic Neue','Comic Sans MS','Comic Neue',cursive";
+  default:return "'Noto Sans Greek', Inter, system-ui, Arial, sans-serif";
+}}
+function apply(){
+  document.documentElement.style.setProperty('--bg', $('bg').value);
+  document.documentElement.style.setProperty('--accent', $('accent').value);
+  document.documentElement.style.setProperty('--grbg', $('grBg').value);
+  document.documentElement.style.setProperty('--enbg', $('enBg').value);
+  document.documentElement.style.setProperty('--frame', $('frameColor').value);
+
+  $('hTitle').textContent = $('hdr').value || 'AI ETHICS';
+  $('hSub').textContent = $('sub').value || '';
+  $('grText').style.fontFamily = fontCSS($('grFont').value);
+  $('enText').style.fontFamily = fontCSS($('enFont').value);
+  $('grText').style.color = $('grColor').value;
+  $('enText').style.color = $('enColor').value;
+  $('grBlock').style.setProperty('--blk-border', $('grBorder').value);
+  $('enBlock').style.setProperty('--blk-border', $('enBorder').value);
+
+  $('grText').style.textAlign = $('grAlign').value;
+  $('enText').style.textAlign = $('enAlign').value;
+
+  $('grText').style.fontSize = ($('grSize').value||36)+'px';
+  $('enText').style.fontSize = ($('enSize').value||36)+'px';
+
+  // header/sub/footer sizes
+  const tSz = parseInt(($('titleSize')&&$('titleSize').value)||64,10);
+  const sSz = parseInt(($('subSize')&&$('subSize').value)||40,10);
+  const fSz = parseInt(($('footSize')&&$('footSize').value)||22,10);
+  $('hTitle').style.fontSize = tSz + 'px';
+  $('hSub').style.fontSize = sSz + 'px';
+  $('footText').style.fontSize = fSz + 'px';
+
+  $('footText').textContent = $('foot').value;
+
+  // doodles
+  const size = $('dSize').value+'px';
+  ['d1','d2','d3','d4'].forEach((id,i)=>{
+    const which = $(['d1Sel','d2Sel','d3Sel','d4Sel'][i]).value;
+    const el=$(id); el.textContent = which; el.style.fontSize=size;
+    el.style.display = which ? 'block':'none';
+  });
+
+  // content lines — keep newlines from textareas
+  function renderText(el, text){
+    const norm = (text||'').replace(/\\r\\n/g, '\\n');
+    el.textContent = norm;
+  }
+  renderText($('grText'), $('gr').value);
+  renderText($('enText'), $('en').value);
+
+  // watermark
+  const wm = $('watermark');
+  const txt = $('wmText').value;
+  wm.textContent = txt;
+  const op = Math.max(0, Math.min(1, parseInt($('wmOpacity').value||45,10)/100));
+  wm.style.color = $('wmColor').value;
+  wm.style.opacity = op.toString();
+  wm.style.fontSize = (parseInt($('wmSize').value||14,10)) + 'px';
+
+  // position
+  const pos = $('wmPos').value;
+  const mx = parseInt($('wmMx').value||24,10);
+  const my = parseInt($('wmMy').value||24,10);
+  wm.style.left = 'auto'; wm.style.right='auto'; wm.style.top='auto'; wm.style.bottom='auto'; wm.style.transform='none';
+  if(pos==='bl'){ wm.style.left = mx+'px'; wm.style.bottom = my+'px'; }
+  else if(pos==='br'){ wm.style.right = mx+'px'; wm.style.bottom = my+'px'; }
+  else if(pos==='tl'){ wm.style.left = mx+'px'; wm.style.top = my+'px'; }
+  else if(pos==='tr'){ wm.style.right = mx+'px'; wm.style.top = my+'px'; }
+  else { wm.style.left = '50%'; wm.style.top = '50%'; wm.style.transform = 'translate(-50%,-50%)'; }
+}
+['hdr','sub','accent','bg','gr','grFont','grBg','grAlign','grColor','grBorder','grSize','en','enFont','enBg','enAlign','enColor','enBorder','enSize','foot','d1Sel','d2Sel','d3Sel','d4Sel','dSize','frameColor','wmText','wmColor','wmOpacity','wmSize','wmPos','wmMx','wmMy','titleSize','subSize','footSize'].forEach(id=>$(id).addEventListener('input',apply));
+
+// Sync poster edits back to side textareas
+// In-poster editing for header/sub/footer -> sync to inputs
+;[['hTitle','hdr'],['hSub','sub'],['footText','foot']].forEach(([elId,inputId])=>{
+  const el=$(elId), inp=$(inputId);
+  if(el && inp){
+    el.addEventListener('input', ()=>{
+      inp.value = el.textContent || '';
+    });
+    el.addEventListener('keydown', (e)=>{
+      if(e.key==='Enter' && elId!=='footText' && !e.shiftKey){
+        // For headers, simple line break (kept) but prevent creating <div>
+        document.execCommand('insertLineBreak');
+        e.preventDefault();
+      }
+    });
+  }
+});
+
+;['grText','enText'].forEach((id,i)=>{
+  const el=$(id);
+  const ta = i===0 ? $('gr') : $('en');
+  if(el && ta){
+    el.addEventListener('input', ()=>{
+      ta.value = el.textContent || '';
+    });
+    el.addEventListener('keydown', (e)=>{
+      if(e.key==='Enter' && !e.shiftKey){
+        document.execCommand('insertLineBreak');
+        e.preventDefault();
+      }
+    });
+  }
+});
+
+
+// Lock / Unlock text editing
+let __locked = false;
+function setLock(state){
+  __locked = !!state;
+  const fields = ['hTitle','hSub','grText','enText','footText'];
+  fields.forEach(id=>{
+    const el = $(id);
+    if(!el) return;
+    el.setAttribute('contenteditable', __locked ? 'false' : 'true');
+    el.style.outline = __locked ? 'none' : '';
+  });
+  const btn = $('lockBtn');
+  if(btn) btn.textContent = __locked ? '🔓 Unlock Text' : '🔒 Lock Text';
+}
+// Button toggle
+(function(){
+  const btn = $('lockBtn');
+  if(!btn) return;
+  btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    setLock(!__locked);
+  });
+})();
+
+// image controls
+$('imgFile').addEventListener('change', e=>{
+  const f=e.target.files[0]; if(!f) return;
+  const fr=new FileReader();
+  fr.onload=ev=>{ $('userImg').src=ev.target.result; $('userImg').style.display='block'; $('clearImg').disabled=false; };
+  fr.readAsDataURL(f);
+});
+$('imgSize').addEventListener('input', e=>{
+  document.documentElement.style.setProperty('--img-width', e.target.value+'%');
+});
+$('imgTop').addEventListener('input', e=>{
+  document.documentElement.style.setProperty('--img-top', e.target.value+'%');
+});
+$('imgOpacity').addEventListener('input', e=>{
+  document.documentElement.style.setProperty('--img-opacity', (e.target.value/100).toString());
+});
+$('imgRadius').addEventListener('input', e=>{
+  document.documentElement.style.setProperty('--img-radius', e.target.value+'px');
+});
+$('toggleImg').addEventListener('click', e=>{
+  e.preventDefault();
+  const im=$('userImg'); im.style.display = (im.style.display==='none'?'block':'none');
+});
+
+$('toggleSize').addEventListener('click', ()=>{
+  const cs=getComputedStyle(document.documentElement);
+  const h=cs.getPropertyValue('--h').trim();
+  if(h==='1920px'){ document.documentElement.style.setProperty('--w','1080px'); document.documentElement.style.setProperty('--h','1350px'); }
+  else { document.documentElement.style.setProperty('--w','1080px'); document.documentElement.style.setProperty('--h','1920px'); }
+});
+
+$('print').addEventListener('click', ()=>{ window.print(); });
+
+// Export PNG with foreignObject (if supported), fallback to Canvas renderer
+function roundedRect(ctx, x, y, w, h, r){
+  const rr = Math.max(0, r||0);
+  ctx.beginPath();
+  ctx.moveTo(x+rr, y);
+  ctx.arcTo(x+w, y, x+w, y+h, rr);
+  ctx.arcTo(x+w, y+h, x, y+h, rr);
+  ctx.arcTo(x, y+h, x, y, rr);
+  ctx.arcTo(x, y, x+w, y, rr);
+  ctx.closePath();
+}
+function drawTextBlock(ctx, el, scale){
+  const cs = getComputedStyle(el);
+  const rect = el.getBoundingClientRect();
+  const parentRect = $('poster').getBoundingClientRect();
+  const x = (rect.left - parentRect.left) * scale;
+  const y = (rect.top - parentRect.top) * scale;
+  const w = rect.width * scale;
+  const h = rect.height * scale;
+  let bg = cs.backgroundColor;
+  if(bg && bg!=='rgba(0, 0, 0, 0)' && bg!=='transparent'){
+    ctx.fillStyle = bg;
+    roundedRect(ctx, x, y, w, h, 14*scale);
+    ctx.fill();
+  }
+  let content = el.querySelector('div') || el;
+  const ccs = getComputedStyle(content);
+  const text = content.textContent || '';
+  const lines = text.replace(/\\r\\n/g,'\\n').split('\\n');
+  const lh = parseFloat(ccs.lineHeight) || (parseFloat(ccs.fontSize)*1.35);
+  const contentRect = content.getBoundingClientRect();
+  let y0 = (contentRect.top - parentRect.top) * scale + (parseFloat(ccs.paddingTop)||0);
+  const cw = contentRect.width * scale;
+  ctx.fillStyle = ccs.color || '#000';
+  ctx.font = `${ccs.fontWeight} ${parseFloat(ccs.fontSize)*scale}px ${ccs.fontFamily}`;
+  ctx.textAlign = ccs.textAlign || 'left';
+  ctx.textBaseline = 'top';
+  lines.forEach(line=>{
+    let tx = (contentRect.left - parentRect.left) * scale + (parseFloat(ccs.paddingLeft)||0);
+    if(ctx.textAlign==='center'){ tx = (contentRect.left - parentRect.left)*scale + cw/2; }
+    if(ctx.textAlign==='right' || ctx.textAlign==='end'){ tx = (contentRect.left - parentRect.left)*scale + cw - (parseFloat(ccs.paddingRight)||0); }
+    ctx.fillText(line, tx, y0);
+    y0 += lh*scale;
+  });
+}
+async function exportWithCanvas(){
+  const poster = $('poster');
+  const root = document.documentElement;
+  const w = parseInt(getComputedStyle(root).getPropertyValue('--w'));
+  const h = parseInt(getComputedStyle(root).getPropertyValue('--h'));
+  const rect = poster.getBoundingClientRect();
+  const scale = w / rect.width;
+
+  apply();
+  try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch(e){}
+
+  const c = document.createElement('canvas'); c.width=w; c.height=h;
+  const cx = c.getContext('2d', {alpha:false});
+
+  const bg = getComputedStyle(root).getPropertyValue('--bg').trim() || '#ffffff';
+  cx.fillStyle = bg; cx.fillRect(0,0,w,h);
+
+  const im = $('userImg');
+  if(im && im.style.display!=='none' && im.src){
+    const imr = im.getBoundingClientRect();
+    const x = (imr.left - rect.left) * scale;
+    const y = (imr.top - rect.top) * scale;
+    const iw = imr.width * scale;
+    const ih = imr.height * scale;
+    const rad = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--img-radius'))||0;
+    cx.save();
+    roundedRect(cx, x, y, iw, ih, rad*scale);
+    cx.clip();
+    try { cx.drawImage(im, x, y, iw, ih); } catch(e) {}
+    cx.restore();
+  }
+
+  ['d1','d2','d3','d4'].forEach(id=>{
+    const d = $(id); if(!d || d.style.display==='none' || !d.textContent) return;
+    const r = d.getBoundingClientRect();
+    const ds = getComputedStyle(d);
+    cx.fillStyle = ds.color || '#000';
+    cx.font = `${ds.fontWeight||700} ${parseFloat(ds.fontSize)*scale}px ${ds.fontFamily||'Inter, Arial'}`;
+    cx.textAlign = 'left'; cx.textBaseline='top';
+    const x = (r.left - rect.left) * scale;
+    const y = (r.top - rect.top) * scale;
+    cx.fillText(d.textContent, x, y);
+  });
+
+  [['hTitle','header'],['hSub','sub']].forEach(([id,cls])=>{
+    const el=$(id); if(!el) return;
+    const r = el.getBoundingClientRect();
+    const cs = getComputedStyle(el);
+    const x = (r.left - rect.left) * scale;
+    const y = (r.top - rect.top) * scale;
+    const w2 = r.width * scale;
+    cx.fillStyle = cs.color || '#000';
+    cx.font = `${cs.fontWeight||800} ${parseFloat(cs.fontSize)*scale}px ${cs.fontFamily}`;
+    cx.textAlign = 'center'; cx.textBaseline='top';
+    cx.fillText(el.textContent||'', x + w2/2, y);
+  });
+
+  ['grBlock','enBlock'].forEach(id=>{
+    const blk = $(id); if(!blk) return;
+    const br = blk.getBoundingClientRect();
+    const bcs = getComputedStyle(blk);
+    const bx = (br.left - rect.left) * scale;
+    const by = (br.top - rect.top) * scale;
+    const bw = br.width * scale;
+    const bh = br.height * scale;
+    cx.fillStyle = bcs.backgroundColor || 'transparent';
+    roundedRect(cx, bx, by, bw, bh, 14*scale);
+    cx.fill();
+    const border = parseFloat(blk.style.getPropertyValue('--blk-border')||0);
+    if(border>0){
+      cx.lineWidth = border*scale;
+      cx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--frame') || '#eadfcc';
+      roundedRect(cx, bx, by, bw, bh, 14*scale);
+      cx.stroke();
+    }
+    drawTextBlock(cx, blk, scale);
+  });
+
+  const foot = $('footText'); if(foot){
+    const fr = foot.getBoundingClientRect();
+    const fcs = getComputedStyle(foot);
+    cx.fillStyle = fcs.color || '#000';
+    cx.font = `${fcs.fontWeight||600} ${parseFloat(fcs.fontSize||'24')*scale}px ${fcs.fontFamily||'Inter'}`;
+    cx.textAlign = 'center'; cx.textBaseline='top';
+    const x = (fr.left - rect.left) * scale + (fr.width*scale)/2;
+    const y = (fr.top - rect.top) * scale;
+    cx.fillText(foot.textContent||'', x, y);
+  }
+
+  const wm = $('watermark');
+  if(wm && !wm.classList.contains('wm-hidden') && (wm.textContent||'').length){
+    const wr = wm.getBoundingClientRect();
+    const wcs = getComputedStyle(wm);
+    cx.globalAlpha = parseFloat(wcs.opacity)||0.45;
+    cx.fillStyle = wcs.color || '#000';
+    cx.font = `${wcs.fontWeight||600} ${parseFloat(wcs.fontSize)*scale}px ${wcs.fontFamily||'Inter'}`;
+    cx.textAlign = 'left'; cx.textBaseline='top';
+    const x = (wr.left - rect.left) * scale;
+    const y = (wr.top - rect.top) * scale;
+    cx.fillText(wm.textContent, x, y);
+    cx.globalAlpha = 1;
+  }
+
+  return await new Promise((res)=>{
+    c.toBlob((blob)=>{
+      if(!blob){ res(null); return; }
+      const a = document.createElement('a');
+      a.download = 'poster-v3.4.png';
+      a.href = URL.createObjectURL(blob);
+      a.click();
+      setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+      res(true);
+    }, 'image/png');
+  });
+}
+
+$('exportPng').addEventListener('click', async ()=>{
+  let worked = false;
+  try {
+    const poster = $('poster');
+    const w = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--w'));
+    const h = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--h'));
+    apply();
+    try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch(e){}
+    const rootStyles = getComputedStyle(document.documentElement);
+    const cssVars = Array.from(rootStyles).filter(k => k.startsWith('--')).map(k => `${k}:${rootStyles.getPropertyValue(k).trim()}`).join(';');
+    poster.setAttribute('style', (poster.getAttribute('style')||'') + ';' + cssVars);
+    const styleEl = document.querySelector('head style');
+    const criticalCSS = styleEl ? styleEl.textContent : '';
+    const clone = poster.cloneNode(true);
+    const xhtml = `<div xmlns="http://www.w3.org/1999/xhtml"><style>${criticalCSS}</style>${clone.outerHTML}</div>`;
+    const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}'><foreignObject width='100%' height='100%'>${xhtml}</foreignObject></svg>`;
+    const svgBlob = new Blob([svg], {type:'image/svg+xml;charset=utf-8'});
+    const url = URL.createObjectURL(svgBlob);
+    worked = await new Promise((resolve)=>{
+      const img = new Image();
+      img.onload = () => {
+        const c = document.createElement('canvas'); c.width=w; c.height=h;
+        const cx = c.getContext('2d', { alpha: false });
+        const bg = getComputedStyle(document.documentElement).getPropertyValue('--bg') || '#ffffff';
+        cx.fillStyle = bg; cx.fillRect(0,0,w,h);
+        cx.drawImage(img, 0, 0);
+        URL.revokeObjectURL(url);
+        c.toBlob((blob)=>{
+          if(!blob){ resolve(false); return; }
+          const a = document.createElement('a');
+          a.download = 'poster-v3.4.png';
+          a.href = URL.createObjectURL(blob);
+          a.click();
+          setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+          resolve(true);
+        }, 'image/png');
+      };
+      img.onerror = ()=>{ resolve(false); };
+      img.src = url;
+    });
+  } catch(e){ worked = false; }
+  if(!worked){
+    const ok = await exportWithCanvas();
+    if(!ok){
+      alert('PNG export still failed on this browser. Δοκίμασε Export PDF για τώρα — και στείλε μου ποιον browser/σύστημα έχεις.');
+    }
+  }
+});
+
+// Drag & Drop for image
+(function(){
+  const dz = $('dropzone');
+  if(dz){
+    ['dragenter','dragover'].forEach(evt => {
+      dz.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); dz.classList.add('dragover'); });
+    });
+    ['dragleave','drop'].forEach(evt => {
+      dz.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); dz.classList.remove('dragover'); });
+    });
+    dz.addEventListener('drop', e => {
+      const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+      if(!f) return;
+      const fr=new FileReader();
+      fr.onload=ev=>{ $('userImg').src=ev.target.result; $('userImg').style.display='block'; $('clearImg').disabled=false; };
+      fr.readAsDataURL(f);
+    });
+  }
+})();
+
+// Clear Image button
+(function(){
+  const btn = $('clearImg');
+  if(!btn) return;
+  const input = $('imgFile');
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const im = $('userImg');
+    im.src = '';
+    im.style.display = 'none';
+    if(input) input.value = '';
+    btn.disabled = true;
+  });
+})();
+
+// Watermark toggles
+(function(){
+  const wm = $('watermark');
+  $('wmToggle').addEventListener('click', (e)=>{
+    e.preventDefault();
+    wm.classList.toggle('wm-hidden');
+  });
+  $('wmClear').addEventListener('click', (e)=>{
+    e.preventDefault();
+    $('wmText').value='';
+    apply();
+  });
+})();
+
+// Initial render
+apply();
+</script>
+</body>
+</html>
