@@ -11,6 +11,7 @@
    - Header (τίτλος)
    - Tagline (υπότιτλος)
    - Body (κύριο κείμενο / μανιφέστο / tip)
+   - Υδατογράφημα (υψος-θέση-επωνυμία]
    - Hashtags
 4) Διάλεξε μέγεθος (Story/Reel ή Feed) και στυλ (Retro, Mint, Plum, Mono).
 5) Πάτα Download PNG → σώζεται έτοιμο poster στον υπολογιστή/κινητό σου.
@@ -33,6 +34,7 @@ How do I use it?
    - Header (title)
    - Tagline (subtitle)
    - Body (main text / manifesto / tip)
+   -  Watermark (size-location-logo)
    - Hashtags
 4) Choose size (Story/Reel or Feed) and style (Retro, Mint, Plum, Mono).
 5) Click Download PNG → your poster is saved, ready to post.
