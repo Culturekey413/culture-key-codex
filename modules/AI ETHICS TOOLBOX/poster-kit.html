@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Creator Poster Kit — Culture Key</title>
+<style>
+  :root{
+    --bg:#f2e9de; --ink:#1a1a1a; --accent:#6b46c1; --accent2:#1f9d55;
+    --paper:#f7efe4; --shadow:#d8cbbb;
+  }
+  *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+  body{margin:0;background:#faf7f2;color:#222;}
+  header{padding:16px 20px;border-bottom:1px solid #e6dccf;background:#fff;position:sticky;top:0;z-index:10}
+  h1{font-size:18px;margin:0}
+  .wrap{display:grid;grid-template-columns:360px 1fr;gap:18px;padding:16px;max-width:1400px;margin:0 auto}
+  @media (max-width: 980px){.wrap{grid-template-columns:1fr}}
+  .panel{background:#fff;border:1px solid #eadfcc;border-radius:14px;box-shadow:0 1px 0 #ede3d6;padding:14px}
+  .panel h2{font-size:14px;margin:2px 0 10px 0;letter-spacing:.3px;color:#5b4636;text-transform:uppercase}
+  label{font-size:12px;color:#6b5a4a;display:block;margin:10px 0 6px}
+  input[type=text], textarea, select{width:100%;padding:10px 12px;border:1px solid #e0d5c6;border-radius:10px;background:#fff}
+  textarea{min-height:84px;resize:vertical}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .btn{appearance:none;border:0;border-radius:12px;background:#1f2937;color:#fff;padding:10px 14px;font-weight:600;cursor:pointer}
+  .btn.secondary{background:#6b46c1}
+  .btn.ghost{background:#fff;color:#1f2937;border:1px solid #d9cdbd}
+  .options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .preview{display:flex;justify-content:center;align-items:center}
+  canvas{background:#f7efe4;border-radius:18px;box-shadow:0 10px 30px rgba(80,60,40,.12), inset 0 0 0 1px #e7dbcd}
+  .note{font-size:12px;color:#7a6b5b;margin-top:10px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Creator Poster Kit — Culture Key (no‑code)</h1>
+</header>
+<div class="wrap">
+  <section class="panel" id="controls">
+    <h2>Ρυθμίσεις</h2>
+    <label>Μέγεθος</label>
+    <div class="row">
+      <select id="size">
+        <option value="1080x1920">Story/Reel — 1080×1920</option>
+        <option value="1080x1350">Feed — 1080×1350</option>
+      </select>
+      <select id="theme">
+        <option value="earthy">Retro Earthy</option>
+        <option value="mint">Mint Retro</option>
+        <option value="plum">Plum Retro</option>
+        <option value="mono">Minimal Mono</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <div>
+        <label>Γραμματοσειρά τίτλου</label>
+        <select id="fontHead">
+          <option value="serif">Vintage Serif</option>
+          <option value="sans">Retro Sans</option>
+          <option value="comic">Comic Bold</option>
+        </select>
+      </div>
+      <div>
+        <label>Γραμματοσειρά κειμένου</label>
+        <select id="fontBody">
+          <option value="sans">Retro Sans</option>
+          <option value="serif">Vintage Serif</option>
+          <option value="mono">Mono</option>
+        </select>
+      </div>
+    </div>
+
+    <label>Header</label>
+    <input id="headerText" type="text" placeholder="AI με Αξίες ✦ AI with Values" value="AI με Αξίες ✦ AI with Values" />
+
+    <label>Tagline</label>
+    <input id="taglineText" type="text" placeholder="Χτίζοντας εμπιστοσύνη στην τεχνητή νοημοσύνη ✦ Building trust in AI" value="Χτίζοντας εμπιστοσύνη στην τεχνητή νοημοσύνη ✦ Building trust in AI" />
+
+    <label>Κύριο κείμενο (πολλαπλές γραμμές)</label>
+    <textarea id="bodyText" placeholder="Pinned ✦ Το μανιφέστο μας
+
+Το Culture Key – AI TRENDS ξεκινά με αξίες:
+🔑 Ηθική
+🔑 Εμπιστοσύνη
+🔑 Διαφάνεια
+
+Pinned ✦ Our Manifesto
+
+Culture Key – AI TRENDS begins with values:
+🔑 Ethics
+🔑 Trust
+🔑 Transparency"></textarea>
+
+    <label>Hashtags</label>
+    <input id="hashtagsText" type="text" placeholder="#CultureKey #AITRENDS #Manifesto #EthicsInAI #TrustInAI" value="#CultureKey #AITRENDS #Manifesto #EthicsInAI #TrustInAI" />
+
+    <div class="row" style="margin-top:12px">
+      <button class="btn" id="download">Download PNG</button>
+      <button class="btn ghost" id="clear">Καθάρισμα</button>
+    </div>
+    <p class="note">Όλα γίνονται τοπικά στον browser σου (χωρίς upload). Άνοιξε αυτό το αρχείο και πάτα <em>Download PNG</em>.</p>
+  </section>
+
+  <section class="panel preview">
+    <canvas id="c" width="1080" height="1920"></canvas>
+  </section>
+</div>
+
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+
+const els = {
+  size: document.getElementById('size'),
+  theme: document.getElementById('theme'),
+  fontHead: document.getElementById('fontHead'),
+  fontBody: document.getElementById('fontBody'),
+  headerText: document.getElementById('headerText'),
+  taglineText: document.getElementById('taglineText'),
+  bodyText: document.getElementById('bodyText'),
+  hashtagsText: document.getElementById('hashtagsText'),
+  download: document.getElementById('download'),
+  clear: document.getElementById('clear')
+};
+
+function setCanvasSize(v){
+  const [w,h] = v.split('x').map(Number);
+  canvas.width=w; canvas.height=h; draw();
+}
+
+function themeColors(name){
+  switch(name){
+    case 'mint': return {paper:'#eef6f2', ink:'#1a1f1c', accent:'#1f9d55', accent2:'#0ea5e9', deco:'#cde9dd'};
+    case 'plum': return {paper:'#f5eefc', ink:'#191024', accent:'#6b46c1', accent2:'#f59e0b', deco:'#e7d7fb'};
+    case 'mono': return {paper:'#f0f0f0', ink:'#111', accent:'#111', accent2:'#666', deco:'#e6e6e6'};
+    default: return {paper:'#f7efe4', ink:'#1b1b1b', accent:'#6b46c1', accent2:'#1f9d55', deco:'#e8dccb'};
+  }
+}
+
+function pickFont(kind, size){
+  const map = {
+    serif: `700 ${size}px "Georgia", "Times New Roman", serif`,
+    sans: `800 ${size}px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial`,
+    comic: `900 ${size}px "Comic Sans MS", "Comic Neue", system-ui`,
+    mono: `600 ${size}px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace`
+  };
+  return map[kind]||map.sans;
+}
+
+function roundedRect(x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r);
+  ctx.closePath();
+}
+
+function drawBackground(col){
+  const {paper, deco} = col;
+  // paper
+  ctx.fillStyle = paper; ctx.fillRect(0,0,canvas.width,canvas.height);
+  // soft radial vignette
+  const g = ctx.createRadialGradient(canvas.width*0.5, canvas.height*0.35, 50, canvas.width*0.5, canvas.height*0.5, canvas.height*0.8);
+  g.addColorStop(0,'rgba(0,0,0,0)'); g.addColorStop(1,'rgba(0,0,0,0.08)');
+  ctx.fillStyle=g; ctx.fillRect(0,0,canvas.width,canvas.height);
+  // deco frame
+  const pad = Math.round(canvas.width*0.04);
+  ctx.lineWidth=Math.max(2, canvas.width*0.004);
+  ctx.strokeStyle = deco; roundedRect(pad,pad,canvas.width-pad*2,canvas.height-pad*2,18); ctx.stroke();
+}
+
+function wrapText(text, maxWidth, font){
+  ctx.font = font; ctx.textBaseline='top';
+  const words = text.split(/\s+/);
+  const lines = []; let line = '';
+  for (let w of words){
+    const test = line ? line + ' ' + w : w;
+    if (ctx.measureText(test).width <= maxWidth) line = test; else { lines.push(line); line = w; }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+function draw(){
+  const col = themeColors(els.theme.value);
+  drawBackground(col);
+
+  const padX = Math.round(canvas.width*0.08);
+  let y = Math.round(canvas.height*0.09);
+
+  // HEADER pill
+  const head = els.headerText.value.trim();
+  const headFont = pickFont(els.fontHead.value, Math.round(canvas.width*0.06));
+  ctx.font = headFont; ctx.fillStyle = '#fff';
+  const headW = Math.min(ctx.measureText(head).width + 28, canvas.width - padX*2);
+  const headH = Math.round(canvas.width*0.09);
+  const headX = Math.round((canvas.width - headW)/2);
+  const headY = y;
+  ctx.fillStyle = col.accent; roundedRect(headX, headY, headW, headH, 14); ctx.fill();
+  // header text centered
+  ctx.fillStyle = '#fff'; ctx.textBaseline='middle'; ctx.textAlign='center';
+  ctx.font = headFont;
+  ctx.fillText(head, canvas.width/2, headY + headH/2);
+
+  // TAGLINE
+  y = headY + headH + Math.round(canvas.height*0.02);
+  ctx.textAlign='center'; ctx.textBaseline='top';
+  const tagFont = pickFont('sans', Math.round(canvas.width*0.035));
+  const tagLines = wrapText(els.taglineText.value, canvas.width - padX*2, tagFont);
+  ctx.fillStyle = col.ink; ctx.font = tagFont;
+  let ty = y; const lhTag = Math.round(canvas.width*0.05);
+  for (const line of tagLines){ ctx.fillText(line, canvas.width/2, ty); ty += lhTag; }
+
+  // BODY panel
+  y = ty + Math.round(canvas.height*0.02);
+  const panPad = Math.round(canvas.width*0.04);
+  const panW = canvas.width - padX*2; const panH = Math.round(canvas.height*0.48);
+  const panX = padX; const panY = y;
+  ctx.fillStyle = '#ffffff'; roundedRect(panX, panY, panW, panH, 16); ctx.fill();
+  ctx.strokeStyle = '#e7dbcd'; ctx.lineWidth = 2; roundedRect(panX, panY, panW, panH, 16); ctx.stroke();
+
+  // BODY text
+  const body = els.bodyText.value.trim();
+  const bodyFont = pickFont(els.fontBody.value, Math.round(canvas.width*0.035));
+  const bodyLines = [];
+  body.split(/\n/).forEach(block=>{
+    if (!block){ bodyLines.push(''); return; }
+    wrapText(block, panW - panPad*2, bodyFont).forEach(l=> bodyLines.push(l));
+  });
+  ctx.textAlign='left'; ctx.textBaseline='top'; ctx.fillStyle = '#2a2118'; ctx.font = bodyFont;
+  let by = panY + panPad; const lh = Math.round(canvas.width*0.05);
+  for (const line of bodyLines){ if (by > panY + panH - panPad - lh) break; ctx.fillText(line, panX + panPad, by); by += lh; }
+
+  // Footer bar with hashtag line + brand
+  const footH = Math.round(canvas.height*0.09);
+  const footY = canvas.height - footH - Math.round(canvas.height*0.04);
+  ctx.fillStyle = col.accent2; roundedRect(padX, footY, canvas.width - padX*2, footH, 14); ctx.fill();
+
+  const hashFont = pickFont('mono', Math.round(canvas.width*0.03));
+  ctx.font = hashFont; ctx.fillStyle = '#ffffffcc'; ctx.textAlign='left'; ctx.textBaseline='middle';
+  ctx.fillText(els.hashtagsText.value, padX + Math.round(canvas.width*0.03), footY + footH/2);
+
+  // Brand stamp
+  ctx.textAlign='right'; ctx.fillStyle='#fff'; ctx.font = pickFont('sans', Math.round(canvas.width*0.03));
+  ctx.fillText('Culture Key — AI TRENDS', canvas.width - padX - Math.round(canvas.width*0.03), footY + footH/2);
+}
+
+// Events
+['size','theme','fontHead','fontBody','headerText','taglineText','bodyText','hashtagsText']
+  .forEach(id=> els[id].addEventListener('input', ()=>{
+    if(id==='size') setCanvasSize(els.size.value); else draw();
+  }));
+
+els.download.addEventListener('click', ()=>{
+  const link = document.createElement('a');
+  link.download = 'culture-key-poster.png';
+  link.href = canvas.toDataURL('image/png');
+  link.click();
+});
+
+els.clear.addEventListener('click', ()=>{
+  els.headerText.value=''; els.taglineText.value=''; els.bodyText.value=''; els.hashtagsText.value=''; draw();
+});
+
+// init
+setCanvasSize(els.size.value);
+</script>
+</body>
+</html>
