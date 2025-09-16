@@ -16,8 +16,8 @@
 5) Πάτα Download PNG → σώζεται έτοιμο poster στον υπολογιστή/κινητό σου.
 
 Demo αρχεία:
-- manifesto.txt → παράδειγμα με “AI με Αξίες ✦ AI with Values”.
-- ai_tip2.txt → παράδειγμα με “ChatGPT σωστή χρήση”.
+- manifesto.md → παράδειγμα με “AI με Αξίες ✦ AI with Values”.
+- ai_tips.md → παράδειγμα με “ChatGPT σωστή χρήση”.
 
 Σημείωση:
 Όλα γίνονται τοπικά στον browser. Δεν ανεβαίνει τίποτα στο internet.
