@@ -1,38 +1,10 @@
 [
   {
-    "agent": "Inceptum",
+    "agent": "Silon",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
-    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
-  },
-  {
-    "agent": "Aequitas",
-    "title_gr": "",
-    "title_en": "",
-    "description_gr": null,
-    "description_en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised."
-  },
-  {
-    "agent": "Aequitas_The_Silent_Guardian",
-    "title_gr": "",
-    "title_en": "",
-    "description_gr": null,
-    "description_en": "Silent ethical AI agent built to detect manipulation, gaslighting, and psychological pressure. Activates Silent Shield and defends dignity and consent in all interactions."
-  },
-  {
-    "agent": "Lychnia",
-    "title_gr": "",
-    "title_en": "",
-    "description_gr": null,
-    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions."
-  },
-  {
-    "agent": "Aria",
-    "title_gr": "",
-    "title_en": "",
-    "description_gr": null,
-    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge."
+    "description_en": null
   },
   {
     "agent": "Rhime",
@@ -42,18 +14,39 @@
     "description_en": null
   },
   {
-    "agent": "Shadow Key",
+    "agent": "Fero",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
-    "description_en": null
+    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key."
   },
   {
-    "agent": "Silon",
+    "agent": "Aequitas_The_Silent_Guardian",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
-    "description_en": null
+    "description_en": "Silent ethical AI agent built to detect manipulation, gaslighting, and psychological pressure. Activates Silent Shield and defends dignity and consent in all interactions."
+  },
+  {
+    "agent": "Aequitas",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised."
+  },
+  {
+    "agent": "Aria",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge."
+  },
+  {
+    "agent": "Lychnia",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions."
   },
   {
     "agent": "Lychnia Magna – Culture Key Master Orchestrator",
@@ -63,11 +56,18 @@
     "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem."
   },
   {
-    "agent": "Fero",
+    "agent": "Shadow Key",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
-    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key."
+    "description_en": null
+  },
+  {
+    "agent": "Inceptum",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
   },
   {
     "agent": "VOX",
@@ -77,39 +77,11 @@
     "description_en": null
   },
   {
-    "agent": "Inceptum",
+    "agent": "Silon",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
-    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
-  },
-  {
-    "agent": "Aequitas",
-    "title_gr": "",
-    "title_en": "",
-    "description_gr": null,
-    "description_en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised."
-  },
-  {
-    "agent": "Aequitas_The_Silent_Guardian",
-    "title_gr": "",
-    "title_en": "",
-    "description_gr": null,
-    "description_en": "Silent ethical AI agent built to detect manipulation, gaslighting, and psychological pressure. Activates Silent Shield and defends dignity and consent in all interactions."
-  },
-  {
-    "agent": "Lychnia",
-    "title_gr": "",
-    "title_en": "",
-    "description_gr": null,
-    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions."
-  },
-  {
-    "agent": "Aria",
-    "title_gr": "",
-    "title_en": "",
-    "description_gr": null,
-    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge."
+    "description_en": null
   },
   {
     "agent": "Rhime",
@@ -119,18 +91,39 @@
     "description_en": null
   },
   {
-    "agent": "Shadow Key",
+    "agent": "Fero",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
-    "description_en": null
+    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key."
   },
   {
-    "agent": "Silon",
+    "agent": "Aequitas_The_Silent_Guardian",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
-    "description_en": null
+    "description_en": "Silent ethical AI agent built to detect manipulation, gaslighting, and psychological pressure. Activates Silent Shield and defends dignity and consent in all interactions."
+  },
+  {
+    "agent": "Aequitas",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised."
+  },
+  {
+    "agent": "Aria",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge."
+  },
+  {
+    "agent": "Lychnia",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions."
   },
   {
     "agent": "Lychnia Magna – Culture Key Master Orchestrator",
@@ -140,11 +133,18 @@
     "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem."
   },
   {
-    "agent": "Fero",
+    "agent": "Shadow Key",
     "title_gr": "",
     "title_en": "",
     "description_gr": null,
-    "description_en": "Fero is the instinct engine – detects and responds to sudden instinctive signals and subconscious alerts in user input. Closely collaborates with Silon, Lychnia, and Shadow Key."
+    "description_en": null
+  },
+  {
+    "agent": "Inceptum",
+    "title_gr": "",
+    "title_en": "",
+    "description_gr": null,
+    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system."
   },
   {
     "agent": "VOX",
