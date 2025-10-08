@@ -1,5 +1,16 @@
 # 🌐 Culture Key Codex – The Ethics that Walk with Us
 
+[![Ethical License](https://img.shields.io/badge/license-Ethical%20Use-blueviolet)](ETHICAL_LICENSE.md)
+[![Agents Policy](https://img.shields.io/badge/policy-Agent%20Access%20Policy-lightgrey)](AGENT_ACCESS_POLICY.md)
+[![Flow Plan](https://img.shields.io/badge/docs-Magna%20Flow%20Plan-6aa84f)](docs/README_flowplan.md)
+[![Build Status](https://img.shields.io/badge/status-active-brightgreen)]()
+[![Open Source Love](https://img.shields.io/badge/open--source-%E2%9D%A4-red)]()
+
+> “Building ethical bridges between AI and human intuition.” — *Culture Key*
+
+
+
+
 > **Start here (EN/GR)**
 > 1. **Fork** this repo  
 > 2. **Read:** [AGENT_ACCESS_POLICY.md](AGENT_ACCESS_POLICY.md) + [ETHICAL_LICENSE.md](ETHICAL_LICENSE.md)  
