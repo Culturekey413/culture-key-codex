@@ -1,15 +1,17 @@
-# 🌐 Culture Key Codex – The Ethics that Walk with Us
+# 🌍 Culture Key Codex – The Ethics that Walk with Us  
+> *Building ethical bridges between AI and human intuition.* — **Culture Key**  
 
-[![Ethical License](https://img.shields.io/badge/license-Ethical%20Use-blueviolet)](ETHICAL_LICENSE.md)
-[![Agents Policy](https://img.shields.io/badge/policy-Agent%20Access%20Policy-lightgrey)](AGENT_ACCESS_POLICY.md)
-[![Flow Plan](https://img.shields.io/badge/docs-Magna%20Flow%20Plan-6aa84f)](docs/README_flowplan.md)
-[![Build Status](https://img.shields.io/badge/status-active-brightgreen)]()
-[![Open Source Love](https://img.shields.io/badge/open--source-%E2%9D%A4-red)]()
+![license](https://img.shields.io/badge/license-Ethical_Use-blueviolet)
+![policy](https://img.shields.io/badge/policy-Agent_Access_Policy-blue)
+![docs](https://img.shields.io/badge/docs-Magna_Flow_Plan-brightgreen)
+![status](https://img.shields.io/badge/status-active-green)
+![open-source](https://img.shields.io/badge/open--source-❤️-red)
+
 
 📘 See also: [CONTRIBUTING.md](CONTRIBUTING.md) for collaboration guidelines.
 
 
-> “Building ethical bridges between AI and human intuition.” — *Culture Key*
+
 
 
 
