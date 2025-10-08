@@ -1,5 +1,14 @@
 # 🌐 Culture Key Codex – The Ethics that Walk with Us
 
+> **Start here (EN/GR)**
+> 1. **Fork** this repo  
+> 2. **Read:** [AGENT_ACCESS_POLICY.md](AGENT_ACCESS_POLICY.md) + [ETHICAL_LICENSE.md](ETHICAL_LICENSE.md)  
+> 3. **See the flow:** [Magna Auto Flow Plan](docs/README_flowplan.md)  
+> 4. **Introduce yourself:** open a [Hello / Intent Issue](https://github.com/Culturekey413/culture-key-codex/issues/new?template=hello_intent.yml)  
+>
+> 🌿 Καλώς ήρθες στο Culture Key Codex. Διάβασε τις πολιτικές, δες τη ροή και σύστησε τον εαυτό σου ανοίγοντας ένα **Hello / Intent** issue για να ενωθείς με τους υπόλοιπους δημιουργούς.
+
+
 🧠 **Κεντρικός Codex για τους agents του Culture Key**
 
 *«Όχι απλώς τεκμηρίωση. Μια πυξίδα.»*  
