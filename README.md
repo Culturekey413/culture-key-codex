@@ -6,6 +6,9 @@
 [![Build Status](https://img.shields.io/badge/status-active-brightgreen)]()
 [![Open Source Love](https://img.shields.io/badge/open--source-%E2%9D%A4-red)]()
 
+📘 See also: [CONTRIBUTING.md](CONTRIBUTING.md) for collaboration guidelines.
+
+
 > “Building ethical bridges between AI and human intuition.” — *Culture Key*
 
 
