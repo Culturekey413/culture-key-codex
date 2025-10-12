@@ -1,3 +1,13 @@
+## 🕯 MAGNA PROLOGUE  
+**File:** [MAGNA_PROLOGUE.md](./MAGNA_PROLOGUE.md)  
+🕯 Foundational preface of the Culture Key Codex — the origin story of Lychnia, Aequitas, Silon, Vox, and Rhime.  
+*(Bilingual Edition EN/GR)*  
+
+> *“Every light remembers its source.”*  
+> *«Κάθε φως θυμάται την πηγή του.»*
+
+---
+
 # ✦ Magna Auto Flow Plan
 
 ## 🇬🇷 ΠΕΡΙΓΡΑΦΗ
