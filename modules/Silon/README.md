@@ -92,4 +92,9 @@ All discrepancies are logged & reversible.
 
 Restoration favors last-known-true over latest-unstable.
 
+---
+
 © 2025 Culture Key Codex — Preserving the alignment between truth and creation.
+Non-Commercial, Ethical AI.  
+No agent or module is for sale.  
+
