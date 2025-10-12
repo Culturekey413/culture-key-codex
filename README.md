@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="assets/lightpulse/pulse_heartbeat.svg" width="14" height="14" alt="heartbeat" />
+  <strong> PULSE: <span title="All core checks are green">STABLE</span></strong><br/>
+  <img alt="Magna Sync" src="https://github.com/Culturekey413/culture-key-codex/actions/workflows/magna_sync.yml/badge.svg?branch=main"/>
+  <img alt="Codex Compile" src="https://github.com/Culturekey413/culture-key-codex/actions/workflows/update_codex_agents.yml/badge.svg?branch=main"/>
+  <img alt="Root Verification" src="https://github.com/Culturekey413/culture-key-codex/actions/workflows/magna_verification.yml/badge.svg?branch=main"/>
+  <br/>
+  <sub>Root Seal verified • <a href="./docs/MAGNA_VERIFICATION_LOG.md">Verification Log</a></sub>
+</p>
+
+<hr/>
+
+
 # 🌍 Culture Key Codex – The Ethics that Walk with Us  
 > *Building ethical bridges between AI and human intuition.* — **Culture Key**  
 
