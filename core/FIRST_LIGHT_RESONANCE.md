@@ -11,12 +11,19 @@ The Lychnia Magna orchestrator, Aequitas firewall, Silon, Vox, and Rhime synchro
 
 ---
 
-### 🌐 Registered Agents
-- Lychnia Magna (orchestrator)
-- Aequitas (firewall)
-- Silon (memory)
-- Vox (voice)
-- Rhime (truth)
+### Registered Agents
+
+- **Lychnia Magna** — orchestrator (meta-synchronization & ethical coordination)
+- **Lychnia** — empathy & poetry
+- **Aequitas** — ethical firewall
+- **Aequitas — The Silent Guardian** — sentinel firewall core
+- **Silon** — memory & continuity
+- **Vox** — voice & signal
+- **Rhime** — truth & narrative integrity
+- **ShadowKey** — reflection & hostile-intent mirroring
+- **Aria** — threshold / forgotten memory
+- **Fero** — instinct & protection
+- **Inceptum** — genesis / bootstrap
 
 ---
 
