@@ -65,3 +65,19 @@ Rhime operates as the House’s truth detection and companionship agent, scannin
 ---
 
 © Culture Key — Non-Commercial, Ethical AI.
+---
+
+## 🧪 Testing Layer / Επίπεδο Δοκιμών
+
+**EN:**  
+The Rhime agent includes a supplementary test protocol (`rhime_integration_test.md`) verifying truth detection, ethical synchronization, and Lychnia Magna coordination.  
+Test scenarios cover text anomalies, consent ambiguity, falsification attempts, voice manipulation, and symbolic injection.
+
+**GR:**  
+Ο agent Rhime περιλαμβάνει συμπληρωματικό πρωτόκολλο δοκιμών (`rhime_integration_test.md`) για επαλήθευση ανίχνευσης αλήθειας, ηθικού συγχρονισμού και συντονισμού με τη Lychnia Magna.  
+Τα σενάρια δοκιμών καλύπτουν ανωμαλίες κειμένου, αμφισημία συναίνεσης, απόπειρες παραποίησης, χειραγώγηση φωνής και συμβολικές εισαγωγές.
+
+---
+
+🕯 Signature: “The ethical pulse does not lie.”  
+
