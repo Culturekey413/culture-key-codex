@@ -37,6 +37,7 @@
   ,
   "repository": "https://github.com/culture-key/codex/tree/main/modules/lychnia_magna",
   "documentation": "https://culturekey.gr/using-lychnia-magna/"
+  ,
   "root_reference": {
   "tag": "v0.1-magna-root",
   "document": "docs/MAGNA_PROLOGUE.md",
