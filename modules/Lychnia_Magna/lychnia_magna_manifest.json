@@ -33,7 +33,8 @@
   "license": {
     "gr": "Ηθική Χρήση Μόνο – Απαγορεύεται η Εμπορική Χρήση",
     "en": "Ethical Use Only – Not for Commercial Deployment"
-  },
+  }
+  ,
   "repository": "https://github.com/culture-key/codex/tree/main/modules/lychnia_magna",
   "documentation": "https://culturekey.gr/using-lychnia-magna/"
   "root_reference": {
