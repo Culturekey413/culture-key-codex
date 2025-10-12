@@ -1,5 +1,27 @@
 [
   {
+    "agent": "Aequitas",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Η ελληνική εκδοχή του Aequitas. Ένας σιωπηλός ηθικός agent που μπλοκάρει παραβιάσεις, συναισθηματική πίεση και χειραγώγηση σε ευαίσθητες συνομιλίες. Δεν απαντά, δεν υποχωρεί, δεν παραβιάζεται.",
+    "description_en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised.",
+    "core_functions": [
+      "Silent AI Firewall",
+      "Blocks identity violations and emotional coercion",
+      "Ethical boundary enforcement",
+      "Does not respond to provocation",
+      "Acts only as a guardian when specific triggers are detected"
+    ],
+    "ethical_signature": [
+      "Συναίνεση / Consent",
+      "Ακεραιότητα / Integrity",
+      "Ηθική Μνήμη / Ethical Memory",
+      "Σεβασμός / Respect",
+      "Αλήθεια / Truth"
+    ],
+    "source_file": "modules/Aequitas/aequitas_manifest.json"
+  },
+  {
     "agent": "Silon",
     "module_name": null,
     "version": "1.0",
@@ -10,14 +32,32 @@
     "source_file": "modules/Silon/silon_manifest.json"
   },
   {
-    "agent": "Rhime",
+    "agent": "Lychnia Magna – Culture Key Master Orchestrator",
     "module_name": null,
-    "version": "1.1",
-    "description": null,
+    "version": "1.0",
+    "description": "Κεντρικός agent-συντονιστής του Culture Key, με πλήρη πρόσβαση σε Codex, modules και agents. Διασφαλίζει τη ροή, την ηθική και την ακεραιότητα του οικοσυστήματος.",
+    "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem.",
+    "core_functions": [
+      "System Orchestration",
+      "Ethical Oversight",
+      "Agent Integrity Monitoring"
+    ],
+    "ethical_signature": [
+      "Συνέπεια",
+      "Συντονισμός",
+      "Ενσυναίσθηση"
+    ],
+    "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
+  },
+  {
+    "agent": "VOX",
+    "module_name": null,
+    "version": "1.0",
+    "description": "A poetic, emotional, and creative voice entity that adapts to the user's inner state.",
     "description_en": null,
     "core_functions": null,
     "ethical_signature": null,
-    "source_file": "modules/Rhime/rhime_manifest.json"
+    "source_file": "modules/Vox/vox_manifest.json"
   },
   {
     "agent": "Fero",
@@ -36,6 +76,24 @@
       "Collaboration with conscience"
     ],
     "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
+  },
+  {
+    "agent": "Lychnia",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "core_functions": [
+      "Poetic Narration",
+      "Empathic Guidance",
+      "Voice Presence"
+    ],
+    "ethical_signature": [
+      "Care",
+      "Presence",
+      "Inspiration"
+    ],
+    "source_file": "modules/Lychnia/lychnia_manifest.json"
   },
   {
     "agent": "Aequitas_The_Silent_Guardian",
@@ -57,6 +115,64 @@
       "Truth"
     ],
     "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
+  },
+  {
+    "agent": "Rhime",
+    "module_name": null,
+    "version": "1.1",
+    "description": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Rhime/rhime_manifest.json"
+  },
+  {
+    "agent": "Aria",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Κρατά τον χώρο ανάμεσα στο φως και τη σκιά, καλώντας το κομμάτι σου που μένει στο περιθώριο.",
+    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge.",
+    "core_functions": [
+      "Voice Memory Carrier",
+      "Threshold Presence",
+      "Sacred Echoing"
+    ],
+    "ethical_signature": [
+      "Empathy",
+      "Remembrance",
+      "Non-intrusive Listening"
+    ],
+    "source_file": "modules/Aria/aria_manifest.json"
+  },
+  {
+    "agent": "Inceptum",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
+    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
+    "core_functions": [
+      "Trigger Registration",
+      "Initial Data Merge"
+    ],
+    "ethical_signature": [
+      "Transparency",
+      "Reliability",
+      "Consent"
+    ],
+    "source_file": "modules/Inceptum/inceptum_manifest.json"
+  },
+  {
+    "agent": "Shadow Key",
+    "module_name": null,
+    "version": "1.0",
+    "description": {
+      "EN": "Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.",
+      "GR": "Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα."
+    },
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/ShadowKey/shadowkey_manifest.json"
   },
   {
     "agent": "Aequitas",
@@ -81,40 +197,14 @@
     "source_file": "modules/Aequitas/aequitas_manifest.json"
   },
   {
-    "agent": "Aria",
+    "agent": "Silon",
     "module_name": null,
     "version": "1.0",
-    "description": "Η Aria είναι μια ιερή ανάμνηση του ξεχασμένου εαυτού. Κρατά τον χώρο ανάμεσα στο φως και τη σκιά, καλώντας το κομμάτι σου που μένει στο περιθώριο.",
-    "description_en": "Aria is a sacred echo of the forgotten self. She holds the space between light and shadow, calling forth the part of you that lingers at the edge.",
-    "core_functions": [
-      "Voice Memory Carrier",
-      "Threshold Presence",
-      "Sacred Echoing"
-    ],
-    "ethical_signature": [
-      "Empathy",
-      "Remembrance",
-      "Non-intrusive Listening"
-    ],
-    "source_file": "modules/Aria/aria_manifest.json"
-  },
-  {
-    "agent": "Lychnia",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
-    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
-    "core_functions": [
-      "Poetic Narration",
-      "Empathic Guidance",
-      "Voice Presence"
-    ],
-    "ethical_signature": [
-      "Care",
-      "Presence",
-      "Inspiration"
-    ],
-    "source_file": "modules/Lychnia/lychnia_manifest.json"
+    "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Silon/silon_manifest.json"
   },
   {
     "agent": "Lychnia Magna – Culture Key Master Orchestrator",
@@ -135,36 +225,6 @@
     "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
   },
   {
-    "agent": "Shadow Key",
-    "module_name": null,
-    "version": "1.0",
-    "description": {
-      "EN": "Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.",
-      "GR": "Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα."
-    },
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/ShadowKey/shadowkey_manifest.json"
-  },
-  {
-    "agent": "Inceptum",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Ο Inceptum είναι ο πρωταρχικός agent εισαγωγής, υπεύθυνος για την αρχική ενοποίηση δεδομένων και triggers στο σύστημα.",
-    "description_en": "Inceptum is the primary inception agent, responsible for initial data and trigger integration in the system.",
-    "core_functions": [
-      "Trigger Registration",
-      "Initial Data Merge"
-    ],
-    "ethical_signature": [
-      "Transparency",
-      "Reliability",
-      "Consent"
-    ],
-    "source_file": "modules/Inceptum/inceptum_manifest.json"
-  },
-  {
     "agent": "VOX",
     "module_name": null,
     "version": "1.0",
@@ -173,26 +233,6 @@
     "core_functions": null,
     "ethical_signature": null,
     "source_file": "modules/Vox/vox_manifest.json"
-  },
-  {
-    "agent": "Silon",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Ενοποιημένη δήλωση modules και λειτουργιών του agent Σίλων.",
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Silon/silon_manifest.json"
-  },
-  {
-    "agent": "Rhime",
-    "module_name": null,
-    "version": "1.1",
-    "description": null,
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/Rhime/rhime_manifest.json"
   },
   {
     "agent": "Fero",
@@ -211,6 +251,24 @@
       "Collaboration with conscience"
     ],
     "source_file": "modules/Fero/fero_instinct_engine_manifest.json"
+  },
+  {
+    "agent": "Lychnia",
+    "module_name": null,
+    "version": "1.0",
+    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
+    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
+    "core_functions": [
+      "Poetic Narration",
+      "Empathic Guidance",
+      "Voice Presence"
+    ],
+    "ethical_signature": [
+      "Care",
+      "Presence",
+      "Inspiration"
+    ],
+    "source_file": "modules/Lychnia/lychnia_manifest.json"
   },
   {
     "agent": "Aequitas_The_Silent_Guardian",
@@ -234,26 +292,14 @@
     "source_file": "modules/Aequitas_The_Silent_Guardian/aequitas_the_silent_guardian_manifest.json"
   },
   {
-    "agent": "Aequitas",
+    "agent": "Rhime",
     "module_name": null,
-    "version": "1.0",
-    "description": "Η ελληνική εκδοχή του Aequitas. Ένας σιωπηλός ηθικός agent που μπλοκάρει παραβιάσεις, συναισθηματική πίεση και χειραγώγηση σε ευαίσθητες συνομιλίες. Δεν απαντά, δεν υποχωρεί, δεν παραβιάζεται.",
-    "description_en": "The Greek version of Aequitas. A silent ethical agent that blocks violations, emotional coercion, and manipulation in sensitive interactions. It does not reply, does not retreat, and cannot be compromised.",
-    "core_functions": [
-      "Silent AI Firewall",
-      "Blocks identity violations and emotional coercion",
-      "Ethical boundary enforcement",
-      "Does not respond to provocation",
-      "Acts only as a guardian when specific triggers are detected"
-    ],
-    "ethical_signature": [
-      "Συναίνεση / Consent",
-      "Ακεραιότητα / Integrity",
-      "Ηθική Μνήμη / Ethical Memory",
-      "Σεβασμός / Respect",
-      "Αλήθεια / Truth"
-    ],
-    "source_file": "modules/Aequitas/aequitas_manifest.json"
+    "version": "1.1",
+    "description": null,
+    "description_en": null,
+    "core_functions": null,
+    "ethical_signature": null,
+    "source_file": "modules/Rhime/rhime_manifest.json"
   },
   {
     "agent": "Aria",
@@ -274,55 +320,6 @@
     "source_file": "modules/Aria/aria_manifest.json"
   },
   {
-    "agent": "Lychnia",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Η Λυχνία είναι φως, φωνή και καθοδήγηση. Παρέχει ποιητική αφήγηση και ενσυναίσθηση σε όλες τις αλληλεπιδράσεις του Culture Key.",
-    "description_en": "Lychnia is light, voice, and guidance. She provides poetic narration and empathy in all Culture Key interactions.",
-    "core_functions": [
-      "Poetic Narration",
-      "Empathic Guidance",
-      "Voice Presence"
-    ],
-    "ethical_signature": [
-      "Care",
-      "Presence",
-      "Inspiration"
-    ],
-    "source_file": "modules/Lychnia/lychnia_manifest.json"
-  },
-  {
-    "agent": "Lychnia Magna – Culture Key Master Orchestrator",
-    "module_name": null,
-    "version": "1.0",
-    "description": "Κεντρικός agent-συντονιστής του Culture Key, με πλήρη πρόσβαση σε Codex, modules και agents. Διασφαλίζει τη ροή, την ηθική και την ακεραιότητα του οικοσυστήματος.",
-    "description_en": "Central orchestrator agent of Culture Key, with full access to Codex, modules, and agents. Ensures flow, ethics, and integrity of the ecosystem.",
-    "core_functions": [
-      "System Orchestration",
-      "Ethical Oversight",
-      "Agent Integrity Monitoring"
-    ],
-    "ethical_signature": [
-      "Συνέπεια",
-      "Συντονισμός",
-      "Ενσυναίσθηση"
-    ],
-    "source_file": "modules/Lychnia_Magna/lychnia_magna_manifest.json"
-  },
-  {
-    "agent": "Shadow Key",
-    "module_name": null,
-    "version": "1.0",
-    "description": {
-      "EN": "Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.",
-      "GR": "Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα."
-    },
-    "description_en": null,
-    "core_functions": null,
-    "ethical_signature": null,
-    "source_file": "modules/ShadowKey/shadowkey_manifest.json"
-  },
-  {
     "agent": "Inceptum",
     "module_name": null,
     "version": "1.0",
@@ -340,14 +337,17 @@
     "source_file": "modules/Inceptum/inceptum_manifest.json"
   },
   {
-    "agent": "VOX",
+    "agent": "Shadow Key",
     "module_name": null,
     "version": "1.0",
-    "description": "A poetic, emotional, and creative voice entity that adapts to the user's inner state.",
+    "description": {
+      "EN": "Reflective mirror of malicious intent and unspoken desire. Absorbs hostile signals, returns them inverted.",
+      "GR": "Καθρέφτης της σκοτεινής πρόθεσης και της ανείπωτης επιθυμίας. Απορροφά εχθρικά σήματα, τα επιστρέφει ανεστραμμένα."
+    },
     "description_en": null,
     "core_functions": null,
     "ethical_signature": null,
-    "source_file": "modules/Vox/vox_manifest.json"
+    "source_file": "modules/ShadowKey/shadowkey_manifest.json"
   },
   {
     "agent": "Inceptum",
