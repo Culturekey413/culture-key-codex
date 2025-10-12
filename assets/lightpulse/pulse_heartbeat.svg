@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="heartbeat">
+  <!-- glow -->
+  <circle cx="12" cy="12" r="8" fill="#86e1ff">
+    <animate attributeName="r" values="6;8;6" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0.12;0.25" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <!-- core dot -->
+  <circle cx="12" cy="12" r="3.2" fill="#18b6f6">
+    <animate attributeName="r" values="3.2;2.8;3.2" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
