@@ -19,7 +19,8 @@ jobs:
         run: chmod +x .github/scripts/check_magna_root.sh
 
       - name: Run Magna Root check
-        run: .github/scripts/check_magna_root.sh
+        shell: bash
+        run: bash .github/scripts/check_magna_root.sh
 
       - name: Summarize
         if: always()
