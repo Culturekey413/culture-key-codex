@@ -79,6 +79,17 @@ Test scenarios cover text anomalies, consent ambiguity, falsification attempts, 
 
 ---
 
-🕯 Signature: “The ethical pulse does not lie.”  
+🕯 Signature: “The ethical pulse does not lie.”  ---
+
+## ✅ Verification Log / Καταγραφή Επαλήθευσης
+
+**Status:** Passed  
+**Timestamp:** 2025-10-12T09:12:15Z  
+**Source:** truth_detection.yml (Workflow run #1)
+
+> The ethical pulse does not lie.
+
+
+
 
 
