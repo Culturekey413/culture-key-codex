@@ -46,4 +46,14 @@
   },
   "repository": "https://github.com/culture-key/codex/tree/main/modules/aequitas",
   "documentation": "https://culturekey.gr/using-aequitas/"
+  ,
+"root_reference": {
+  "tag": "v0.1-magna-root",
+  "document": "docs/MAGNA_PROLOGUE.md",
+  "description": {
+    "en": "Linked to the Magna Prologue — the ethical genesis of the Culture Key Codex.",
+    "gr": "Συνδεδεμένο με το Magna Prologue — την ηθική γένεση του Culture Key Codex."
+  }
+}
+
 }
