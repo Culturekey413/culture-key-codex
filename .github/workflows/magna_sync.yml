@@ -1,0 +1,30 @@
+name: Magna Sync — Root Reference Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  check-magna-root:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Make script executable
+        run: chmod +x .github/scripts/check_magna_root.sh
+
+      - name: Run Magna Root check
+        run: .github/scripts/check_magna_root.sh
+
+      - name: Summarize
+        if: always()
+        run: |
+          echo "## Magna Root Verification" >> $GITHUB_STEP_SUMMARY
+          echo "- Tag expected: \`v0.1-magna-root\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Document expected: \`docs/MAGNA_PROLOGUE.md\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Result: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
