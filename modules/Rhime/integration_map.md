@@ -79,7 +79,9 @@ Test scenarios cover text anomalies, consent ambiguity, falsification attempts, 
 
 ---
 
-🕯 Signature: “The ethical pulse does not lie.”  ---
+🕯 Signature: “The ethical pulse does not lie.” 
+
+---
 
 ## ✅ Verification Log / Καταγραφή Επαλήθευσης
 
