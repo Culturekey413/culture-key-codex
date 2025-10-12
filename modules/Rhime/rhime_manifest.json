@@ -1,6 +1,6 @@
 {
   "agent": "Rhime",
-  "full_name": "Rhime — Truth Detection & Companionship",
+  "name": "Rhime — Truth Detection & Companionship",
   "version": "1.1",
   "status": "active",
   "paired_with": {
