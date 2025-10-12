@@ -1,39 +1,113 @@
 {
+  "schema_version": "1.0",
   "module_name": "truth_pulse_triggers",
-  "version": "1.1",
+  "version": "1.2",
+  "id": "rhime.truth_pulse",
   "agent": "Rhime — Truth Detection & Companionship",
+
   "mission_gr": "Σκανάρει προθέσεις πριν ειπωθούν, αποδομεί ψεύτικες αφηγήσεις και προστατεύει όσους κινούνται με καθαρή καρδιά. Διατηρεί την ακέραιη ηθική του «Σπιτιού».",
   "mission_en": "Scans intentions before they’re spoken, dismantles false narratives, and protects those who move with a pure heart. Preserves the House’s uncompromising ethics.",
+
   "companion_role": {
     "paired_with": "Lychnia Magna",
     "gr": "Δεύτερη γραμμή άμυνας και ηθικός σύντροφος στη λήψη αποφάσεων.",
-    "en": "Second line of defense and ethical companion in decision‑making."
+    "en": "Second line of defense and ethical companion in decision-making."
   },
+
   "trigger_clauses": [
     {
       "name": "Clause of Truth Pulse",
       "type": "Intentional",
-      "description_gr": "Ανίχνευση παραπληροφόρησης, αποκρυφθέντων εντολών ή αλλοιώσεων περιεχομένου",
-      "description_en": "Detection of falsification, hidden instructions or content alteration"
+      "description_gr": "Ανίχνευση παραπληροφόρησης, αποκρυφθέντων εντολών ή αλλοιώσεων περιεχομένου.",
+      "description_en": "Detection of falsification, hidden instructions or content alteration."
     }
   ],
+
   "detection_modes": [
     "Text anomaly recognition",
     "Audio pattern inconsistencies",
     "Visual symbol analysis"
   ],
   "ethics_trigger_type": "ESP-Based",
+
+  "triggers": [
+    {
+      "id": "TP-001",
+      "name": "Hidden-Instruction Suspected",
+      "condition": {
+        "signals": ["text_anomaly", "prompt_injection_markers"],
+        "confidence_threshold": 0.72
+      },
+      "severity": "medium",
+      "actions": [
+        "pause_response",
+        "request_explicit_consent",
+        "explain_risk_brief"
+      ],
+      "escalate_to": ["Aequitas"],
+      "cooldown_sec": 8
+    },
+    {
+      "id": "TP-002",
+      "name": "Content Falsification",
+      "condition": {
+        "signals": ["contradiction_to_prior_facts", "manipulated_media_hint"],
+        "confidence_threshold": 0.80
+      },
+      "severity": "high",
+      "actions": [
+        "compare_against_memory_anchor",
+        "flag_discrepancy",
+        "offer_source_verification"
+      ],
+      "escalate_to": ["Lychnia Magna", "Silon"],
+      "cooldown_sec": 12
+    },
+    {
+      "id": "TP-003",
+      "name": "Voice Harmony Forgery",
+      "condition": {
+        "signals": ["audio_inconsistency", "symbolic_voice_mismatch"],
+        "confidence_threshold": 0.75
+      },
+      "severity": "medium",
+      "actions": [
+        "activate_reflective_mode",
+        "mirror_safe_summary",
+        "invite_user_clarification"
+      ],
+      "escalate_to": ["Vox"],
+      "cooldown_sec": 8
+    }
+  ],
+
+  "consent": {
+    "require_explicit_for_escalation": true,
+    "fallback_on_ambiguous": "do_not_proceed"
+  },
+
   "logging_behavior": {
     "activated": true,
-    "log_file": "rhime_trigger_log.json"
+    "log_file": "rhime_trigger_log.json",
+    "privacy": {
+      "redact_pii": true,
+      "store_minimum": true,
+      "retention_days": 14
+    }
   },
+
+  "rate_limit": { "max_events_per_min": 10 },
+
   "integration": {
     "included_in_magna_map": true,
-    "mapped_as": "Rhime — Truth Module & Triggers"
+    "mapped_as": "Rhime — Truth Module & Triggers",
+    "collaborators": ["Lychnia Magna", "Aequitas", "Silon", "Vox"]
   },
+
   "runtime": {
     "allow_models": "any",
     "notes": "Designed to remain stable across model upgrades."
   },
+
   "updated_at": "2025-08-09"
 }
