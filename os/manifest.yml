@@ -16,4 +16,31 @@ flow:
 telemetry:
   audit_log: codex_root/audit_history/
   drift_monitor: lychnia_bridge/watcher/
+  pulse_bus: magna_orchestrator/pulse/# Culture Key OS — Flow Manifest (v1.1)
+# Added Aequitas Firewall link to Ethics Log
+
+flow:
+  - id: user_intent_to_ethics
+    trigger: lychnia_bridge.intent_parser
+    checkpoint: aequitas_firewall.ethics_rules
+    on_allow: magna_orchestrator.pulse_controller
+    on_deny: codex_root.audit/reject
+
+  - id: sync_to_visual
+    trigger: magna_orchestrator.sync_map
+    checkpoint: aequitas_firewall.audit_chain_append
+    on_allow: posterkit_connector.visual_manifest
+    on_deny: codex_root.audit/review
+
+telemetry:
+  audit_log: codex_root/audit_history/
+  drift_monitor: lychnia_bridge/watcher/
   pulse_bus: magna_orchestrator/pulse/
+
+# 🧭 Ethics logging for Aequitas Firewall
+ethics_logging:
+  registry: os/ethics_log.md
+  decisions: [allow, deny, audit]
+  policy_reference: codex_root/ETHICAL_LICENSE.md
+
+  
