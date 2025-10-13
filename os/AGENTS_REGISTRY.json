@@ -1,4 +1,4 @@
-{
+ {
   "version": "1.2",
   "aliases": {
     "Magna": "lychnia_magna",
@@ -6,7 +6,7 @@
     "AEQUITAS": "aequitas",
     "Aequitas_The_Silent_Guardian": "aequitas",
     "Shadow Key": "shadow_key",
-    "Silon": "silon_2",
+    "Silon": "silon",
     "Lychnia Bridge": "lychnia_bridge",
     "PosterKit": "posterkit_connector"
   },
@@ -21,7 +21,7 @@
     "key": ["id_resolve", "capability_map"],
     "fero": ["package", "transport"],
     "inceptum": ["ignite"],
-    "silon_2": ["memory_note", "reconcile_memory", "signal_compare"],
+    "silon": ["memory_note", "reconcile_memory", "signal_compare"],
     "rhime": ["truth_scan", "compose"]
   }
 }
