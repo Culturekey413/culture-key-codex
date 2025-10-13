@@ -10,15 +10,16 @@ on:
       - 'core/**'
       - '.github/workflows/truth_detection.yml'
   pull_request:
-     branches:
+    branches:
       - main
-      - agent-toolkit  
-     paths:
+      - agent-toolkit
+    paths:
       - 'modules/Rhime/**'
       - 'core/**'
       - '.github/workflows/truth_detection.yml'
   schedule:
     - cron: '0 6 * * 1'  # Δευτέρα 06:00 UTC
+  workflow_dispatch:
 
 concurrency:
   group: rhime-checks-${{ github.ref }}
@@ -31,27 +32,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Ensure required Rhime files exist
-        run: |
-          test -f modules/Rhime/rhime_manifest.json || (echo "Missing rhime_manifest.json" && exit 1)
-          test -f modules/Rhime/rhime_trigger_module.json || (echo "Missing rhime_trigger_module.json" && exit 1)
-          test -f modules/Rhime/integration_map.md || (echo "Missing integration_map.md" && exit 1)
-
-      - name: Validate Rhime JSON only (avoid overlap with global validator)
-        run: |
-          sudo apt-get update && sudo apt-get install -y jq
-          find modules/Rhime -name "*.json" -print -exec sh -c 'jq empty "$1"' _ {} \;
-
-      - name: Check Magna signature phrase present
-        run: |
-          grep -Riq "The ethical pulse does not lie" modules/Rhime || (echo "Signature phrase missing in Rhime docs" && exit 1)
-
-      - name: Create machine-readable health report
-        run: |
-          echo '{"module":"Rhime","checks":"passed","timestamp":"'"$(date -u +%FT%TZ)"'"}' > rhime_report.json
-
-      - name: Upload report
-        uses: actions/upload-artifact@v4
-        with:
-          name: rhime-report
-          path: rhime_report.json
+      - name: Validate Rhime Truth Flow
+        run: bash .github/scripts/check_truth_pulse.sh
