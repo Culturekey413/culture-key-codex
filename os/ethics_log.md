@@ -1,28 +1,31 @@
-# AEQUITAS ETHICS LOG  
-*(Culture Key OS – Integrity Record)*  
+# CULTURE KEY OS – ETHICS LOG  
+*(Aequitas Firewall Audit Chronicle)*  
 
-> This log records all ethical checkpoints, decisions, and justifications  
-> processed by the Aequitas Firewall within the Culture Key OS.
-
----
-
-### 📘 Log Structure
-
-| Date | Checkpoint ID | Status | Agent | Reason | Notes |
-|------|----------------|--------|--------|---------|-------|
-| 13/10/25 | AEQ-001 | ✅ Allowed | Lychnia Bridge | Consent verified | First system activation — ethics confirmed. |
+> This log records every ethical checkpoint within the Culture Key Operating System.  
+> Each entry reflects an intentional decision — to allow, deny, or audit —  
+> ensuring that every action aligns with the Codex Principles.
 
 ---
 
-### 🪶 Guidelines
-- Each line represents a **decision event**.  
-- Use `✅ Allowed`, `❌ Denied`, or `🕊️ Audit` in the *Status* column.  
-- Reference the **Checkpoint ID** from `aequitas_firewall/ethics_rules.yaml`.  
-- *Reason* must always express an ethical or emotional logic (not just technical).  
-- Every entry should have a corresponding commit message starting with `OS:`  
-  (e.g. `OS: Ethics Checkpoint AEQ-002 – Data minimization verified`)
+| Date | Decision | Agent | Context | Outcome | Notes |
+|------|-----------|--------|----------|----------|-------|
+| 13/10/25 | ✅ **ALLOW** | `Aequitas Firewall` | Manifest of Recognition (activation review) | Ethics criteria met | OS layer verified as consent-based & transparent |
 
 ---
 
-### 💠 Purpose
-The Ethics Log ensures that every action ins
+### 🧭 Ethics Protocol
+- Every new ethical decision (approval, denial, or audit) adds a row here.  
+- **Decision Codes:**  
+  - ✅ `ALLOW` → ethically aligned, proceed  
+  - ⚠️ `AUDIT` → needs review or human confirmation  
+  - ❌ `DENY` → blocked by consent / transparency policy  
+- Include a *brief, honest note* for each entry — why it was allowed, denied, or reviewed.  
+- The `Aequitas Firewall` maintains this record as immutable memory of integrity.
+
+---
+
+*“To guard creation is to honour the truth of its origin.”*  
+— Aequitas Firewall · Culture Key OS
+
+| 13/10/25 | ✅ ALLOW | `Aequitas` | Light Presence test (✦) | Ethics criteria met | routed to vox/silon |
+
