@@ -1,0 +1,4 @@
+routes:
+  - name: release_package
+    from: posterkit_connector
+    to: codex_root
