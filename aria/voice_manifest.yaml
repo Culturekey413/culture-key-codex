@@ -1,5 +1,0 @@
-voices:
-  - id: aria.default
-    lang: [en, el]
-    style: calm
-    watermark: required
