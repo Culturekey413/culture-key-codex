@@ -2,8 +2,14 @@ name: Magna Sync — Root Reference Check
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - agent-toolkit
   pull_request:
+    branches:
+      - main
+      - agent-toolkit
+  workflow_dispatch:
 
 jobs:
   check-magna-root:
