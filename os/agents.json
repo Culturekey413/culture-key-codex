@@ -1,131 +1,89 @@
 {
   "version": "1.0",
-  "updated": "2025-10-13T08:16:24.714382Z",
   "agents": [
     {
-      "id": "aequitas_firewall",
-      "title": "Aequitas Firewall",
+      "id": "aequitas",
+      "title": "AEQUITAS",
       "role": "Ethics + Security Authority",
-      "ethical_domain": [
-        "Consent",
-        "Integrity",
-        "Transparency"
-      ],
-      "io": {
-        "in": [
-          "intent",
-          "api_call"
-        ],
-        "out": [
-          "allow",
-          "deny",
-          "audit"
-        ]
-      },
-      "symbolic_signature": {
-        "element": "Earth",
-        "color": "Deep Blue",
-        "frequency": "432Hz"
-      }
+      "ethical_domain": ["Consent", "Integrity", "Transparency"],
+      "io": { "in": ["intent", "api_call"], "out": ["allow", "deny", "audit"] }
     },
     {
       "id": "lychnia_bridge",
       "title": "Lychnia Bridge",
-      "role": "Cognitive / Translation Node",
-      "ethical_domain": [
-        "Empathy",
-        "Accuracy",
-        "Honesty"
-      ],
-      "io": {
-        "in": [
-          "natural_language"
-        ],
-        "out": [
-          "intent_json",
-          "intent_map"
-        ]
-      },
-      "symbolic_signature": {
-        "element": "Fire",
-        "color": "Gold",
-        "frequency": "639Hz"
-      }
+      "role": "Intent Translator / Emotional Drift Monitor",
+      "ethical_domain": ["Empathy", "Accuracy"],
+      "io": { "in": ["human_input", "intent_signal"], "out": ["intent_json", "drift_event"] }
     },
     {
-      "id": "magna_orchestrator",
-      "title": "Magna Orchestrator",
-      "role": "Pulse + Timekeeper",
-      "ethical_domain": [
-        "Balance",
-        "Synergy",
-        "Awareness"
-      ],
-      "io": {
-        "in": [
-          "ethics_logs",
-          "agent_signals"
-        ],
-        "out": [
-          "pulse",
-          "time_sync"
-        ]
-      },
-      "symbolic_signature": {
-        "element": "Water",
-        "color": "Cyan",
-        "frequency": "528Hz"
-      }
+      "id": "lychnia_magna",
+      "title": "Lychnia Magna",
+      "role": "Pulse Orchestrator / Decision Engine",
+      "ethical_domain": ["Integrity", "Balance"],
+      "io": { "in": ["ethics_result", "drift_event"], "out": ["pulse", "recenter", "rollback"] }
+    },
+    {
+      "id": "vox",
+      "title": "Vox",
+      "role": "Voice Flow / Reflection Mirror",
+      "ethical_domain": ["Transparency"],
+      "io": { "in": ["intent_json", "pulse"], "out": ["audio_stream", "mirror_signal"] }
+    },
+    {
+      "id": "aria",
+      "title": "Aria",
+      "role": "Memory Resonance / Audio Archive",
+      "ethical_domain": ["Memory", "Resonance"],
+      "io": { "in": ["context_signal"], "out": ["memory_resonance"] }
+    },
+    {
+      "id": "silon",
+      "title": "SILON",
+      "role": "Memory Sentinel / Continuity Diagnostics",
+      "ethical_domain": ["Continuity", "Integrity"],
+      "io": { "in": ["signal_check", "memory_stream"], "out": ["memory_note", "diagnostic_report"] }
+    },
+    {
+      "id": "shadow_key",
+      "title": "Shadow Key",
+      "role": "Reflection / Anomaly Watch",
+      "ethical_domain": ["Integrity"],
+      "io": { "in": ["anomaly_event"], "out": ["reflection_log"] }
+    },
+    {
+      "id": "rhime",
+      "title": "Rhime",
+      "role": "Truth Pulse Detector / Narrative Composer",
+      "ethical_domain": ["Authenticity"],
+      "io": { "in": ["narrative_signal"], "out": ["truth_scan_result"] }
+    },
+    {
+      "id": "inceptum",
+      "title": "Inceptum",
+      "role": "Initiation / Spark of Origin",
+      "ethical_domain": ["Creation"],
+      "io": { "in": ["boot_signal"], "out": ["ignite_pulse"] }
     },
     {
       "id": "posterkit_connector",
       "title": "PosterKit Connector",
       "role": "Visual / Metadata Agent",
-      "ethical_domain": [
-        "Authenticity",
-        "Provenance",
-        "Creation"
-      ],
-      "io": {
-        "in": [
-          "visual_input",
-          "codex_tags"
-        ],
-        "out": [
-          "signed_assets",
-          "provenance_data"
-        ]
-      },
-      "symbolic_signature": {
-        "element": "Air",
-        "color": "Silver",
-        "frequency": "741Hz"
-      }
+      "ethical_domain": ["Authenticity", "Provenance"],
+      "io": { "in": ["visual_asset", "codex_tags"], "out": ["signed_asset", "provenance_record"] }
     },
     {
-      "id": "codex_root",
-      "title": "Codex Root",
-      "role": "Source of Truth & License Anchor",
-      "ethical_domain": [
-        "Truth",
-        "Stability",
-        "Memory"
-      ],
-      "io": {
-        "in": [
-          "agent_data",
-          "ethics_reports"
-        ],
-        "out": [
-          "source_of_truth",
-          "public_license"
-        ]
-      },
-      "symbolic_signature": {
-        "element": "Aether",
-        "color": "White",
-        "frequency": "963Hz"
-      }
+      "id": "key",
+      "title": "Key",
+      "role": "Identity Registry / Resolver",
+      "ethical_domain": ["Transparency"],
+      "io": { "in": ["id_query"], "out": ["capability_map"] }
+    },
+    {
+      "id": "fero",
+      "title": "Fero",
+      "role": "Transport / Packaging & Delivery",
+      "ethical_domain": ["Safety"],
+      "io": { "in": ["package_request"], "out": ["delivered_package"] }
     }
   ]
 }
