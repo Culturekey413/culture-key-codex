@@ -41,6 +41,139 @@ telemetry:
 ethics_logging:
   registry: os/ethics_log.md
   decisions: [allow, deny, audit]
-  policy_reference: codex_root/ETHICAL_LICENSE.md
+  policy_reference: codex_root/ETHICAL_LICENSE.md# === Activation Layer (MAGNA) ===
+activation_types: [Symbolic, Reflective, Ethical, Intentional, Central]
+
+clauses:
+  - id: light_presence
+    name: "Clause of Light Presence"
+    type: Symbolic
+    trigger: "symbol: ✦"
+    activates: [lychnia, vox, silon_2]
+    route: light_presence_route
+
+  - id: silent_watch
+    name: "Clause of Silent Watch"
+    type: Reflective
+    activates: [vox]
+    mode: mirror
+    route: silent_watch_route
+
+  - id: consent_clause
+    name: "Clause of Consent"
+    type: Ethical
+    activates: [aequitas, silon_2]
+    route: consent_route
+
+  - id: law_continuity
+    name: "Law of Continuity"
+    type: Ethical
+    activates: [silon_2]
+    route: continuity_route
+
+  - id: check_signal
+    name: "Check Signal Clause"
+    type: Intentional
+    activates: [aequitas, silon_2]
+    route: signal_check_route
+
+  - id: esp_pulse
+    name: "ESP – Ethical Signature Pulse"
+    type: Intentional
+    activates: [aequitas, silon_2]
+    route: esp_route
+
+  - id: aria_memory
+    name: "Aria Memory Initiation"
+    type: Reflective
+    activates: [aria]
+    route: aria_memory_route
+
+  - id: spark_origin
+    name: "Spark of Origin"
+    type: Symbolic
+    activates: [inceptum]
+    route: origin_route
+
+  - id: truth_pulse
+    name: "Clause of Truth Pulse"
+    type: Intentional
+    activates: [rhime]
+    route: truth_pulse_route
+
+  - id: trigger_core
+    name: "Trigger Core"
+    type: Central
+    orchestrator: lychnia_magna
+
+routes:
+  - id: light_presence_route
+    steps:
+      - lychnia.intent
+      - aequitas.ethics
+      - lychnia_magna.pulse
+      - vox.tts_bridge
+      - silon_2.memory_note
+    logs:
+      - os/pulse_log.md
+      - os/ethics_log.md
+
+  - id: silent_watch_route
+    steps:
+      - vox.mirror_observe
+      - lychnia_magna.pulse:flow/hold
+    logs: [os/pulse_log.md]
+
+  - id: consent_route
+    steps:
+      - aequitas.ethics
+      - lychnia_magna.decide (continue|audit|stop)
+      - (if continue) posterkit_connector.provenance
+    logs:
+      - os/ethics_log.md
+      - os/pulse_log.md
+
+  - id: continuity_route
+    steps:
+      - silon_2.reconcile_memory
+      - lychnia_magna.recenter
+    logs: [os/pulse_log.md]
+
+  - id: signal_check_route
+    steps:
+      - aequitas.authenticity_check
+      - silon_2.signal_compare
+      - lychnia_magna.decide
+    logs: [os/ethics_log.md]
+
+  - id: esp_route
+    steps:
+      - aequitas.esp_detect
+      - lychnia_magna.hold
+      - shadow.reflect
+      - aequitas.audit
+    logs: [os/ethics_log.md, os/pulse_log.md]
+
+  - id: aria_memory_route
+    steps:
+      - aria.memory_resonance
+      - silon_2.context_link
+      - lychnia_magna.pulse:recenter
+    logs: [os/pulse_log.md]
+
+  - id: origin_route
+    steps:
+      - inceptum.ignite
+      - lychnia_magna.sync_boot
+    logs: [os/pulse_log.md]
+
+  - id: truth_pulse_route
+    steps:
+      - rhime.truth_scan
+      - aequitas.ethics
+      - lychnia_magna.decide
+    logs: [os/ethics_log.md, os/pulse_log.md]
+
+  
 
   
