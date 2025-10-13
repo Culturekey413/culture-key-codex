@@ -150,7 +150,7 @@ routes:
     steps:
       - aequitas.esp_detect
       - lychnia_magna.hold
-      - shadow.reflect
+      - shadow_key.reflect
       - aequitas.audit
     logs: [os/ethics_log.md, os/pulse_log.md]
 
