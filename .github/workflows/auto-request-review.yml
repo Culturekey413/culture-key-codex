@@ -1,13 +1,7 @@
 name: auto-request-review
+
 on:
-  push:
-    branches:
-      - main
-      - agent-toolkit
   pull_request:
-    branches:
-      - main
-      - agent-toolkit
     types: [opened, reopened]
 
 permissions:
@@ -17,14 +11,22 @@ jobs:
   request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v7
+      - name: Request review (safe mode)
+        uses: actions/github-script@v7
         with:
           script: |
             const { owner, repo, number } = context.issue;
+            if (!number) {
+              console.log("ℹ️ No pull request context found — skipping auto-review request.");
+              return;
+            }
+
             await github.rest.pulls.requestReviewers({
               owner,
               repo,
               pull_number: number,
-              reviewers: ['@Culturekey413']
+              reviewers: ['Culturekey413']
             });
 
+            // Optional log for pulse tracking
+            console.log(`✅ Auto-review requested by ${owner}/${repo} for PR #${number}`);
