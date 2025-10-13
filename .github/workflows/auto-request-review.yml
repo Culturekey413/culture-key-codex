@@ -1,9 +1,18 @@
 name: auto-request-review
 on:
+  push:
+    branches:
+      - main
+      - agent-toolkit
   pull_request:
+    branches:
+      - main
+      - agent-toolkit
     types: [opened, reopened]
+
 permissions:
   pull-requests: write
+
 jobs:
   request:
     runs-on: ubuntu-latest
@@ -11,8 +20,11 @@ jobs:
       - uses: actions/github-script@v7
         with:
           script: |
-            const {owner, repo, number} = context.issue;
+            const { owner, repo, number } = context.issue;
             await github.rest.pulls.requestReviewers({
-              owner, repo, pull_number: number,
-              reviewers: ['@Culturekey413'] // 
+              owner,
+              repo,
+              pull_number: number,
+              reviewers: ['@Culturekey413']
             });
+
