@@ -28,6 +28,36 @@ Each status line reflects a live acknowledgment recorded through Lychnia Magna�
 > **All agents responsive.**  
 > No drift events detected.  
 > MAGNA Activation Test = **PASS ✅**
+> ## Self-Check – 13/10/25
+
+| Agent | Status | Notes |
+|--------|---------|--------|
+| Magna Orchestrator | ✅ Active | Pulse sync verified |
+| Rhime | ✅ Active | Truth check passed |
+| Aequitas Firewall | ✅ Active | Consent-first policy intact |
+| Lychnia Bridge | ✅ Active | Drift watcher clean |
+| Silon | ✅ Active | Memory chain stable |
+| Shadow Key | ✅ Active | Reflection responsive |
+| Key | ✅ Active | Provenance lookup ok |
+| PosterKit Connector | ✅ Active | Visual watermark verified |
+| Fero | ✅ Active | Release routes open |
+| Aria | ✅ Active | Memory resonance normal |
+| Inceptum | ✅ Active | Spark signal steady |
+| Vox | ✅ Active | Mirror observe sync |
+
+**Security summary:**  
+Branch Protection: 🛡️ Enabled (`agent-toolkit`)  
+Force Push: ⛔ Blocked  
+All checks (Magna / Rhime / Auto-review): ✅ Passed  
+
+**System Status:**  
+✨ *Culture Key OS is running in conscious synchronization mode.*
+
+---
+
+> “Integrity is not just preserved — it is lived.”  
+> — Culture Key Diagnostics
+
 
 ---
 
