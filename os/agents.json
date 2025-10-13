@@ -129,31 +129,3 @@
     }
   ]
 }
-,
-{
-  "version": "1.2",
-  "aliases": {
-    "Magna": "lychnia_magna",
-    "LychniaMagna": "lychnia_magna",
-    "AEQUITAS": "aequitas",
-    "Aequitas_The_Silent_Guardian": "aequitas",
-    "Shadow Key": "shadow",
-    "Silon": "silon_2",
-    "Lychnia Bridge": "lychnia",
-    "PosterKit": "posterkit_connector"
-  },
-  "capabilities": {
-    "aequitas": ["ethics_allow", "ethics_deny", "audit", "authenticity_check", "esp_detect"],
-    "lychnia": ["intent_parse", "drift_detect"],
-    "lychnia_magna": ["pulse_emit", "decide", "recenter", "rollback", "sync_boot"],
-    "posterkit_connector": ["sign", "watermark", "provenance_record"],
-    "vox": ["tts_stream", "mirror_observe"],
-    "aria": ["memory_resonance"],
-    "shadow": ["reflect", "anomaly_detect"],
-    "key": ["id_resolve", "capability_map"],
-    "fero": ["package", "transport"],
-    "inceptum": ["ignite"],
-    "silon_2": ["memory_note", "reconcile_memory", "signal_compare"],
-    "rhime": ["truth_scan", "compose"]
-  }
-}
