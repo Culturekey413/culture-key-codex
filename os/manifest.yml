@@ -1,0 +1,19 @@
+# Culture Key OS — Flow Manifest (v1)
+# Each step defines a conscious pipeline hop with an ethics checkpoint.
+flow:
+  - id: user_intent_to_ethics
+    trigger: lychnia_bridge.intent_parser
+    checkpoint: aequitas_firewall.ethics_rules
+    on_allow: magna_orchestrator.pulse_controller
+    on_deny: codex_root.audit/reject
+
+  - id: sync_to_visual
+    trigger: magna_orchestrator.sync_map
+    checkpoint: aequitas_firewall.audit_chain_append
+    on_allow: posterkit_connector.visual_manifest
+    on_deny: codex_root.audit/review
+
+telemetry:
+  audit_log: codex_root/audit_history/
+  drift_monitor: lychnia_bridge/watcher/
+  pulse_bus: magna_orchestrator/pulse/

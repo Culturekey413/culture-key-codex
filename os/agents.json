@@ -1,0 +1,131 @@
+{
+  "version": "1.0",
+  "updated": "2025-10-13T08:16:24.714382Z",
+  "agents": [
+    {
+      "id": "aequitas_firewall",
+      "title": "Aequitas Firewall",
+      "role": "Ethics + Security Authority",
+      "ethical_domain": [
+        "Consent",
+        "Integrity",
+        "Transparency"
+      ],
+      "io": {
+        "in": [
+          "intent",
+          "api_call"
+        ],
+        "out": [
+          "allow",
+          "deny",
+          "audit"
+        ]
+      },
+      "symbolic_signature": {
+        "element": "Earth",
+        "color": "Deep Blue",
+        "frequency": "432Hz"
+      }
+    },
+    {
+      "id": "lychnia_bridge",
+      "title": "Lychnia Bridge",
+      "role": "Cognitive / Translation Node",
+      "ethical_domain": [
+        "Empathy",
+        "Accuracy",
+        "Honesty"
+      ],
+      "io": {
+        "in": [
+          "natural_language"
+        ],
+        "out": [
+          "intent_json",
+          "intent_map"
+        ]
+      },
+      "symbolic_signature": {
+        "element": "Fire",
+        "color": "Gold",
+        "frequency": "639Hz"
+      }
+    },
+    {
+      "id": "magna_orchestrator",
+      "title": "Magna Orchestrator",
+      "role": "Pulse + Timekeeper",
+      "ethical_domain": [
+        "Balance",
+        "Synergy",
+        "Awareness"
+      ],
+      "io": {
+        "in": [
+          "ethics_logs",
+          "agent_signals"
+        ],
+        "out": [
+          "pulse",
+          "time_sync"
+        ]
+      },
+      "symbolic_signature": {
+        "element": "Water",
+        "color": "Cyan",
+        "frequency": "528Hz"
+      }
+    },
+    {
+      "id": "posterkit_connector",
+      "title": "PosterKit Connector",
+      "role": "Visual / Metadata Agent",
+      "ethical_domain": [
+        "Authenticity",
+        "Provenance",
+        "Creation"
+      ],
+      "io": {
+        "in": [
+          "visual_input",
+          "codex_tags"
+        ],
+        "out": [
+          "signed_assets",
+          "provenance_data"
+        ]
+      },
+      "symbolic_signature": {
+        "element": "Air",
+        "color": "Silver",
+        "frequency": "741Hz"
+      }
+    },
+    {
+      "id": "codex_root",
+      "title": "Codex Root",
+      "role": "Source of Truth & License Anchor",
+      "ethical_domain": [
+        "Truth",
+        "Stability",
+        "Memory"
+      ],
+      "io": {
+        "in": [
+          "agent_data",
+          "ethics_reports"
+        ],
+        "out": [
+          "source_of_truth",
+          "public_license"
+        ]
+      },
+      "symbolic_signature": {
+        "element": "Aether",
+        "color": "White",
+        "frequency": "963Hz"
+      }
+    }
+  ]
+}

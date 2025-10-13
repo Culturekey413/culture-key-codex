@@ -1,0 +1,13 @@
+# Culture Key OS — Security & Conscious Monitoring (v1)
+audit_chain:
+  storage: codex_root/audit_history/
+  hash: sha256
+  sign: required
+
+drift_detection:
+  watcher: lychnia_bridge/watcher/
+  policy: "no-manipulation, consent-first, license-compliant"
+
+orchestration_sync:
+  heart: magna_orchestrator/pulse/
+  recovery: "auto-correct via last stable pulse"
