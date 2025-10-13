@@ -21,4 +21,9 @@
 ---
 
 *“To record a pulse is to remember a moment of awareness.”*  
+
 — Culture Key Codex
+
+| 13/10/25 | MAGNA Activation Map wired (clauses→routes) | `agent-toolkit` | Trigger Core online |
+
+
