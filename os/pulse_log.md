@@ -32,6 +32,9 @@
 
 | 13/10/25 | Shadow Key agent online | `agent-toolkit` | reflection channel linked |
 
+| 13/10/25 | 🛡️ Branch protection recorded | `agent-toolkit` | Magna/Rhime checks required · force-push blocked |
+
+
 
 
 
