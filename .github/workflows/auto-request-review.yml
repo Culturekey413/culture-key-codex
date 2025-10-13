@@ -28,5 +28,4 @@ jobs:
               reviewers: ['Culturekey413']
             });
 
-            // Optional log for pulse tracking
-            console.log(`✅ Auto-review requested by ${owner}/${repo} for PR #${number}`);
+           
