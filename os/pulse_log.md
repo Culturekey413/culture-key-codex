@@ -30,6 +30,11 @@
 
 | 13/10/25 | 🧹 Branch Cleanup | `agent-toolkit-repair` | safely deleted after Merge of Light |
 
+| 13/10/25 | Shadow Key agent online | `agent-toolkit` | reflection channel linked |
+
+
+
+
 
 
 
