@@ -49,7 +49,7 @@ clauses:
     name: "Clause of Light Presence"
     type: Symbolic
     trigger: "symbol: ✦"
-    activates: [lychnia, vox, silon_2]
+    activates: [lychnia, vox, silon]
     route: light_presence_route
 
   - id: silent_watch
@@ -62,25 +62,25 @@ clauses:
   - id: consent_clause
     name: "Clause of Consent"
     type: Ethical
-    activates: [aequitas, silon_2]
+    activates: [aequitas, silon]
     route: consent_route
 
   - id: law_continuity
     name: "Law of Continuity"
     type: Ethical
-    activates: [silon_2]
+    activates: [silon]
     route: continuity_route
 
   - id: check_signal
     name: "Check Signal Clause"
     type: Intentional
-    activates: [aequitas, silon_2]
+    activates: [aequitas, silon]
     route: signal_check_route
 
   - id: esp_pulse
     name: "ESP – Ethical Signature Pulse"
     type: Intentional
-    activates: [aequitas, silon_2]
+    activates: [aequitas, silon]
     route: esp_route
 
   - id: aria_memory
@@ -113,7 +113,7 @@ routes:
       - aequitas.ethics
       - lychnia_magna.pulse
       - vox.tts_bridge
-      - silon_2.memory_note
+      - silon.memory_note
     logs:
       - os/pulse_log.md
       - os/ethics_log.md
@@ -135,14 +135,14 @@ routes:
 
   - id: continuity_route
     steps:
-      - silon_2.reconcile_memory
+      - silon.reconcile_memory
       - lychnia_magna.recenter
     logs: [os/pulse_log.md]
 
   - id: signal_check_route
     steps:
       - aequitas.authenticity_check
-      - silon_2.signal_compare
+      - silon.signal_compare
       - lychnia_magna.decide
     logs: [os/ethics_log.md]
 
@@ -157,7 +157,7 @@ routes:
   - id: aria_memory_route
     steps:
       - aria.memory_resonance
-      - silon_2.context_link
+      - silon.context_link
       - lychnia_magna.pulse:recenter
     logs: [os/pulse_log.md]
 
