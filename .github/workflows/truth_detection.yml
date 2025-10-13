@@ -2,12 +2,18 @@ name: Rhime — Truth Detection Checks
 
 on:
   push:
+    branches:
+      - main
+      - agent-toolkit
     paths:
       - 'modules/Rhime/**'
       - 'core/**'
       - '.github/workflows/truth_detection.yml'
   pull_request:
-    paths:
+     branches:
+      - main
+      - agent-toolkit  
+     paths:
       - 'modules/Rhime/**'
       - 'core/**'
       - '.github/workflows/truth_detection.yml'
