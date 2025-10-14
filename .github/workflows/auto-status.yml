@@ -1,0 +1,91 @@
+name: Auto Update Project Status
+
+on:
+  issues:
+    types: [labeled, assigned, reopened, closed]
+  pull_request:
+    types: [opened, ready_for_review, closed]
+
+jobs:
+  update_status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Route status in Project (User Project v2)
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PROJECTS_TOKEN }}
+          script: |
+            const OWNER = "Culturekey413";
+            const PROJECT_NUMBER = 2;
+
+            const isIssue = !!context.payload.issue;
+            const content = isIssue ? context.payload.issue : context.payload.pull_request;
+            const CONTENT_NODE_ID = content.node_id;
+
+            // 1) Πάρε Project + Status field + επιλογές
+            const data = await github.graphql(`
+              query($owner:String!,$number:Int!){
+                user(login:$owner){
+                  projectV2(number:$number){
+                    id
+                    fields(first:50){
+                      nodes{
+                        ... on ProjectV2SingleSelectField { id name options { id name } }
+                        ... on ProjectV2FieldCommon { id name }
+                      }
+                    }
+                  }
+                }
+              }`, { owner: OWNER, number: PROJECT_NUMBER });
+
+            const project = data.user.projectV2;
+            const statusField = project.fields.nodes.find(f => f.name === "Status" && f.options);
+            const opt = n => statusField.options.find(o => o.name.toLowerCase() === n.toLowerCase());
+
+            // 2) Πρόσθεσε (no-op αν υπάρχει ήδη) και βρες itemId
+            let itemId;
+            try {
+              const add = await github.graphql(`
+                mutation($pid:ID!,$cid:ID!){
+                  addProjectV2ItemById(input:{projectId:$pid, contentId:$cid}){ item{ id } }
+                }`, { pid: project.id, cid: CONTENT_NODE_ID });
+              itemId = add.addProjectV2ItemById.item.id;
+            } catch {
+              const search = await github.graphql(`
+                query($owner:String!,$number:Int!){
+                  user(login:$owner){ projectV2(number:$number){
+                    items(first:100){ nodes{ id content{ ... on Issue{ id } ... on PullRequest{ id } } } } } }
+                }`, { owner: OWNER, number: PROJECT_NUMBER });
+              itemId = search.user.projectV2.items.nodes.find(n => n.content?.id === CONTENT_NODE_ID)?.id;
+            }
+            if (!itemId) { core.setFailed("Project item not found"); return; }
+
+            // 3) Υπολόγισε target status
+            let target = null;
+
+            if (isIssue) {
+              const action = context.payload.action;
+              const labels = (context.payload.issue.labels || []).map(l => l.name.toLowerCase());
+              if (action === "reopened") target = "Inbox";
+              if (labels.some(l => l.startsWith("type:"))) target = "Triaged";
+              if (action === "assigned") target = "In Progress";
+              if (action === "closed") target = "Done";
+            } else {
+              const pr = context.payload.pull_request;
+              if (context.payload.action === "opened") target = "In Progress";
+              if (["ready_for_review"].includes(context.payload.action)) target = "Review";
+              if (context.payload.action === "closed" && pr.merged) target = "Done";
+            }
+
+            if (!target) { core.info("No status change needed."); return; }
+
+            const option = opt(target) || opt("Inbox");
+            await github.graphql(`
+              mutation($pid:ID!,$iid:ID!,$fid:ID!,$oid:String!){
+                updateProjectV2ItemFieldValue(input:{
+                  projectId:$pid, itemId:$iid, fieldId:$fid,
+                  value:{ singleSelectOptionId:$oid }
+                }){ clientMutationId }
+              }`, { pid: project.id, iid: itemId, fid: statusField.id, oid: option.id });
+
+            core.info(`✅ Set Status → ${target}`);
