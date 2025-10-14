@@ -1,59 +1,60 @@
-name: Insight Tracker v1 (Ethical)
+name: Insight Tracker v1 (Ethical, PR mode)
 
 on:
   schedule:
     - cron: "0 9 * * MON"   # κάθε Δευτέρα 09:00 UTC
-  workflow_dispatch:        # να μπορείς να το τρέχεις και χειροκίνητα
+  workflow_dispatch:
 
 permissions:
-  contents: write           # για commit στο repo
+  contents: write          # για commit σε κλάδο
+  pull-requests: write     # για άνοιγμα PR
 
 jobs:
-  collect:
+  collect-and-pr:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
+      - id: date
+        run: echo "today=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
       - name: Collect traffic & append to metrics log
         env:
           REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ secrets.INSIGHTS_TOKEN }}
+          GH_TOKEN: ${{ secrets.INSIGHTS_TOKEN }}   # <-- το PAT που έφτιαξες
         run: |
           mkdir -p metrics
-          TODAY=$(date -u +"%Y-%m-%d")
 
-          # Τραβάμε τα 14-day traffic stats (views & clones)
           VIEWS_JSON=$(gh api repos/$REPO/traffic/views)
           CLONES_JSON=$(gh api repos/$REPO/traffic/clones)
-
-          # Repo counters για context
           REPO_JSON=$(gh api repos/$REPO)
 
           VIEWS_TOT=$(echo "$VIEWS_JSON" | jq '.count')
           VIEWS_UNIQ=$(echo "$VIEWS_JSON" | jq '.uniques')
           CLONES_TOT=$(echo "$CLONES_JSON" | jq '.count')
           CLONES_UNIQ=$(echo "$CLONES_JSON" | jq '.uniques')
-
           STARS=$(echo "$REPO_JSON" | jq '.stargazers_count')
           FORKS=$(echo "$REPO_JSON" | jq '.forks_count')
           OPEN_ISSUES=$(echo "$REPO_JSON" | jq '.open_issues_count')
 
           {
-            echo "## $TODAY"
-            echo "- Views (14d): **$VIEWS_TOT**  _(unique: $VIEWS_UNIQ)_"
-            echo "- Clones (14d): **$CLONES_TOT**  _(unique: $CLONES_UNIQ)_"
+            echo "## ${{ steps.date.outputs.today }}"
+            echo "- Views (14d): **$VIEWS_TOT** _(unique: $VIEWS_UNIQ)_"
+            echo "- Clones (14d): **$CLONES_TOT** _(unique: $CLONES_UNIQ)_"
             echo "- Stars: **$STARS** • Forks: **$FORKS** • Open issues: **$OPEN_ISSUES**"
             echo ""
           } >> metrics/INSIGHTS_LOG.md
 
-      - name: Commit metrics (if changed)
-        run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add metrics/INSIGHTS_LOG.md
-            git commit -m "chore(metrics): weekly insights $(date -u +%Y-%m-%d)"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}   # για το PR
+          commit-message: "chore(metrics): weekly insights ${{ steps.date.outputs.today }}"
+          branch: "metrics/insights-${{ steps.date.outputs.today }}"
+          title: "chore(metrics): weekly insights ${{ steps.date.outputs.today }}"
+          body: |
+            Automated weekly update to `metrics/INSIGHTS_LOG.md`.
+            Mode: Ethical. Source: GitHub Traffic API (14d window).
+          labels: metrics, automated
+          add-paths: |
+            metrics/INSIGHTS_LOG.md
