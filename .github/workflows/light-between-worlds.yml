@@ -1,0 +1,42 @@
+name: Light Between Worlds
+on:
+  project_card:
+    types: [moved]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create artifact issue in Codex when Published
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const card = context.payload.project_card;
+            // TODO: Βάλε το πραγματικό ID της στήλης "Published" στο PinkClouds project.
+            const PUBLISHED_COLUMN_ID = 123456;
+            if (!card || card.column_id !== PUBLISHED_COLUMN_ID) {
+              return;
+            }
+            if (!card.content_url) return;
+            const { data: issue } = await github.request(card.content_url, {});
+
+            await github.rest.issues.create({
+              owner: 'YOUR_ORG_OR_USER', // TODO: συμπλήρωσε
+              repo: 'culture-key-codex', // TODO: προσαρμογή αν χρειάζεται
+              title: `PinkClouds Artifact — ${issue.title}`,
+              labels: ['type:docs','area:social'],
+              body: [
+                'Source: PinkCloudsByNiki',
+                'Flow: Light Between Worlds',
+                '',
+                'Heart Cue: Όταν η φράση έχει ειπωθεί, δεν πονάει πια.',
+                '',
+                'Quote:',
+                '> ' + (issue.title || '').trim(),
+                '',
+                'Notes:',
+                (issue.body || '').trim()
+              ].join('\n')
+            });
