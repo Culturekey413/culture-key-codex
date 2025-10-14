@@ -1,0 +1,37 @@
+name: Task
+description: Συγκεκριμένη εργασία (writing / ops / dev)
+labels: ["type:task","prio:P2"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Περιγραφή
+      description: Τι ακριβώς θα γίνει; Τι αποτέλεσμα θέλουμε;
+      placeholder: π.χ. «Στήσιμο README για Codex», «Πέρασμα 3 PinkClouds»
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Βήματα (προαιρετικό)
+      placeholder: 1) ... 2) ... 3) ...
+  - type: dropdown
+    id: area
+    attributes:
+      label: Περιοχή
+      options:
+        - area:writing
+        - area:ops
+        - area:dev
+    validations:
+      required: false
+  - type: dropdown
+    id: prio
+    attributes:
+      label: Προτεραιότητα
+      options:
+        - prio:P1
+        - prio:P2
+        - prio:P3
+    validations:
+      required: false
