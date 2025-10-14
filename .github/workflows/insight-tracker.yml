@@ -17,7 +17,7 @@ jobs:
       - name: Collect traffic & append to metrics log
         env:
           REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.INSIGHTS_TOKEN }}
         run: |
           mkdir -p metrics
           TODAY=$(date -u +"%Y-%m-%d")
