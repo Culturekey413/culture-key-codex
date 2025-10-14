@@ -23,6 +23,7 @@
 
 📘 See also: [CONTRIBUTING.md](CONTRIBUTING.md) for collaboration guidelines.
 
+📊 Weekly Insights: [metrics/INSIGHTS_LOG.md](./metrics/INSIGHTS_LOG.md)
 
 
 
