@@ -1,0 +1,14 @@
+name: Idea / PinkCloud
+description: Φρέσκια ιδέα ή απόσταγμα
+labels: ["type:idea","prio:P2"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Περιγραφή
+      description: Τι είναι; Γιατί τώρα;
+  - type: textarea
+    id: heart
+    attributes:
+      label: Heart cue
+      description: Η φράση/πυρήνας
