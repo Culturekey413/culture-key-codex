@@ -1,0 +1,22 @@
+name: Bug report
+description: Αναφορά σφάλματος
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Περιγραφή
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Βήματα Αναπαραγωγής
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Αναμενόμενο vs Πραγματικό
+  - type: input
+    id: env
+    attributes:
+      label: Περιβάλλον

@@ -1,0 +1,15 @@
+name: Docs task
+description: Ενημέρωση/βελτίωση τεκμηρίωσης
+labels: ["type:docs"]
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: Εμβέλεια
+  - type: checkboxes
+    id: done
+    attributes:
+      label: Definition of Done
+      options:
+        - label: README ενημερωμένο
+        - label: Screenshots/παραδείγματα
