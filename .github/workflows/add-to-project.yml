@@ -9,8 +9,9 @@ jobs:
   add:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@v1
+      - uses: leonsteinhaeuser/project-beta-automations@v2.2.1
         with:
-          
-          project-url: https://github.com/users/Culturekey413/projects/2
-          github-token: ${{ secrets.PROJECTS_TOKEN }}
+          gh_token: ${{ secrets.PROJECTS_TOKEN }}
+          organization: Culturekey413
+          project_id: 2
+          resource_node_id: ${{ github.event.issue.node_id }}
