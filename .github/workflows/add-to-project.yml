@@ -2,17 +2,29 @@ name: Add new issues to Codex Project
 on:
   issues:
     types: [opened]
+
 permissions:
   issues: write
   contents: read
+
 jobs:
   add:
     runs-on: ubuntu-latest
     steps:
-      - uses: leonsteinhaeuser/project-beta-automations@v2.2.1
+      - name: Add new issues to Codex Project
+        uses: leonsteinhaeuser/project-beta-automations@v2.2.1
         with:
           gh_token: ${{ secrets.PROJECTS_TOKEN }}
           user: Culturekey413
           project_id: 2
           resource_node_id: ${{ github.event.issue.node_id }}
-          
+
+  triage:
+    needs: add
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'type:task')
+    steps:
+      - name: Auto-assign status
+        run: |
+          echo "Setting task issue to Triaged"
+          gh issue edit ${{ github.event.issue.number }} --add-label "status:triaged" --repo ${{ github.repository }}
