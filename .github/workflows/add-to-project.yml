@@ -1,0 +1,17 @@
+name: Add new issues to Codex Project
+on:
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+  contents: read
+  projects: write
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v1
+        with:
+          # TODO: Βάλε το σωστό URL του Project και το NUMBER από το link.
+          project-url: https://github.com/orgs/YOUR_ORG/projects/NUMBER
+          github-token: ${{ secrets.GITHUB_TOKEN }}
