@@ -1,0 +1,19 @@
+name: Comment on Add-to-Project
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  note:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PROJECTS_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              ...context.repo,
+              issue_number: context.payload.issue.number,
+              body: "🪄 Added to **Culture Key Codex — Operations** → Status: *Inbox*.\n\n_Να θυμάσαι: “Όταν η φράση έχει ειπωθεί, δεν πονάει πια.”_"
+            });
