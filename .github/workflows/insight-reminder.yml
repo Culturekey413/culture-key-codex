@@ -1,0 +1,51 @@
+name: Weekly Insights Reminder
+
+on:
+  schedule:
+    - cron: "0 9 * * MON"   # κάθε Δευτέρα 09:00 UTC
+  workflow_dispatch:        # μπορείς να το τρέχεις και χειροκίνητα
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping or create reminder issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const label = "insights";
+            // Βρες ανοιχτό issue υπενθύμισης
+            const issues = await github.rest.issues.listForRepo({ owner, repo, state: "open", labels: label });
+            let issue = issues.data.find(i => /Weekly Insights Reminder/i.test(i.title));
+            if (!issue) {
+              // αν δεν υπάρχει, φτιάξ’ το
+              const body = [
+                "📊 **Weekly Insights Reminder**",
+                "",
+                "Ενημέρωσε το αρχείο: `metrics/INSIGHTS_LOG.md`",
+                "",
+                "- [ ] Πρόσθεσε τα Views & Clones (14d)",
+                "- [ ] Μικρό σχόλιο/σημείωση (τι άλλαξε αυτή τη βδομάδα)",
+                "",
+                "Link: `metrics/INSIGHTS_LOG.md`",
+              ].join("\n");
+              issue = (await github.rest.issues.create({
+                owner, repo,
+                title: "Weekly Insights Reminder",
+                body,
+                labels: [label]
+              })).data;
+              core.info(`Created issue #${issue.number}`);
+            } else {
+              // αλλιώς, άφησε εβδομαδιαίο σχόλιο-ντινγκ
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: issue.number,
+                body: "⏰ Weekly ping — ενημέρωσε το `metrics/INSIGHTS_LOG.md` όταν έχεις χρόνο."
+              });
+              core.info(`Commented on issue #${issue.number}`);
+            }
