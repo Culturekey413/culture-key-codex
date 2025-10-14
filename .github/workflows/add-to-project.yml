@@ -13,4 +13,4 @@ jobs:
         with:
           
           project-url: https://github.com/users/Culturekey413/projects/2
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PROJECTS_TOKEN }}
