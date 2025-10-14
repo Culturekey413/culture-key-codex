@@ -5,13 +5,12 @@ on:
 permissions:
   issues: write
   contents: read
-  projects: write
 jobs:
   add:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/add-to-project@v1
         with:
-          # TODO: Βάλε το σωστό URL του Project και το NUMBER από το link.
-          project-url: https://github.com/orgs/YOUR_ORG/projects/NUMBER
+          
+          project-url: https://github.com/users/Culturekey413/projects/2
           github-token: ${{ secrets.GITHUB_TOKEN }}
