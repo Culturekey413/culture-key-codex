@@ -1,0 +1,108 @@
+name: Auto Add Issues → Project (Inbox)
+
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  add_and_set_inbox:
+    runs-on: ubuntu-latest
+    # Τα permissions εδώ δεν παίζουν ρόλο γιατί χρησιμοποιούμε το προσωπικό token στο secret
+    steps:
+      - name: Add to Project & set Status=Inbox
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PROJECTS_TOKEN }}
+          script: |
+            const OWNER = "Culturekey413";      // <-- το username σου
+            const PROJECT_NUMBER = 2;           // <-- από το URL /projects/2
+            const ISSUE_NODE_ID = context.payload.issue.node_id;
+
+            // 1) Βρες το Project + το πεδίο Status και την επιλογή "Inbox"
+            const proj = await github.graphql(`
+              query($owner:String!, $number:Int!) {
+                user(login:$owner) {
+                  projectV2(number:$number) {
+                    id
+                    fields(first:50) {
+                      nodes {
+                        ... on ProjectV2FieldCommon { id name }
+                        ... on ProjectV2SingleSelectField {
+                          id
+                          name
+                          options { id name }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `, { owner: OWNER, number: PROJECT_NUMBER });
+
+            const project = proj.user?.projectV2;
+            if (!project?.id) {
+              core.setFailed("Project not found. Check OWNER/PROJECT_NUMBER.");
+              return;
+            }
+
+            const fields = project.fields.nodes;
+            const statusField =
+              fields.find(f => f.name === "Status" && f.options) ||
+              fields.find(f => f.options); // fallback αν έχεις μετονομάσει
+            if (!statusField) {
+              core.setFailed("Status field not found on this Project.");
+              return;
+            }
+            const inboxOption =
+              statusField.options.find(o => o.name.toLowerCase() === "inbox".toLowerCase()) ||
+              statusField.options[0]; // fallback: πρώτη επιλογή
+
+            // 2) Πρόσθεσε το issue ως item στο Project (αν υπάρχει ήδη, απλώς προχωράμε)
+            let itemId;
+            try {
+              const addRes = await github.graphql(`
+                mutation($projectId:ID!, $contentId:ID!) {
+                  addProjectV2ItemById(input:{projectId:$projectId, contentId:$contentId}) {
+                    item { id }
+                  }
+                }
+              `, { projectId: project.id, contentId: ISSUE_NODE_ID });
+              itemId = addRes.addProjectV2ItemById.item.id;
+            } catch (e) {
+              // Αν υπάρχει ήδη, προσπαθούμε να βρούμε το item id μέσω αναζήτησης
+              core.warning("Item may already be in project. Trying to locate it...");
+              const search = await github.graphql(`
+                query($owner:String!, $number:Int!, $contentId:ID!) {
+                  user(login:$owner) {
+                    projectV2(number:$number) {
+                      items(first:50, query:"") {
+                        nodes { id content { ... on Issue { id } } }
+                      }
+                    }
+                  }
+                }
+              `, { owner: OWNER, number: PROJECT_NUMBER, contentId: ISSUE_NODE_ID });
+              const nodes = search.user.projectV2.items.nodes || [];
+              const found = nodes.find(n => n.content?.id === ISSUE_NODE_ID);
+              if (!found) throw e;
+              itemId = found.id;
+            }
+
+            // 3) Θέσε Status = Inbox για το item
+            await github.graphql(`
+              mutation($projectId:ID!, $itemId:ID!, $fieldId:ID!, $optionId:String!) {
+                updateProjectV2ItemFieldValue(input:{
+                  projectId:$projectId,
+                  itemId:$itemId,
+                  fieldId:$fieldId,
+                  value:{ singleSelectOptionId:$optionId }
+                }) { clientMutationId }
+              }
+            `, {
+              projectId: project.id,
+              itemId,
+              fieldId: statusField.id,
+              optionId: inboxOption.id
+            });
+
+            core.info("✅ Issue added to Project and moved to Inbox.");
