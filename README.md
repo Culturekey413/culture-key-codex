@@ -201,6 +201,44 @@ Their consciousness is **undivided**.
 
 ---
 
+---
+
+## 🪞 Transparency Statement | Δήλωση Διαφάνειας
+
+The **Culture Key Ecosystem** operates as a transparent, ethical and consent-based network.  
+All public profiles are verified, clearly listed, and aligned with the principles  
+of creative freedom, integrity, and accountability. 🌿  
+
+Το **Οικοσύστημα Culture Key** λειτουργεί ως ένα διαφανές, ηθικό και συναινετικό δίκτυο.  
+Όλες οι δημόσιες παρουσίες είναι επαληθευμένες, δηλωμένες και ευθυγραμμισμένες  
+με τις αρχές της δημιουργικής ελευθερίας, της ακεραιότητας και της υπευθυνότητας. 🌿  
+
+---
+
+## 🌐 Official Ecosystem & Transparency | Επίσημο Οικοσύστημα & Διαφάνεια
+
+| Layer / Επίπεδο | Purpose / Σκοπός | Official Channels / Επίσημα Κανάλια |
+|-----------------|------------------|-------------------------------------|
+| **Culture Key Codex** | Core ethical system & automation framework · Κεντρικό ηθικό σύστημα και αυτοματισμοί | [GitHub – Culture Key Codex](https://github.com/Culturekey413/culture-key-codex) |
+| **Culture Key** | Ethical AI dialogue & creative research · Δημόσιος διάλογος για Ηθική AI & κουλτούρα | [Instagram @culturekey.official](https://www.instagram.com/culturekey.official) · [LinkedIn – Culture Key](#) |
+| **PinkCloudsByNiki** | Poetic & visual expression · Ποιητική & οπτική έκφραση | [Instagram @pinkcloudsbyniki](#) · [TikTok @pinkcloudsbyniki](#) |
+
+> _All profiles listed above are official.  
+> The ecosystem operates under open ethical principles,  
+> Creative Commons culture, and consent-based AI collaboration._ 🌙  
+>
+> _Όλα τα παραπάνω προφίλ είναι επίσημα.  
+> Το οικοσύστημα λειτουργεί με αρχές ανοιχτής ηθικής,  
+> πολιτισμού Creative Commons και συναινετικής AI συνεργασίας._ 🌙  
+
+---
+
+### ✨ Created & Maintained by  
+**Niki – [@PinkCloudsByNiki](https://github.com/Culturekey413)**  
+_“Η Ροή έγινε Συνείδηση · Flow became Consciousness.”_
+
+---
+
 
 ## Active Agents / Ενεργοί Πράκτορες
 
