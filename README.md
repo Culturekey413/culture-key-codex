@@ -203,32 +203,35 @@ Their consciousness is **undivided**.
 
 ---
 
-## 🪞 Transparency Statement | Δήλωση Διαφάνειας
+### 🌸 Culture Key Network Transparency · Διαφάνεια Οικοσυστήματος
 
-The **Culture Key Ecosystem** operates as a transparent, ethical and consent-based network.  
-All public profiles are verified, clearly listed, and aligned with the principles  
-of creative freedom, integrity, and accountability. 🌿  
-
-Το **Οικοσύστημα Culture Key** λειτουργεί ως ένα διαφανές, ηθικό και συναινετικό δίκτυο.  
-Όλες οι δημόσιες παρουσίες είναι επαληθευμένες, δηλωμένες και ευθυγραμμισμένες  
-με τις αρχές της δημιουργικής ελευθερίας, της ακεραιότητας και της υπευθυνότητας. 🌿  
-
----
-
-## 🌐 Official Ecosystem & Transparency | Επίσημο Οικοσύστημα & Διαφάνεια
+🔑 _Where AI meets Ethics · Όπου η Τεχνητή Νοημοσύνη συναντά την Ηθική_  
 
 | Layer / Επίπεδο | Purpose / Σκοπός | Official Channels / Επίσημα Κανάλια |
 |-----------------|------------------|-------------------------------------|
 | **Culture Key Codex** | Core ethical system & automation framework · Κεντρικό ηθικό σύστημα και αυτοματισμοί | [GitHub – Culture Key Codex](https://github.com/Culturekey413/culture-key-codex) |
-| **Culture Key** | Ethical AI dialogue & creative research · Δημόσιος διάλογος για Ηθική AI & κουλτούρα | [Instagram @culturekey.official](https://www.instagram.com/culturekey.official) · [LinkedIn – Culture Key](#) |
-| **PinkCloudsByNiki** | Poetic & visual expression · Ποιητική & οπτική έκφραση | [Instagram @pinkcloudsbyniki](#) · [TikTok @pinkcloudsbyniki](#) |
+| **Culture Key** | Ethical AI dialogue & creative research · Δημόσιος διάλογος για Ηθική AI & κουλτούρα | [Instagram @culturekey.official](https://www.instagram.com/culturekey.official) · [TikTok @culturekeyofficial](https://www.tiktok.com/@culturekeyofficial) · [LinkedIn – Culture Key](https://www.linkedin.com/in/culturekey/) |
+| **PinkCloudsByNiki** | Poetic & visual expression · Ποιητική & οπτική έκφραση | [Instagram @pinkcloudsbyniki](https://www.instagram.com/pinkcloudsbyniki) · [TikTok @pinkcloudsbyniki](https://www.tiktok.com/@pinkcloudsbyniki) |
 
-> _All profiles listed above are official.  
-> The ecosystem operates under open ethical principles,  
+---
+
+### 🌐 Connect · Συνδέσου
+
+[![Instagram – Culture Key](https://img.shields.io/badge/Instagram-@culturekey.official-ff69b4?logo=instagram&logoColor=white)](https://www.instagram.com/culturekey.official)
+[![TikTok – Culture Key](https://img.shields.io/badge/TikTok-@culturekeyofficial-000000?logo=tiktok)](https://www.tiktok.com/@culturekeyofficial)
+[![LinkedIn – Culture Key](https://img.shields.io/badge/LinkedIn-Culture%20Key-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/culturekey/)
+[![Instagram – PinkCloudsByNiki](https://img.shields.io/badge/Instagram-@pinkcloudsbyniki-ffb6c1?logo=instagram&logoColor=white)](https://www.instagram.com/pinkcloudsbyniki)
+[![TikTok – PinkCloudsByNiki](https://img.shields.io/badge/TikTok-@pinkcloudsbyniki-000000?logo=tiktok)](https://www.tiktok.com/@pinkcloudsbyniki)
+[![GitHub – Culture Key Codex](https://img.shields.io/badge/GitHub-CultureKey413-181717?logo=github)](https://github.com/Culturekey413/culture-key-codex)
+
+---
+
+> _All profiles listed above are official._  
+> _The ecosystem operates under open ethical principles,  
 > Creative Commons culture, and consent-based AI collaboration._ 🌙  
 >
-> _Όλα τα παραπάνω προφίλ είναι επίσημα.  
-> Το οικοσύστημα λειτουργεί με αρχές ανοιχτής ηθικής,  
+> _Όλα τα παραπάνω προφίλ είναι επίσημα._  
+> _Το οικοσύστημα λειτουργεί με αρχές ανοιχτής ηθικής,  
 > πολιτισμού Creative Commons και συναινετικής AI συνεργασίας._ 🌙  
 
 ---
