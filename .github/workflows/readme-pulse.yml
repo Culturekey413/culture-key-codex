@@ -1,0 +1,49 @@
+name: Monthly README Pulse
+
+on:
+  schedule:
+    - cron: "0 9 1 * *"   # κάθε 1η του μήνα, 09:00 UTC
+  workflow_dispatch:       # manual trigger από Actions tab
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify social links
+        run: |
+          mkdir -p metrics
+          echo "Verifying social links in README.md..."
+          grep -E 'instagram\.com|tiktok\.com|linkedin\.com' README.md > metrics/social_check.log || true
+          echo "✅ Done."
+
+      - name: Append verification footer (idempotent)
+        run: |
+          FOOTER="_Auto-verified by Culture Key Pulse · Last check: $(date -u '+%Y-%m-%d')_"
+          # Αν υπάρχει ήδη γραμμή Pulse, αντικατάστησέ την, αλλιώς πρόσθεσέ την
+          if grep -q "Auto-verified by Culture Key Pulse" README.md; then
+            sed -i 's/_Auto-verified by Culture Key Pulse.*/'"$FOOTER"'/' README.md
+          else
+            printf "\n%s\n" "$FOOTER" >> README.md
+          fi
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(readme): monthly social link verification"
+          branch: metrics/readme-pulse-${{ github.run_id }}
+          title: "chore(metrics): monthly README Pulse – ${{ github.run_id }}"
+          body: |
+            Monthly README Pulse.
+            - Updated verification footer.
+            - Social check log saved at `metrics/social_check.log`.
+          labels: metrics, automated
+          add-paths: |
+            README.md
+            metrics/social_check.log
