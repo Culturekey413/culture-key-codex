@@ -19,8 +19,6 @@
 ![docs](https://img.shields.io/badge/docs-Magna_Flow_Plan-brightgreen)
 ![status](https://img.shields.io/badge/status-active-green)
 ![open-source](https://img.shields.io/badge/open--source-❤️-red)
-[![Monthly README Pulse](https://img.shields.io/badge/Pulse-monthly-blueviolet?style=flat&logo=github)](./.github/workflows/readme-pulse.yml)
-
 
 📘 See also: [CONTRIBUTING.md](CONTRIBUTING.md) for collaboration guidelines.
 
